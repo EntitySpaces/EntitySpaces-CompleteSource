@@ -1,0 +1,47 @@
+<dotnetnuke version="3.0" type="Module">
+  <folders>
+    <folder>
+      <name>EntitySpaces.GridLoader</name>
+      <friendlyname>GridLoader</friendlyname>
+      <foldername>EntitySpaces.GridLoader</foldername>
+      <modulename>EntitySpaces.GridLoader</modulename>
+      <description>A GridLoader module</description>
+      <version>01.00.00</version>
+      <businesscontrollerclass></businesscontrollerclass>
+      <modules>
+        <module>
+          <friendlyname>GridLoader</friendlyname>
+          <cachetime>0</cachetime>
+          <controls>
+            <control>
+              <src>DesktopModules/GridLoader/Index.ascx</src>
+              <type>View</type>
+              <helpurl></helpurl>
+            </control>
+          </controls>
+        </module>
+      </modules>
+      <files>
+        <file>
+	     <name>EntitySpaces.Modules.GridLoader.dll</name>
+		</file>
+        <file>
+          <name>Index.ascx</name>
+        </file>
+		<file>
+          <name>Navigation.ascx</name>
+        </file>
+        <file>
+          <path>App_LocalResources</path>
+          <name>Index.ascx.resx</name>
+        </file>
+        <file>
+          <name>module.css</name>
+        </file>
+        <file>
+          <name>question.gif</name>
+        </file>
+      </files>
+    </folder>
+  </folders>
+</dotnetnuke>

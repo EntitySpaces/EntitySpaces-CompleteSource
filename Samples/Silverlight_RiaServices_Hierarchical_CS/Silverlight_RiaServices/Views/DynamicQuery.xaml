@@ -1,0 +1,41 @@
+﻿<navigation:Page x:Class="Silverlight_RiaServices.Views.DynamicQuery" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="DynamicQuery Page" xmlns:riaControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.DomainServices" xmlns:my="clr-namespace:BusinessObjects" xmlns:my1="clr-namespace:Silverlight_RiaServices.Web" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid x:Name="LayoutRoot">
+        <riaControls:DomainDataSource AutoLoad="False" d:DesignData="{d:DesignInstance my:Customers, CreateList=true}" Height="0" LoadedData="customersDomainDataSource_LoadedData" Name="customersDomainDataSource" QueryName="Customers_LoadByDynamicQuery" Width="0">
+            <riaControls:DomainDataSource.DomainContext>
+                <my1:esDomainContext />
+            </riaControls:DomainDataSource.DomainContext>
+            <riaControls:DomainDataSource.QueryParameters>
+                <riaControls:Parameter ParameterName="serializedQuery" Value="{Binding ElementName=serializedQueryTextBox, Path=Text}" />
+            </riaControls:DomainDataSource.QueryParameters>
+        </riaControls:DomainDataSource>
+        <StackPanel Height="30" Orientation="Horizontal" VerticalAlignment="Top" Margin="12,0">
+            <sdk:Label Content="Company Name : " Margin="3" VerticalAlignment="Center" />
+            <TextBox Name="txtCompanyName" Width="443" Height="23" />
+            <Button Content="Load" Margin="3" Name="btnLoad" Width="61" Click="btnLoad_Click" />
+        </StackPanel>
+        <sdk:DataGrid AutoGenerateColumns="False" ItemsSource="{Binding ElementName=customersDomainDataSource, Path=Data}" Margin="12,62,12,12" Name="customersDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Background="White">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="customerIDColumn" Binding="{Binding Path=CustomerID, Mode=OneWay}" Header="Customer ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="companyNameColumn" Binding="{Binding Path=CompanyName}" Header="Company Name" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="contactNameColumn" Binding="{Binding Path=ContactName}" Header="Contact Name" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="contactTitleColumn" Binding="{Binding Path=ContactTitle}" Header="Contact Title" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="addressColumn" Binding="{Binding Path=Address}" Header="Address" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="cityColumn" Binding="{Binding Path=City}" Header="City" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="countryColumn" Binding="{Binding Path=Country}" Header="Country" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="faxColumn" Binding="{Binding Path=Fax}" Header="Fax" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="phoneColumn" Binding="{Binding Path=Phone}" Header="Phone" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="postalCodeColumn" Binding="{Binding Path=PostalCode}" Header="Postal Code" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="regionColumn" Binding="{Binding Path=Region}" Header="Region" Width="SizeToHeader" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <sdk:Label Height="20" Margin="20,36,12,0" Name="label1" VerticalAlignment="Top" Content="NOTE: Use a % sign at the beginning or end or both to control the LIKE clause" />
+    </Grid>
+</navigation:Page>

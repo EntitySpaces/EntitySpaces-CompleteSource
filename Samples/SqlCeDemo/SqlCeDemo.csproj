@@ -1,0 +1,168 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACB77741-94BE-4D82-AB3F-8FCD5DDF55E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SqlCeDemo</RootNamespace>
+    <AssemblyName>SqlCeDemo</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SqlCeDemo</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core.CF, Version=2010.1.1011.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET CF 3.5\EntitySpaces.Core.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery.CF, Version=2010.1.1011.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET CF 3.5\EntitySpaces.DynamicQuery.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces.CF, Version=2010.1.1011.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET CF 3.5\EntitySpaces.Interfaces.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader.CF, Version=2010.1.1011.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET CF 3.5\EntitySpaces.Loader.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlServerCeProvider.CF, Version=2010.1.1011.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET CF 3.5\EntitySpaces.SqlServerCeProvider.CF.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Customer.cs" />
+    <Compile Include="Custom\CustomerCollection.cs" />
+    <Compile Include="Custom\CustomerGroup.cs" />
+    <Compile Include="Custom\CustomerGroupCollection.cs" />
+    <Compile Include="Custom\CustomerGroupQuery.cs" />
+    <Compile Include="Custom\CustomerQuery.cs" />
+    <Compile Include="Custom\Employee.cs" />
+    <Compile Include="Custom\EmployeeCollection.cs" />
+    <Compile Include="Custom\EmployeeQuery.cs" />
+    <Compile Include="Custom\EmployeeTerritory.cs" />
+    <Compile Include="Custom\EmployeeTerritoryCollection.cs" />
+    <Compile Include="Custom\EmployeeTerritoryQuery.cs" />
+    <Compile Include="Custom\Group.cs" />
+    <Compile Include="Custom\GroupCollection.cs" />
+    <Compile Include="Custom\GroupQuery.cs" />
+    <Compile Include="Custom\Order.cs" />
+    <Compile Include="Custom\OrderCollection.cs" />
+    <Compile Include="Custom\OrderItem.cs" />
+    <Compile Include="Custom\OrderItemCollection.cs" />
+    <Compile Include="Custom\OrderItemQuery.cs" />
+    <Compile Include="Custom\OrderQuery.cs" />
+    <Compile Include="Custom\Product.cs" />
+    <Compile Include="Custom\ProductCollection.cs" />
+    <Compile Include="Custom\ProductQuery.cs" />
+    <Compile Include="Custom\ReferredEmployee.cs" />
+    <Compile Include="Custom\ReferredEmployeeCollection.cs" />
+    <Compile Include="Custom\ReferredEmployeeQuery.cs" />
+    <Compile Include="Custom\Territory.cs" />
+    <Compile Include="Custom\TerritoryCollection.cs" />
+    <Compile Include="Custom\TerritoryEx.cs" />
+    <Compile Include="Custom\TerritoryExCollection.cs" />
+    <Compile Include="Custom\TerritoryExQuery.cs" />
+    <Compile Include="Custom\TerritoryQuery.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generated\Customer.cs" />
+    <Compile Include="Generated\CustomerGroup.cs" />
+    <Compile Include="Generated\Employee.cs" />
+    <Compile Include="Generated\EmployeeTerritory.cs" />
+    <Compile Include="Generated\Group.cs" />
+    <Compile Include="Generated\Order.cs" />
+    <Compile Include="Generated\OrderItem.cs" />
+    <Compile Include="Generated\Product.cs" />
+    <Compile Include="Generated\ReferredEmployee.cs" />
+    <Compile Include="Generated\Territory.cs" />
+    <Compile Include="Generated\TerritoryEx.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ForeignKeyTest_35.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Compact Framework C# Sample.pdf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

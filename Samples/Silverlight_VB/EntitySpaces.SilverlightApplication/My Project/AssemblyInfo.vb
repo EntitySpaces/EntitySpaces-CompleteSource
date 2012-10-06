@@ -1,0 +1,34 @@
+﻿Imports System
+Imports System.Reflection
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following 
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+' Review the values of the assembly attributes
+<Assembly: AssemblyTitle("EntitySpaces.SilverlightApplication")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("EntitySpaces, LLC")> 
+<Assembly: AssemblyProduct("EntitySpaces.Proxies.Silverlight")> 
+<Assembly: AssemblyCopyright("Copyright © EntitySpaces, LLC. 2005 - 2010")> 
+<Assembly: AssemblyTrademark("EntitySpaces(TM) is a legal trademark of EntitySpaces, LLC.")> 
+
+<Assembly: ComVisible(False)>
+
+'The following GUID is for the ID of the typelib if this project is exposed to COM
+<Assembly: Guid("54267345-ef0a-4a84-b249-47b5873f9f5b")> 
+
+' Version information for an assembly consists of the following four values:
+'
+'      Major Version
+'      Minor Version 
+'      Build Number
+'      Revision
+'
+' You can specify all the values or you can default the Build and Revision Numbers 
+' by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")> 
+
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> 

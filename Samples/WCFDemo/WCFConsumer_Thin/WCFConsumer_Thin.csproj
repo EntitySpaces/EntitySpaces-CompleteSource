@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C213E901-2D41-4D7D-9FEA-D52E54DEF478}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCFConsumer_Thin</RootNamespace>
+    <AssemblyName>WCFConsumer_Thin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.DynamicQuery, Version=2010.0.0.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 3.5\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Proxies\Proxies.csproj">
+      <Project>{2A6DCEDE-8DE3-4F27-940A-F79B0FD7B04F}</Project>
+      <Name>Proxies</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\EntitySpaces.Proxies.Proxies.TestClass.datasource" />
+    <None Include="Properties\DataSources\EntitySpaces.Proxies.TestClass.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Proxies.EmployeesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeesProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.TestClass.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Proxies.CategoriesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CategoriesProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerCustomerDemoCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerCustomerDemoProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerDemographicsCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerDemographicsProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeeTerritoriesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeeTerritoriesProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrderDetailsCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrderDetailsProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrdersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrdersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ProductsCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ProductsProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.RegionCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.RegionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ShippersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ShippersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.SuppliersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.SuppliersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.TerritoriesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.TerritoriesProxyStub.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Service1.disco" />
+    <None Include="Service References\ServiceReference1\Service1.wsdl" />
+    <None Include="Service References\ServiceReference1\Service1.xsd" />
+    <None Include="Service References\ServiceReference1\Service11.xsd" />
+    <None Include="Service References\ServiceReference1\Service12.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

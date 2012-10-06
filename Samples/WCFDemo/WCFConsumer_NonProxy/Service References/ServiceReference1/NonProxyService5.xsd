@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4504/NonProxyService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+  <xs:import schemaLocation="http://localhost:4504/NonProxyService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:4504/NonProxyService.svc?xsd=xsd5" namespace="www.entityspaces.net" />
+  <xs:complexType name="esCollectionWCFPacketOfShippersCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ShippersCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q1:ShippersCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfShippersCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfShippersCollection6xVTLYDI" />
+  <xs:complexType name="esEntity">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ModifiedColumns" nillable="true" type="q2:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q3="www.entityspaces.net" minOccurs="0" name="RowState" type="q3:esDataRowState">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esEntity" nillable="true" type="tns:esEntity" />
+  <xs:complexType name="esCollectionWCFPacketOfSuppliersCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SuppliersCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q4:SuppliersCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfSuppliersCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfSuppliersCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfTerritoriesCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="TerritoriesCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q5:TerritoriesCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfTerritoriesCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfTerritoriesCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfEmployeeTerritoriesCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EmployeeTerritoriesCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q6:EmployeeTerritoriesCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfEmployeeTerritoriesCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfEmployeeTerritoriesCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfOrderDetailsCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OrderDetailsCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q7:OrderDetailsCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfOrderDetailsCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfOrderDetailsCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfOrdersCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="OrdersCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q8:OrdersCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfOrdersCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfOrdersCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfProductsCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ProductsCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q9:ProductsCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfProductsCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfProductsCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfRegionCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="RegionCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q10:RegionCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfRegionCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfRegionCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfCategoriesCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CategoriesCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q11:CategoriesCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfCategoriesCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfCategoriesCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfCustomerCustomerDemoCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CustomerCustomerDemoCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q12:CustomerCustomerDemoCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfCustomerCustomerDemoCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfCustomerCustomerDemoCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfCustomerDemographicsCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CustomerDemographicsCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q13:CustomerDemographicsCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfCustomerDemographicsCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfCustomerDemographicsCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfCustomersCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="CustomersCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q14:CustomersCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfCustomersCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfCustomersCollection6xVTLYDI" />
+  <xs:complexType name="esCollectionWCFPacketOfEmployeesCollection6xVTLYDI">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="esCollectionWCFPacketOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/EntitySpaces.Core" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="EmployeesCollection" Namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Collection" nillable="true" type="q15:EmployeesCollection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="esCollectionWCFPacketOfEmployeesCollection6xVTLYDI" nillable="true" type="tns:esCollectionWCFPacketOfEmployeesCollection6xVTLYDI" />
+</xs:schema>

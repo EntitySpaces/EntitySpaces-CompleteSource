@@ -1,0 +1,220 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Editing.aspx.cs" Inherits="WebSiteDemo.Editing" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+    <script src="JavaScript/Libs/jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="JavaScript/Libs/json2.js" type="text/javascript"></script>
+    <script src="JavaScript/Libs/knockout-2.0.0.debug.js" type="text/javascript"></script>
+    <link href="JavaScript/KoGrid/KoGrid.css" rel="stylesheet" type="text/css" />
+    <script src="JavaScript/KoGrid/koGrid.debug.js" type="text/javascript"></script>
+    <script src="JavaScript/entityspaces.js/entityspaces.XHR.debug.js" type="text/javascript"></script>
+    <script src="JavaScript/entityspaces.js/Generated/Employees.js" type="text/javascript"></script>
+    <script src="JavaScript/entityspaces.js/Generated/Orders.js" type="text/javascript"></script>
+    <script src="JavaScript/entityspaces.js/Generated/OrderDetails.js" type="text/javascript"></script>
+    <script src="JavaScript/entityspaces.js/Custom/Employees.js" type="text/javascript"></script>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <table>
+        <tr>
+            <td colspan="3">
+                <h4>Editing <a href="https://github.com/EntitySpaces/entityspaces.js" target="new">entityspaces.js</a> demonstration. We are using <a href="https://github.com/ericmbarnard/KoGrid" target="new">KoGrid</a> in the example for the grid control. The KoGrid control is new so please excuse any painting errors you might see.
+                A screen like this can be written in mere minutes, the only code we really had to hand code to make it "happen" was to add the code shown beneath the buttons into our button click event handlers. It couldn't be any easier. Both the <a href="https://github.com/EntitySpaces/entityspaces.js/blob/master/Examples/EntitySpaces/Generated/Employees.js" target="new">employees.js</a> file and the <a href="https://github.com/EntitySpaces/entityspaces.js/blob/master/Examples/EntitySpaces/esJson.svc.cs" target="new">WCF JSON service</a> were generated for us by <a href="http://www.entityspaces.net/portal/Products/EntitySpacesStudio.aspx" target="new">EntitySpaces Studio</a>.</h4>
+                <hr />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <strong>NOTE:</strong> This is accessing a real database. Some records cannot be deleted because of foreign key constraints. We are showing all of the low level errors that come back from our service just as an example. In real world scenarios you would not do this, of course.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" data-bind="text: error" style="color:Red; font-weight:bold;">
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="left" style="width:1%;">
+                    <div id="myGrid" style="max-height: 300px; max-width: 710px; border:1px solid rgb(0, 0, 0);" data-bind="koGrid:{ data: collection, 
+                            isMultiSelect: false,
+                            selectedItem: mySelectedItem,
+                            autogenerateColumns: false,
+                            sortInfo: sortInfo,
+							enablePaging: false,
+                            columnDefs: [
+                                {field: 'EmployeeID', displayName: 'ID', width: 30}, 
+                                {field: 'FirstName', displayName: 'First Name', width: 120}, 
+                                {field: 'LastName', displayName: 'Last Name', width: 160},
+                                {field: 'RowState', displayName: 'RowState', width: 90},
+                                {field: 'isDirty', displayName: 'isDirty', width: 80},
+                                {field: 'ModifiedColumns', displayName: 'ModifiedColumns', width: 160}
+                            ],
+                            displaySelectionCheckbox: true,
+                            displayRowIndex: true }">
+                    </div>
+            </td>
+            <td>
+                &nbsp;&nbsp;
+            </td>
+            <td valign="top" align="left" rowspan="6">
+                <!--------------------------->
+                <!-- This is our Edit Area -->
+                <!--------------------------->
+                <table id="EditArea" cellpadding="3" width="400px" style="max-width: 400px; vertical-align:top; border:1px solid rgb(0,0,0);" data-bind="with: mySelectedItem">
+                    <tr align="center">
+                        <td colspan="2">
+                            <b>Edit Selected Employee Here</b>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            The Original Values are stored for each column. They are not shown below. However, they are restored when you selected 'Reject Changes'.
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>EmployeeID:</strong></td>
+                        <td data-bind="text: EmployeeID"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>First Name:</strong></td>
+                        <td><input data-bind='value: FirstName, valueUpdate: "afterkeydown"' maxlength="10" /></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Last Name:</strong></td>
+                        <td><input data-bind='value: LastName, valueUpdate: "afterkeydown"' maxlength="20" /></td>
+                    </tr>
+                    <tr>
+                        <td><strong>RowState:</strong></td>
+                        <td data-bind="text: RowState"></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <hr />
+                            RowState : Unchanged = 2, Added = 4, Deleted = 8, Modified = 16
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button data-bind="click: $root.onMarkAllAsDeleted" style="width: 280px">Mark 'All' as Deleted</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button data-bind="click: $root.onMarkAsDeleted" style="width: 280px">Mark 'Selected Item' as Deleted</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button data-bind="click: $root.onRejectChanges" style="width: 280px">Reject All Changes</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button data-bind="click: $root.onAddNew" style="width: 280px">Add a New Employee</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button data-bind="click: $root.onSave" style="width: 280px">Save changes</button>
+                        </td>
+                    </tr>
+                </table>
+            </td>    
+        </tr>
+        <tr valign="top">
+            <td>
+                <b>The Collections Deleted Item List (collection.es.deletedEntities)</b>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td valign="top" align="left" style="width:1%" rowspan="3">
+                <div id="myDeleted" style="max-height: 200px; max-width: 710px; border:1px solid rgb(0,0,0);" data-bind="koGrid:{ data: collection.es.deletedEntities, 
+                        isMultiSelect: false,
+                        autogenerateColumns: false,
+                        sortInfo: sortInfo,
+                        columnDefs: [
+                            {field: 'EmployeeID', displayName: 'ID', width: 30}, 
+                            {field: 'FirstName', displayName: 'First Name', width: 120}, 
+                            {field: 'LastName', displayName: 'Last Name', width: 160},
+                            {field: 'RowState', displayName: 'RowState', width: 90},
+                            {field: 'isDirty', displayName: 'isDirty', width: 80},
+                            {field: 'ModifiedColumns', displayName: 'ModifiedColumns', width: 160}
+                        ],
+                        displaySelectionCheckbox: true,
+                        displayRowIndex: true }">
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script language="javascript" type="text/javascript">
+
+        es.dataProvider.baseURL = "esJson.svc/";
+
+        $(document).ready(function () {
+
+            var vm = {
+                collection: new es.objects.EmployeesCollection(),
+                mySelectedItem: ko.observable(new es.objects.Employees()),
+                error: ko.observable(),
+                sortInfo: ko.observable(),
+
+                onAddNew: function () {
+                    vm.error("");
+
+                    //  Add the new Employee
+                    var newEmployee = vm.collection.addNew();
+                    newEmployee.FirstName("Joe");
+                    newEmployee.LastName("Smith");
+
+                    vm.mySelectedItem(newEmployee);
+                },
+
+                onMarkAllAsDeleted: function () {
+                    vm.error("");
+                    vm.collection.markAllAsDeleted();
+                },
+
+                onMarkAsDeleted: function () {
+                    vm.error("");
+
+                    var index = ko.utils.arrayIndexOf(vm.collection(), vm.mySelectedItem());
+
+                    // only line of entityspaces.js code necessary
+                    vm.collection.markAsDeleted(vm.mySelectedItem());
+
+                    if (vm.collection().length > 0) {
+                        vm.mySelectedItem(vm.collection()[Math.max(index, 0)]);
+                    }
+                },
+
+                onRejectChanges: function () {
+                    vm.error("");
+                    vm.collection.rejectChanges();
+                },
+
+                onSave: function () {
+                    vm.collection.save({
+                        success: function (data, state) {
+                            vm.error("");
+                            vm.collection.loadAll();
+                        },
+                        error: function (status, responseText, state) {
+                            vm.error(responseText);
+                        }
+                    });
+                }
+            };
+
+            ko.applyBindings(vm);
+
+            // Hit our service ...
+            vm.collection.loadAll();
+
+            vm.mySelectedItem(vm.collection()[0]);
+        });
+    </script>
+
+</asp:Content>
+
+

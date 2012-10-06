@@ -1,0 +1,198 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{798E37EF-D054-4FA4-82E5-8C97B1174FB4}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntitySpaces.SilverlightApplication</RootNamespace>
+    <AssemblyName>EntitySpaces.SilverlightApplication</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>EntitySpaces.SilverlightApplication.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>EntitySpaces.SilverlightApplication.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.DynamicQuery.Silverlight, Version=2010.1.830.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\Silverlight\3\EntitySpaces.DynamicQuery.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls" />
+    <Reference Include="System.Windows.Controls.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\NorthwindClient\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SimpleDataGrid.xaml.cs">
+      <DependentUpon>SimpleDataGrid.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Resource Include="Assets\Styles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Views\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SimpleDataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <Resource Include="Assets\logo.jpg" />
+    <None Include="Service References\NorthwindClient\Northwind.disco" />
+    <None Include="Service References\NorthwindClient\configuration91.svcinfo" />
+    <None Include="Service References\NorthwindClient\configuration.svcinfo" />
+    <None Include="Service References\NorthwindClient\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntitySpaces.Proxies.Silverlight\EntitySpaces.Proxies.Silverlight.csproj">
+      <Project>{6D123D0B-541D-4DF7-98EE-14564CCB7E34}</Project>
+      <Name>EntitySpaces.Proxies.Silverlight</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Proxies.CategoriesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CategoriesProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerCustomerDemoCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerCustomerDemoProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerDemographicsCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomerDemographicsProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.CustomersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeesProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeeTerritoriesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.EmployeeTerritoriesProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrderDetailsCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrderDetailsProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrdersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.OrdersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ProductsCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ProductsProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.RegionCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.RegionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ShippersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.ShippersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.SuppliersCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.SuppliersProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.TerritoriesCollectionProxyStub.datasource" />
+    <None Include="Properties\DataSources\Proxies.TerritoriesProxyStub.datasource" />
+    <None Include="Service References\NorthwindClient\Northwind.wsdl" />
+    <None Include="Service References\NorthwindClient\Northwind.xsd" />
+    <None Include="Service References\NorthwindClient\Northwind1.xsd" />
+    <None Include="Service References\NorthwindClient\Northwind2.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NorthwindClient\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

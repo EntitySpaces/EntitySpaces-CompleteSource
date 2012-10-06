@@ -1,0 +1,39 @@
+﻿<navigation:Page x:Class="Silverlight_RiaServices.Views.ExtraColumn" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="ExtraColumn Page" 
+           xmlns:riaControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.DomainServices" 
+           xmlns:my="clr-namespace:BusinessObjects" 
+           xmlns:my1="clr-namespace:Silverlight_RiaServices.Web" 
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid x:Name="LayoutRoot">
+
+        <riaControls:DomainDataSource AutoLoad="True" d:DesignData="{d:DesignInstance my:Products, CreateList=true}" Height="0" LoadedData="productsDomainDataSource_LoadedData" Name="productsDomainDataSource" QueryName="Products_LoadWithExtraColumnQuery" Width="0">
+             <riaControls:DomainDataSource.DomainContext>
+                <my1:esDomainContext />
+            </riaControls:DomainDataSource.DomainContext>
+        </riaControls:DomainDataSource>
+
+        <sdk:DataGrid AutoGenerateColumns="False" ItemsSource="{Binding ElementName=productsDomainDataSource, Path=DataView}" Margin="12" Name="productsDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="productIDColumn" Binding="{Binding Path=ProductID, Mode=OneWay}" Header="Product ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="SupplierName" Binding="{Binding esExtraColumns[SupplierName], Mode=TwoWay}" Header="** Supplier Name **" CanUserSort="False"/>
+                <sdk:DataGridTextColumn x:Name="categoryIDColumn" Binding="{Binding Path=CategoryID}" Header="Category ID" Width="SizeToHeader" />
+                <sdk:DataGridCheckBoxColumn x:Name="discontinuedColumn" Binding="{Binding Path=Discontinued}" Header="Discontinued" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="productNameColumn" Binding="{Binding Path=ProductName}" Header="Product Name" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="quantityPerUnitColumn" Binding="{Binding Path=QuantityPerUnit}" Header="Quantity Per Unit" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="reorderLevelColumn" Binding="{Binding Path=ReorderLevel}" Header="Reorder Level" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="supplierIDColumn" Binding="{Binding Path=SupplierID}" Header="Supplier ID" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="unitPriceColumn" Binding="{Binding Path=UnitPrice}" Header="Unit Price" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="unitsInStockColumn" Binding="{Binding Path=UnitsInStock}" Header="Units In Stock" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="unitsOnOrderColumn" Binding="{Binding Path=UnitsOnOrder}" Header="Units On Order" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="rowStateColumn" Binding="{Binding Path=RowState}" Header="Row State" Width="SizeToHeader" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+    </Grid>
+</navigation:Page>

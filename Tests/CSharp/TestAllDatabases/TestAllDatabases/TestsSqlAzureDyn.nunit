@@ -1,0 +1,9 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="bin\Debug\TestAllDatabases.exe" />
+  </Config>
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="bin\Release\TestAllDatabases.exe" />
+  </Config>
+</NUnitProject>

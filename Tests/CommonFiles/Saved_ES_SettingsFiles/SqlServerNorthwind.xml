@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<esSettings Version="2012.1.0319.0">
+  <Driver>SQL</Driver>
+  <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+  <TemplatePath>C:\SVNData\EntitySpacesNew\Code\ES2012\CodeGeneration\Templates</TemplatePath>
+  <OutputPath>C:\SVNData\EntitySpacesNew\Code\ES2012\Tests\CommonFiles</OutputPath>
+  <UIAssemblyPath>C:\SVNData\EntitySpacesNew\Code\ES2012\CodeGeneration\ClassLibraries\EntitySpaces.TemplateUI\bin\x86\Debug</UIAssemblyPath>
+  <CompilerAssemblyPath>C:\SVNData\EntitySpacesNew\Code\ES2012\CodeGeneration\StandAlone\bin\x86\Debug</CompilerAssemblyPath>
+  <LanguageMappingFile>C:\SVNData\EntitySpacesNew\Code\ES2012\CodeGeneration\esLanguages.xml</LanguageMappingFile>
+  <UserMetadataFile>C:\SVNData\EntitySpacesNew\Code\ES2012\Tests\CommonFiles\esUserData.xml</UserMetadataFile>
+  <AbstractPrefix>es</AbstractPrefix>
+  <EntitySuffix />
+  <CollectionSuffix>Collection</CollectionSuffix>
+  <QuerySuffix>Query</QuerySuffix>
+  <MetadataSuffix>Metadata</MetadataSuffix>
+  <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+  <PrefixWithSchema>false</PrefixWithSchema>
+  <ProcPrefix>proc_</ProcPrefix>
+  <ProcInsert>Insert</ProcInsert>
+  <ProcUpdate>Update</ProcUpdate>
+  <ProcDelete>Delete</ProcDelete>
+  <ProcLoadAll>LoadAll</ProcLoadAll>
+  <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+  <ProcSuffix />
+  <ProcVerbFirst>false</ProcVerbFirst>
+  <OnePrefix />
+  <OneSeparator>By</OneSeparator>
+  <OneSuffix />
+  <ManyPrefix />
+  <ManySeparator>By</ManySeparator>
+  <ManySuffix>Collection</ManySuffix>
+  <SelfOnly>false</SelfOnly>
+  <SwapNames>false</SwapNames>
+  <UseAssociativeName>false</UseAssociativeName>
+  <UseUpToPrefix>true</UseUpToPrefix>
+  <PreserveUnderscores>false</PreserveUnderscores>
+  <UseRawNames>false</UseRawNames>
+  <UseNullableTypesAlways>true</UseNullableTypesAlways>
+  <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+  <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+  <LicenseProxyEnable>false</LicenseProxyEnable>
+  <LicenseProxyUrl />
+  <LicenseProxyUserName />
+  <LicenseProxyPassword />
+  <LicenseProxyDomainName />
+  <DriverInfoCollection>
+    <esSettingsDriverInfo>
+      <Driver>SQL</Driver>
+      <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+      <DateAdded>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName />
+        <Type>ClientSide</Type>
+        <ClientType>UtcNow</ClientType>
+        <ServerSideText />
+      </DateAdded>
+      <DateModified>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName />
+        <Type>ClientSide</Type>
+        <ClientType>UtcNow</ClientType>
+        <ServerSideText />
+      </DateModified>
+      <AddedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+        <ColumnName />
+        <ServerSideText />
+      </AddedBy>
+      <ModifiedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+        <ColumnName />
+        <ServerSideText />
+      </ModifiedBy>
+      <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+      <ConcurrencyColumn />
+    </esSettingsDriverInfo>
+  </DriverInfoCollection>
+</esSettings>

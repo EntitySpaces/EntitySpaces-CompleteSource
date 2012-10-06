@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92762CF4-317D-48C7-9209-1E723841DC07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>My.MyApplication</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>TestAllDatabases</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TestAllDatabases.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TestAllDatabases.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TestAllDatabases.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>TestAllDatabases.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core, Version=2010.1.524.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\EntitySpaces.Core\bin\Debug35\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DebuggerVisualizer, Version=2010.1.524.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\EntitySpaces.DebuggerVisualizer\bin\Debug35\EntitySpaces.DebuggerVisualizer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery, Version=2010.1.524.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\EntitySpaces.DynamicQuery\bin\Debug35\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces, Version=2010.1.524.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\EntitySpaces.Interfaces\bin\Debug35\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader, Version=2010.1.524.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\EntitySpaces.Loader\bin\Debug35\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.MSAccessProvider, Version=2012.1.319.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\Providers\EntitySpaces.MSAccessProvider\bin\Debug35\EntitySpaces.MSAccessProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.MySqlClientProvider, Version=2012.1.319.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\Providers\EntitySpaces.MySqlClientProvider\bin\Debug35\EntitySpaces.MySqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider, Version=2012.1.319.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\Providers\EntitySpaces.SqlClientProvider\bin\Debug35\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\CustomBase\CollectionBase.vb" />
+    <Compile Include="BusinessObjects\CustomBase\EntityBase.vb" />
+    <Compile Include="BusinessObjects\CustomBase\QueryBase.vb" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\AggregateTestCollectionCustom.vb" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\AggregateTestCustom.vb" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\ComputedTestCustom.vb" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\FullNameViewCollectionCustom.vb" />
+    <Compile Include="BusinessObjects\CustomObjects\ForeignKeyTest\ProductCollectionCustom.vb" />
+    <Compile Include="BusinessObjects\CustomObjects\Utility.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChild.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChildCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChildQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameView.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameViewCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameViewQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirst.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirstCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirstQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2Collection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2Query.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTest.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Course.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CourseCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CourseQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Customer.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroup.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroupCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroupQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Employee.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritory.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritoryCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritoryQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Group.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\GroupCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\GroupQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Order.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItem.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItemCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItemQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Product.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ProductCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ProductQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployee.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployeeCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployeeQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChild.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChildCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChildQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParent.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParentCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParentQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Student.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClass.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClassCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClassQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Territory.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryEx.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryExCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryExQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest2.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest2Collection.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest2Query.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MysqltypetestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MysqltypetestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MySqlUnicodeTest.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MySqlUnicodeTestCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MySqlUnicodeTestQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Categories.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CategoriesCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CategoriesQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemo.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemoCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemoQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographics.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographicsCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographicsQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Customers.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomersCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomersQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Employees.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeesCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeesQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritories.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritoriesCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritoriesQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetails.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetailsCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetailsQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Orders.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrdersCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrdersQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Products.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ProductsCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ProductsQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Region.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\RegionCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\RegionQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Shippers.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ShippersCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ShippersQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Suppliers.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\SuppliersCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\SuppliersQuery.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Territories.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\TerritoriesCollection.vb" />
+    <Compile Include="BusinessObjects\Custom\Northwind\TerritoriesQuery.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AggregateTest.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ComputedTest.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConcurrencyTest.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConcurrencyTestChild.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConstructorTest.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\DefaultTest.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\FullNameView.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\KeyNotFirst.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\NamingTest.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\NamingTest2.vb" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\SqlServerTypeTest.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Course.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Customer.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\CustomerGroup.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Employee.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\EmployeeTerritory.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Group.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Order.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\OrderItem.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Product.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReferredEmployee.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReverseCompositeChild.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReverseCompositeParent.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Student.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\StudentClass.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Territory.vb" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\TerritoryEx.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\AggregateTestMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CategoriesMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ConcurrencyTestChildMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ConcurrencyTestMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CustomerGroupMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CustomerMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CustomersMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\EmployeeMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\EmployeesMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\EmployeeTerritoryMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\FullNameViewMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\GroupMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrderDetailsMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrderItemMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrderMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrdersMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ProductMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ProductsMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ReferredEmployeeMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ShippersMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\SuppliersMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\TerritoryExMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\TerritoryMetadataesAccess.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\AggregateTestMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CategoriesMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ConcurrencyTestChildMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ConcurrencyTestMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CustomerGroupMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CustomerMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CustomersMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\DefaultTestMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\EmployeeMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\EmployeesMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\EmployeeTerritoryMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\FullNameViewMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\GroupMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\Mysqltypetest.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\Mysqltypetest2.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\Mysqltypetest2MetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\MysqltypetestMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\MySqlUnicodeTest.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\MySqlUnicodeTestMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrderDetailsMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrderItemMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrderMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrdersMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ProductMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ProductsMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ReferredEmployeeMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ReverseCompositeChildMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ReverseCompositeParentMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ShippersMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\SuppliersMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\TerritoryExMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\TerritoryMetadataesMySQL.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Categories.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\CustomerCustomerDemo.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\CustomerDemographics.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Customers.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Employees.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\EmployeeTerritories.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\OrderDetails.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Orders.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Products.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Region.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Shippers.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Suppliers.vb" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Territories.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TestFixtures\CollectionFixture.vb" />
+    <Compile Include="TestFixtures\CollectionViewFixture.vb" />
+    <Compile Include="TestFixtures\ConcurrencyFixture.vb" />
+    <Compile Include="TestFixtures\DataContractSerializationFixture.vb" />
+    <Compile Include="TestFixtures\DataTypeFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\AggregateFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\CastingFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\ExpressionsFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\GroupByFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\JoinDaisyChainingFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\JoinFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\NaturalQuerySyntax.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\SetOperatorFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\SubOperatorFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\SubQueryDaisyChainingFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\SubQueryFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\ViewAggregateFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\ViewGroupByFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\WhereDaisyChainingFixture.vb" />
+    <Compile Include="TestFixtures\DynamicQuery\WhereFixture.vb" />
+    <Compile Include="TestFixtures\Hierarchical\ManyToManyFixture.vb" />
+    <Compile Include="TestFixtures\Hierarchical\ManyToOneFixture.vb" />
+    <Compile Include="TestFixtures\Hierarchical\OneToOneFixture.vb" />
+    <Compile Include="TestFixtures\Hierarchical\PrefetchFixture.vb" />
+    <Compile Include="TestFixtures\Hierarchical\ZeroToManyFixture.vb" />
+    <Compile Include="TestFixtures\LoadFixture.vb" />
+    <Compile Include="TestFixtures\MetadataFixture.vb" />
+    <Compile Include="TestFixtures\MiscellaneousFixture.vb" />
+    <Compile Include="TestFixtures\NamingFixture.vb" />
+    <Compile Include="TestFixtures\PerformanceFixture.vb" />
+    <Compile Include="TestFixtures\Provider\SqlServerFixture.vb" />
+    <Compile Include="TestFixtures\RowStateIsDirty.vb" />
+    <Compile Include="TestFixtures\SaveFixture.vb" />
+    <Compile Include="TestFixtures\SerializeFixture.vb" />
+    <Compile Include="TestFixtures\Setup\Base.vb" />
+    <Compile Include="TestFixtures\Setup\SetupTests.vb" />
+    <Compile Include="TestFixtures\SpecialTextFunctionsFixture.vb" />
+    <Compile Include="TestFixtures\StoredProcFixture.vb" />
+    <Compile Include="TestFixtures\TransactionFixture.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Connections.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

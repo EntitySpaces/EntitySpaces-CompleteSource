@@ -1,0 +1,82 @@
+﻿<navigation:Page x:Class="Silverlight_RiaServices.Views.Editing" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Editing Page" xmlns:riaControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.DomainServices" xmlns:my="clr-namespace:BusinessObjects" xmlns:my1="clr-namespace:Silverlight_RiaServices.Web" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid x:Name="LayoutRoot" Height="654" Width="640">
+        <riaControls:DomainDataSource AutoLoad="True" d:DesignData="{d:DesignInstance my:Employees, CreateList=true}" Height="0" LoadedData="employeesDomainDataSource_LoadedData" Name="employeesDomainDataSource" QueryName="Employees_LoadAllQuery" Width="0">
+            <riaControls:DomainDataSource.DomainContext>
+                <my1:esDomainContext />
+            </riaControls:DomainDataSource.DomainContext>
+        </riaControls:DomainDataSource>
+        <sdk:DataGrid AutoGenerateColumns="False" ItemsSource="{Binding ElementName=employeesDomainDataSource, Path=Data}" Margin="15,12,12,477" Name="employeesDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="employeeIDColumn" Binding="{Binding Path=EmployeeID, Mode=OneWay}" Header="Employee ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="firstNameColumn" Binding="{Binding Path=FirstName}" Header="First Name" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="lastNameColumn" Binding="{Binding Path=LastName}" Header="Last Name" Width="SizeToHeader" />
+                <sdk:DataGridTemplateColumn x:Name="birthDateColumn" Header="Birth Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=BirthDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=BirthDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTemplateColumn x:Name="hireDateColumn" Header="Hire Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=HireDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=HireDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTextColumn x:Name="notesColumn" Binding="{Binding Path=Notes}" Header="Notes" Width="SizeToHeader" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <Grid DataContext="{Binding ElementName=employeesDomainDataSource, Path=Data}" Margin="12,191,22,219" Name="grid1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="494" />
+                <ColumnDefinition Width="11" />
+                <ColumnDefinition Width="19*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="44*" />
+                <RowDefinition Height="29" />
+            </Grid.RowDefinitions>
+            <sdk:Label Content="Birth Date:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" Grid.Row="3" />
+            <sdk:DatePicker Grid.Column="1" Height="23" Margin="3,3,11,3" Name="birthDateDatePicker" SelectedDate="{Binding Path=BirthDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" VerticalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" />
+            <sdk:Label Content="Employee ID:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Height="23" Margin="3,3,11,3" Name="employeeIDTextBox" Text="{Binding Path=EmployeeID, Mode=OneWay}" VerticalAlignment="Center" Grid.ColumnSpan="2" />
+            <sdk:Label Content="First Name:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="1" Height="23" Margin="3,3,11,3" Name="firstNameTextBox" Text="{Binding Path=FirstName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" VerticalAlignment="Center" Grid.ColumnSpan="2" />
+            <sdk:Label Content="Hire Date:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" />
+            <sdk:DatePicker Grid.Column="1" Grid.Row="4" Height="23" Margin="3,3,11,3" Name="hireDateDatePicker" SelectedDate="{Binding Path=HireDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" VerticalAlignment="Center" Grid.ColumnSpan="2" />
+            <sdk:Label Content="Last Name:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="2" Height="23" Margin="3,3,11,3" Name="lastNameTextBox" Text="{Binding Path=LastName, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" VerticalAlignment="Center" Grid.ColumnSpan="2" />
+            <sdk:Label Content="Notes:" Grid.Row="5" HorizontalAlignment="Left" Margin="3,12,0,16" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="5" Margin="3,3,11,6" Name="notesTextBox" Text="{Binding Path=Notes, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" Grid.ColumnSpan="2" />
+            <Button Content="Save" Grid.Column="1" Grid.Row="6" Height="23" HorizontalAlignment="Left" Margin="3,0,0,0" Name="btnSave" VerticalAlignment="Top" Width="75" Click="btnSave_Click" />
+            <Button Content="Add" Grid.Column="1" Grid.Row="6" Height="23" HorizontalAlignment="Left" Margin="84,0,0,0" Name="btnAdd" VerticalAlignment="Top" Width="75" Click="btnAdd_Click" />
+            <Button Content="Mark as Deleted" Grid.Column="1" Grid.Row="6" Height="23" HorizontalAlignment="Right" Margin="0,0,213,0" Name="btnMarkAsDeleted" VerticalAlignment="Top" Width="116" Click="btnMarkAsDeleted_Click" />
+            <Button Content="Refresh" Grid.Column="1" Grid.Row="6" Height="23" HorizontalAlignment="Left" Margin="287,0,0,0" Name="btnRefresh" VerticalAlignment="Top" Width="75" Click="btnRefresh_Click" />
+        </Grid>
+    </Grid>
+</navigation:Page>

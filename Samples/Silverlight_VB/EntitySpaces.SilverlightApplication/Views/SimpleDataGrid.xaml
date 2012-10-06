@@ -1,0 +1,102 @@
+﻿<navigation:Page x:Class="EntitySpaces.SilverlightApplication.SimpleDataGrid" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="SimpleDataGrid Page">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="7">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="240"></ColumnDefinition>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <ProgressBar Name="WorkingBar" Grid.Column="0" Grid.ColumnSpan="3" Foreground="Yellow" Background="Black" Value="0" Maximum="100" Margin="2,2,2,2" />
+            <TextBox Name="SearchTextBox" Text="Enter Criteria Here" Grid.Column="3" Margin="20,0,20,0" Padding="10,5,10,5" FontSize="14" GotFocus="SearchTextBox_GotFocus"></TextBox>
+            <Button Name="SearchButton" Content="Search" Grid.Column="4" FontSize="14" Click="SearchButton_Click"></Button>
+        </Grid>
+
+
+        <Grid Grid.Row="1" Margin="7" >
+            <data:DataGrid Name="EmployeesDataGrid" AutoGenerateColumns="False"  >
+
+                <data:DataGrid.Columns>
+
+                    <data:DataGridTextColumn Binding="{Binding EmployeeID}" Header="Employee ID" IsReadOnly="True" />
+                    <data:DataGridTextColumn Binding="{Binding FirstName}" Header="First Name" />
+                    <data:DataGridTextColumn Binding="{Binding LastName}" Header="Last Name" />
+
+                    <data:DataGridTextColumn Binding="{Binding ExtraColumns[Fullname], Mode=TwoWay}" Header="Fullname" />
+
+                    <data:DataGridTemplateColumn Header="Hire Date" Width="160">
+                        <data:DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding HireDate, Mode=OneWay, Converter={StaticResource ShortDateConverter}}" VerticalAlignment="Center" Margin="2"/>
+                            </DataTemplate>
+                        </data:DataGridTemplateColumn.CellTemplate>
+                        <data:DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <controls:DatePicker SelectedDate="{Binding HireDate, Mode=TwoWay}" />
+                            </DataTemplate>
+                        </data:DataGridTemplateColumn.CellEditingTemplate>
+                    </data:DataGridTemplateColumn>
+
+
+                    <data:DataGridTemplateColumn Header="Birth Date" Width="160">
+                        <data:DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding BirthDate, Mode=OneWay, Converter={StaticResource ShortDateConverter}}" VerticalAlignment="Center" Margin="2"/>
+                            </DataTemplate>
+                        </data:DataGridTemplateColumn.CellTemplate>
+                        <data:DataGridTemplateColumn.CellEditingTemplate>
+                            <DataTemplate>
+                                <controls:DatePicker SelectedDate="{Binding BirthDate, Mode=TwoWay}" />
+                            </DataTemplate>
+                        </data:DataGridTemplateColumn.CellEditingTemplate>
+                    </data:DataGridTemplateColumn>
+
+                </data:DataGrid.Columns>
+
+            </data:DataGrid>
+        </Grid>
+
+
+        <Grid Grid.Row="2" Margin="7">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+                <ColumnDefinition Width="15"></ColumnDefinition>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+                <ColumnDefinition Width="15"></ColumnDefinition>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+                <ColumnDefinition Width="15"></ColumnDefinition>
+                <ColumnDefinition Width="75"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Name="AddButton" Content="Add" Grid.Row="2" Grid.Column="1" FontSize="14" Click="AddButton_Click" ></Button>
+            <Button Name="DeleteButton" Content="Delete" Grid.Row="2" Grid.Column="3" FontSize="14" Click="DeleteButton_Click" ></Button>
+            <Button Name="SaveButton" Content="Save" Grid.Row="2" Grid.Column="5" FontSize="14" Click="SaveButton_Click" ></Button>
+            <Button Name="ClearButton" Content="Clear" Grid.Row="2" Grid.Column="7" FontSize="14" Click="ClearButton_Click" ></Button>
+        </Grid>
+
+    </Grid>
+
+</navigation:Page>

@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="Northwind" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:2936/Northwind.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:2936/Northwind.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:2936/Northwind.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INorthwind_Shippers_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Suppliers_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Suppliers_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Territories_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Territories_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_OrderDetails_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrderDetails_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Orders_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Orders_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Products_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Products_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Products_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Products_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Products_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Products_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Products_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Products_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Products_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Products_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Products_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Products_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Products_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Region_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Region_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Region_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Region_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Region_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Region_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Region_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Region_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Region_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Region_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Region_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Region_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Region_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Shippers_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Shippers_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Categories_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Categories_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerCustomerDemo_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerCustomerDemo_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_CustomerDemographics_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CustomerDemographics_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Customers_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Customers_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_QueryForEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_QueryForEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_QueryForEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_QueryForEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_GetByPrimaryKey_InputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_GetByPrimaryKey" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_GetByPrimaryKey_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_GetByPrimaryKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_SaveCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_SaveCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_SaveCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_SaveCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_SaveEntity_InputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_SaveEntity" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_Employees_SaveEntity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Employees_SaveEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_LoadAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_LoadAll" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_LoadAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_LoadAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_QueryForCollection_InputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_QueryForCollection" />
+  </wsdl:message>
+  <wsdl:message name="INorthwind_EmployeeTerritories_QueryForCollection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EmployeeTerritories_QueryForCollectionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INorthwind">
+    <wsdl:operation name="Shippers_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Shippers_SaveCollection" message="tns:INorthwind_Shippers_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Shippers_SaveCollectionResponse" message="tns:INorthwind_Shippers_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Shippers_SaveEntity" message="tns:INorthwind_Shippers_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Shippers_SaveEntityResponse" message="tns:INorthwind_Shippers_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Suppliers_LoadAll" message="tns:INorthwind_Suppliers_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Suppliers_LoadAllResponse" message="tns:INorthwind_Suppliers_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Suppliers_QueryForCollection" message="tns:INorthwind_Suppliers_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Suppliers_QueryForCollectionResponse" message="tns:INorthwind_Suppliers_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Suppliers_QueryForEntity" message="tns:INorthwind_Suppliers_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Suppliers_QueryForEntityResponse" message="tns:INorthwind_Suppliers_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Suppliers_GetByPrimaryKey" message="tns:INorthwind_Suppliers_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Suppliers_GetByPrimaryKeyResponse" message="tns:INorthwind_Suppliers_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Suppliers_SaveCollection" message="tns:INorthwind_Suppliers_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Suppliers_SaveCollectionResponse" message="tns:INorthwind_Suppliers_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Suppliers_SaveEntity" message="tns:INorthwind_Suppliers_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Suppliers_SaveEntityResponse" message="tns:INorthwind_Suppliers_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Territories_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Territories_LoadAll" message="tns:INorthwind_Territories_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Territories_LoadAllResponse" message="tns:INorthwind_Territories_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Territories_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Territories_QueryForCollection" message="tns:INorthwind_Territories_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Territories_QueryForCollectionResponse" message="tns:INorthwind_Territories_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Territories_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Territories_QueryForEntity" message="tns:INorthwind_Territories_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Territories_QueryForEntityResponse" message="tns:INorthwind_Territories_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Territories_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Territories_GetByPrimaryKey" message="tns:INorthwind_Territories_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Territories_GetByPrimaryKeyResponse" message="tns:INorthwind_Territories_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Territories_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Territories_SaveCollection" message="tns:INorthwind_Territories_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Territories_SaveCollectionResponse" message="tns:INorthwind_Territories_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Territories_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Territories_SaveEntity" message="tns:INorthwind_Territories_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Territories_SaveEntityResponse" message="tns:INorthwind_Territories_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_QueryForEntity" message="tns:INorthwind_EmployeeTerritories_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_QueryForEntityResponse" message="tns:INorthwind_EmployeeTerritories_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_GetByPrimaryKey" message="tns:INorthwind_EmployeeTerritories_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_GetByPrimaryKeyResponse" message="tns:INorthwind_EmployeeTerritories_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_SaveCollection" message="tns:INorthwind_EmployeeTerritories_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_SaveCollectionResponse" message="tns:INorthwind_EmployeeTerritories_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_SaveEntity" message="tns:INorthwind_EmployeeTerritories_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_SaveEntityResponse" message="tns:INorthwind_EmployeeTerritories_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_LoadAll" message="tns:INorthwind_OrderDetails_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_LoadAllResponse" message="tns:INorthwind_OrderDetails_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_QueryForCollection" message="tns:INorthwind_OrderDetails_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_QueryForCollectionResponse" message="tns:INorthwind_OrderDetails_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_QueryForEntity" message="tns:INorthwind_OrderDetails_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_QueryForEntityResponse" message="tns:INorthwind_OrderDetails_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_GetByPrimaryKey" message="tns:INorthwind_OrderDetails_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_GetByPrimaryKeyResponse" message="tns:INorthwind_OrderDetails_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_SaveCollection" message="tns:INorthwind_OrderDetails_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_SaveCollectionResponse" message="tns:INorthwind_OrderDetails_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_SaveEntity" message="tns:INorthwind_OrderDetails_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/OrderDetails_SaveEntityResponse" message="tns:INorthwind_OrderDetails_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orders_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Orders_LoadAll" message="tns:INorthwind_Orders_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Orders_LoadAllResponse" message="tns:INorthwind_Orders_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orders_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Orders_QueryForCollection" message="tns:INorthwind_Orders_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Orders_QueryForCollectionResponse" message="tns:INorthwind_Orders_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orders_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Orders_QueryForEntity" message="tns:INorthwind_Orders_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Orders_QueryForEntityResponse" message="tns:INorthwind_Orders_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orders_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Orders_GetByPrimaryKey" message="tns:INorthwind_Orders_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Orders_GetByPrimaryKeyResponse" message="tns:INorthwind_Orders_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orders_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Orders_SaveCollection" message="tns:INorthwind_Orders_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Orders_SaveCollectionResponse" message="tns:INorthwind_Orders_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Orders_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Orders_SaveEntity" message="tns:INorthwind_Orders_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Orders_SaveEntityResponse" message="tns:INorthwind_Orders_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Products_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Products_LoadAll" message="tns:INorthwind_Products_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Products_LoadAllResponse" message="tns:INorthwind_Products_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Products_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Products_QueryForCollection" message="tns:INorthwind_Products_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Products_QueryForCollectionResponse" message="tns:INorthwind_Products_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Products_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Products_QueryForEntity" message="tns:INorthwind_Products_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Products_QueryForEntityResponse" message="tns:INorthwind_Products_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Products_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Products_GetByPrimaryKey" message="tns:INorthwind_Products_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Products_GetByPrimaryKeyResponse" message="tns:INorthwind_Products_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Products_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Products_SaveCollection" message="tns:INorthwind_Products_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Products_SaveCollectionResponse" message="tns:INorthwind_Products_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Products_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Products_SaveEntity" message="tns:INorthwind_Products_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Products_SaveEntityResponse" message="tns:INorthwind_Products_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Region_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Region_LoadAll" message="tns:INorthwind_Region_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Region_LoadAllResponse" message="tns:INorthwind_Region_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Region_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Region_QueryForCollection" message="tns:INorthwind_Region_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Region_QueryForCollectionResponse" message="tns:INorthwind_Region_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Region_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Region_QueryForEntity" message="tns:INorthwind_Region_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Region_QueryForEntityResponse" message="tns:INorthwind_Region_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Region_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Region_GetByPrimaryKey" message="tns:INorthwind_Region_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Region_GetByPrimaryKeyResponse" message="tns:INorthwind_Region_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Region_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Region_SaveCollection" message="tns:INorthwind_Region_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Region_SaveCollectionResponse" message="tns:INorthwind_Region_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Region_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Region_SaveEntity" message="tns:INorthwind_Region_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Region_SaveEntityResponse" message="tns:INorthwind_Region_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Shippers_LoadAll" message="tns:INorthwind_Shippers_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Shippers_LoadAllResponse" message="tns:INorthwind_Shippers_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Shippers_QueryForCollection" message="tns:INorthwind_Shippers_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Shippers_QueryForCollectionResponse" message="tns:INorthwind_Shippers_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Shippers_QueryForEntity" message="tns:INorthwind_Shippers_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Shippers_QueryForEntityResponse" message="tns:INorthwind_Shippers_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Shippers_GetByPrimaryKey" message="tns:INorthwind_Shippers_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Shippers_GetByPrimaryKeyResponse" message="tns:INorthwind_Shippers_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Categories_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Categories_LoadAll" message="tns:INorthwind_Categories_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Categories_LoadAllResponse" message="tns:INorthwind_Categories_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Categories_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Categories_QueryForCollection" message="tns:INorthwind_Categories_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Categories_QueryForCollectionResponse" message="tns:INorthwind_Categories_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Categories_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Categories_QueryForEntity" message="tns:INorthwind_Categories_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Categories_QueryForEntityResponse" message="tns:INorthwind_Categories_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Categories_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Categories_GetByPrimaryKey" message="tns:INorthwind_Categories_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Categories_GetByPrimaryKeyResponse" message="tns:INorthwind_Categories_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Categories_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Categories_SaveCollection" message="tns:INorthwind_Categories_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Categories_SaveCollectionResponse" message="tns:INorthwind_Categories_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Categories_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Categories_SaveEntity" message="tns:INorthwind_Categories_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Categories_SaveEntityResponse" message="tns:INorthwind_Categories_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_LoadAll" message="tns:INorthwind_CustomerCustomerDemo_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_LoadAllResponse" message="tns:INorthwind_CustomerCustomerDemo_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_QueryForCollection" message="tns:INorthwind_CustomerCustomerDemo_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_QueryForCollectionResponse" message="tns:INorthwind_CustomerCustomerDemo_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_QueryForEntity" message="tns:INorthwind_CustomerCustomerDemo_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_QueryForEntityResponse" message="tns:INorthwind_CustomerCustomerDemo_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_GetByPrimaryKey" message="tns:INorthwind_CustomerCustomerDemo_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_GetByPrimaryKeyResponse" message="tns:INorthwind_CustomerCustomerDemo_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_SaveCollection" message="tns:INorthwind_CustomerCustomerDemo_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_SaveCollectionResponse" message="tns:INorthwind_CustomerCustomerDemo_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_SaveEntity" message="tns:INorthwind_CustomerCustomerDemo_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerCustomerDemo_SaveEntityResponse" message="tns:INorthwind_CustomerCustomerDemo_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_LoadAll" message="tns:INorthwind_CustomerDemographics_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_LoadAllResponse" message="tns:INorthwind_CustomerDemographics_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_QueryForCollection" message="tns:INorthwind_CustomerDemographics_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_QueryForCollectionResponse" message="tns:INorthwind_CustomerDemographics_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_QueryForEntity" message="tns:INorthwind_CustomerDemographics_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_QueryForEntityResponse" message="tns:INorthwind_CustomerDemographics_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_GetByPrimaryKey" message="tns:INorthwind_CustomerDemographics_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_GetByPrimaryKeyResponse" message="tns:INorthwind_CustomerDemographics_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_SaveCollection" message="tns:INorthwind_CustomerDemographics_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_SaveCollectionResponse" message="tns:INorthwind_CustomerDemographics_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_SaveEntity" message="tns:INorthwind_CustomerDemographics_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/CustomerDemographics_SaveEntityResponse" message="tns:INorthwind_CustomerDemographics_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Customers_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Customers_LoadAll" message="tns:INorthwind_Customers_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Customers_LoadAllResponse" message="tns:INorthwind_Customers_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Customers_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Customers_QueryForCollection" message="tns:INorthwind_Customers_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Customers_QueryForCollectionResponse" message="tns:INorthwind_Customers_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Customers_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Customers_QueryForEntity" message="tns:INorthwind_Customers_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Customers_QueryForEntityResponse" message="tns:INorthwind_Customers_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Customers_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Customers_GetByPrimaryKey" message="tns:INorthwind_Customers_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Customers_GetByPrimaryKeyResponse" message="tns:INorthwind_Customers_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Customers_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Customers_SaveCollection" message="tns:INorthwind_Customers_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Customers_SaveCollectionResponse" message="tns:INorthwind_Customers_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Customers_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Customers_SaveEntity" message="tns:INorthwind_Customers_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Customers_SaveEntityResponse" message="tns:INorthwind_Customers_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Employees_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Employees_LoadAll" message="tns:INorthwind_Employees_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Employees_LoadAllResponse" message="tns:INorthwind_Employees_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Employees_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Employees_QueryForCollection" message="tns:INorthwind_Employees_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Employees_QueryForCollectionResponse" message="tns:INorthwind_Employees_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Employees_QueryForEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Employees_QueryForEntity" message="tns:INorthwind_Employees_QueryForEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Employees_QueryForEntityResponse" message="tns:INorthwind_Employees_QueryForEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Employees_GetByPrimaryKey">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Employees_GetByPrimaryKey" message="tns:INorthwind_Employees_GetByPrimaryKey_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Employees_GetByPrimaryKeyResponse" message="tns:INorthwind_Employees_GetByPrimaryKey_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Employees_SaveCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Employees_SaveCollection" message="tns:INorthwind_Employees_SaveCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Employees_SaveCollectionResponse" message="tns:INorthwind_Employees_SaveCollection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Employees_SaveEntity">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/Employees_SaveEntity" message="tns:INorthwind_Employees_SaveEntity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/Employees_SaveEntityResponse" message="tns:INorthwind_Employees_SaveEntity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_LoadAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_LoadAll" message="tns:INorthwind_EmployeeTerritories_LoadAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_LoadAllResponse" message="tns:INorthwind_EmployeeTerritories_LoadAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_QueryForCollection">
+      <wsdl:input wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_QueryForCollection" message="tns:INorthwind_EmployeeTerritories_QueryForCollection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INorthwind/EmployeeTerritories_QueryForCollectionResponse" message="tns:INorthwind_EmployeeTerritories_QueryForCollection_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INorthwind" type="tns:INorthwind">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Shippers_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Shippers_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Shippers_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Suppliers_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Suppliers_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Suppliers_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Suppliers_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Suppliers_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Suppliers_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Suppliers_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Territories_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Territories_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Territories_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Territories_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Territories_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Territories_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Territories_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Territories_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Territories_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Territories_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Territories_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Territories_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/EmployeeTerritories_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/EmployeeTerritories_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/EmployeeTerritories_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/EmployeeTerritories_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/OrderDetails_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/OrderDetails_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/OrderDetails_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/OrderDetails_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/OrderDetails_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrderDetails_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/OrderDetails_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orders_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Orders_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orders_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Orders_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orders_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Orders_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orders_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Orders_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orders_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Orders_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Orders_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Orders_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Products_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Products_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Products_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Products_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Products_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Products_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Products_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Products_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Products_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Products_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Products_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Products_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Region_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Region_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Region_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Region_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Region_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Region_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Region_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Region_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Region_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Region_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Region_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Region_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Shippers_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Shippers_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Shippers_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Shippers_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Shippers_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Categories_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Categories_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Categories_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Categories_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Categories_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Categories_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Categories_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Categories_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Categories_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Categories_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Categories_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Categories_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerCustomerDemo_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerCustomerDemo_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerCustomerDemo_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerCustomerDemo_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerCustomerDemo_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerCustomerDemo_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerCustomerDemo_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerDemographics_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerDemographics_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerDemographics_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerDemographics_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerDemographics_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerDemographics_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/CustomerDemographics_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Customers_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Customers_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Customers_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Customers_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Customers_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Customers_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Customers_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Customers_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Customers_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Customers_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Customers_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Customers_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Employees_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Employees_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Employees_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Employees_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Employees_QueryForEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Employees_QueryForEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Employees_GetByPrimaryKey">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Employees_GetByPrimaryKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Employees_SaveCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Employees_SaveCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Employees_SaveEntity">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/Employees_SaveEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_LoadAll">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/EmployeeTerritories_LoadAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployeeTerritories_QueryForCollection">
+      <soap:operation soapAction="http://tempuri.org/INorthwind/EmployeeTerritories_QueryForCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Northwind">
+    <wsdl:port name="BasicHttpBinding_INorthwind" binding="tns:BasicHttpBinding_INorthwind">
+      <soap:address location="http://localhost:2936/Northwind.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

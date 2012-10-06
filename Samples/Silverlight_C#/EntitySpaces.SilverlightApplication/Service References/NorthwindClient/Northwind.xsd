@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1751/Northwind.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="Shippers_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:ShippersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ShippersCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfShippers">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShippersCollection" nillable="true" type="tns:ShippersCollection" />
+  <xs:complexType name="ArrayOfShippers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Shippers" nillable="true" type="tns:Shippers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShippers" nillable="true" type="tns:ArrayOfShippers" />
+  <xs:complexType name="Shippers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q1:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q2:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Shippers" nillable="true" type="tns:Shippers" />
+  <xs:element name="Shippers_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Shippers_SaveCollectionResult" nillable="true" type="tns:ShippersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Shippers_SaveEntityResult" nillable="true" type="tns:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Suppliers_LoadAllResult" nillable="true" type="tns:SuppliersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="SuppliersCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfSuppliers">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SuppliersCollection" nillable="true" type="tns:SuppliersCollection" />
+  <xs:complexType name="ArrayOfSuppliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Suppliers" nillable="true" type="tns:Suppliers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSuppliers" nillable="true" type="tns:ArrayOfSuppliers" />
+  <xs:complexType name="Suppliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a4" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a5" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a6" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a7" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a8" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a9" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a11" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q3:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q4:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Suppliers" nillable="true" type="tns:Suppliers" />
+  <xs:element name="Suppliers_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Suppliers_QueryForCollectionResult" nillable="true" type="tns:SuppliersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Suppliers_QueryForEntityResult" nillable="true" type="tns:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="supplierID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Suppliers_GetByPrimaryKeyResult" nillable="true" type="tns:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:SuppliersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Suppliers_SaveCollectionResult" nillable="true" type="tns:SuppliersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Suppliers_SaveEntityResult" nillable="true" type="tns:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Territories_LoadAllResult" nillable="true" type="tns:TerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="TerritoriesCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfTerritories">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TerritoriesCollection" nillable="true" type="tns:TerritoriesCollection" />
+  <xs:complexType name="ArrayOfTerritories">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Territories" nillable="true" type="tns:Territories" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTerritories" nillable="true" type="tns:ArrayOfTerritories" />
+  <xs:complexType name="Territories">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q5:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q6:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Territories" nillable="true" type="tns:Territories" />
+  <xs:element name="Territories_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Territories_QueryForCollectionResult" nillable="true" type="tns:TerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Territories_QueryForEntityResult" nillable="true" type="tns:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="territoryID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Territories_GetByPrimaryKeyResult" nillable="true" type="tns:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:TerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Territories_SaveCollectionResult" nillable="true" type="tns:TerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Territories_SaveEntityResult" nillable="true" type="tns:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeTerritories_QueryForEntityResult" nillable="true" type="tns:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EmployeeTerritories">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q7:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q8:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeTerritories" nillable="true" type="tns:EmployeeTerritories" />
+  <xs:element name="EmployeeTerritories_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeID" type="xs:int" />
+        <xs:element minOccurs="0" name="territoryID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeTerritories_GetByPrimaryKeyResult" nillable="true" type="tns:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:EmployeeTerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EmployeeTerritoriesCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfEmployeeTerritories">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeTerritoriesCollection" nillable="true" type="tns:EmployeeTerritoriesCollection" />
+  <xs:complexType name="ArrayOfEmployeeTerritories">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmployeeTerritories" nillable="true" type="tns:EmployeeTerritories" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployeeTerritories" nillable="true" type="tns:ArrayOfEmployeeTerritories" />
+  <xs:element name="EmployeeTerritories_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeTerritories_SaveCollectionResult" nillable="true" type="tns:EmployeeTerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeTerritories_SaveEntityResult" nillable="true" type="tns:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderDetails_LoadAllResult" nillable="true" type="tns:OrderDetailsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="OrderDetailsCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfOrderDetails">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderDetailsCollection" nillable="true" type="tns:OrderDetailsCollection" />
+  <xs:complexType name="ArrayOfOrderDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OrderDetails" nillable="true" type="tns:OrderDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrderDetails" nillable="true" type="tns:ArrayOfOrderDetails" />
+  <xs:complexType name="OrderDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:short">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a4" nillable="true" type="xs:float">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q9:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q10:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrderDetails" nillable="true" type="tns:OrderDetails" />
+  <xs:element name="OrderDetails_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderDetails_QueryForCollectionResult" nillable="true" type="tns:OrderDetailsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderDetails_QueryForEntityResult" nillable="true" type="tns:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderID" type="xs:int" />
+        <xs:element minOccurs="0" name="productID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderDetails_GetByPrimaryKeyResult" nillable="true" type="tns:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:OrderDetailsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderDetails_SaveCollectionResult" nillable="true" type="tns:OrderDetailsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OrderDetails_SaveEntityResult" nillable="true" type="tns:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Orders_LoadAllResult" nillable="true" type="tns:OrdersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="OrdersCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfOrders">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OrdersCollection" nillable="true" type="tns:OrdersCollection" />
+  <xs:complexType name="ArrayOfOrders">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Orders" nillable="true" type="tns:Orders" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOrders" nillable="true" type="tns:ArrayOfOrders" />
+  <xs:complexType name="Orders">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a4" nillable="true" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a5" nillable="true" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a6" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a7" nillable="true" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a8" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a9" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a11" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a12" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a13" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q11:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q12:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Orders" nillable="true" type="tns:Orders" />
+  <xs:element name="Orders_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Orders_QueryForCollectionResult" nillable="true" type="tns:OrdersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Orders_QueryForEntityResult" nillable="true" type="tns:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Orders_GetByPrimaryKeyResult" nillable="true" type="tns:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:OrdersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Orders_SaveCollectionResult" nillable="true" type="tns:OrdersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Orders_SaveEntityResult" nillable="true" type="tns:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Products_LoadAllResult" nillable="true" type="tns:ProductsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ProductsCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfProducts">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductsCollection" nillable="true" type="tns:ProductsCollection" />
+  <xs:complexType name="ArrayOfProducts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Products" nillable="true" type="tns:Products" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProducts" nillable="true" type="tns:ArrayOfProducts" />
+  <xs:complexType name="Products">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a4" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a5" nillable="true" type="xs:decimal">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a6" nillable="true" type="xs:short">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a7" nillable="true" type="xs:short">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a8" nillable="true" type="xs:short">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a9" nillable="true" type="xs:boolean">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q13:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q14:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Products" nillable="true" type="tns:Products" />
+  <xs:element name="Products_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Products_QueryForCollectionResult" nillable="true" type="tns:ProductsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Products_QueryForEntityResult" nillable="true" type="tns:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="productID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Products_GetByPrimaryKeyResult" nillable="true" type="tns:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:ProductsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Products_SaveCollectionResult" nillable="true" type="tns:ProductsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Products_SaveEntityResult" nillable="true" type="tns:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Region_LoadAllResult" nillable="true" type="tns:RegionCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="RegionCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfRegion">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RegionCollection" nillable="true" type="tns:RegionCollection" />
+  <xs:complexType name="ArrayOfRegion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Region" nillable="true" type="tns:Region" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRegion" nillable="true" type="tns:ArrayOfRegion" />
+  <xs:complexType name="Region">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q15:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q16:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Region" nillable="true" type="tns:Region" />
+  <xs:element name="Region_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Region_QueryForCollectionResult" nillable="true" type="tns:RegionCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Region_QueryForEntityResult" nillable="true" type="tns:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regionID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Region_GetByPrimaryKeyResult" nillable="true" type="tns:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:RegionCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Region_SaveCollectionResult" nillable="true" type="tns:RegionCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Region_SaveEntityResult" nillable="true" type="tns:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Shippers_LoadAllResult" nillable="true" type="tns:ShippersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Shippers_QueryForCollectionResult" nillable="true" type="tns:ShippersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Shippers_QueryForEntityResult" nillable="true" type="tns:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="shipperID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Shippers_GetByPrimaryKeyResult" nillable="true" type="tns:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Categories_LoadAllResult" nillable="true" type="tns:CategoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CategoriesCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfCategories">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CategoriesCollection" nillable="true" type="tns:CategoriesCollection" />
+  <xs:complexType name="ArrayOfCategories">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Categories" nillable="true" type="tns:Categories" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategories" nillable="true" type="tns:ArrayOfCategories" />
+  <xs:complexType name="Categories">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:base64Binary">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q17:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q18:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Categories" nillable="true" type="tns:Categories" />
+  <xs:element name="Categories_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Categories_QueryForCollectionResult" nillable="true" type="tns:CategoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Categories_QueryForEntityResult" nillable="true" type="tns:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="categoryID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Categories_GetByPrimaryKeyResult" nillable="true" type="tns:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:CategoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Categories_SaveCollectionResult" nillable="true" type="tns:CategoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Categories_SaveEntityResult" nillable="true" type="tns:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerCustomerDemo_LoadAllResult" nillable="true" type="tns:CustomerCustomerDemoCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CustomerCustomerDemoCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfCustomerCustomerDemo">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerCustomerDemoCollection" nillable="true" type="tns:CustomerCustomerDemoCollection" />
+  <xs:complexType name="ArrayOfCustomerCustomerDemo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerCustomerDemo" nillable="true" type="tns:CustomerCustomerDemo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerCustomerDemo" nillable="true" type="tns:ArrayOfCustomerCustomerDemo" />
+  <xs:complexType name="CustomerCustomerDemo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q19:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q20:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerCustomerDemo" nillable="true" type="tns:CustomerCustomerDemo" />
+  <xs:element name="CustomerCustomerDemo_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerCustomerDemo_QueryForCollectionResult" nillable="true" type="tns:CustomerCustomerDemoCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerCustomerDemo_QueryForEntityResult" nillable="true" type="tns:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerTypeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerCustomerDemo_GetByPrimaryKeyResult" nillable="true" type="tns:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:CustomerCustomerDemoCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerCustomerDemo_SaveCollectionResult" nillable="true" type="tns:CustomerCustomerDemoCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerCustomerDemo_SaveEntityResult" nillable="true" type="tns:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerDemographics_LoadAllResult" nillable="true" type="tns:CustomerDemographicsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CustomerDemographicsCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfCustomerDemographics">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerDemographicsCollection" nillable="true" type="tns:CustomerDemographicsCollection" />
+  <xs:complexType name="ArrayOfCustomerDemographics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerDemographics" nillable="true" type="tns:CustomerDemographics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerDemographics" nillable="true" type="tns:ArrayOfCustomerDemographics" />
+  <xs:complexType name="CustomerDemographics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q21:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q22:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerDemographics" nillable="true" type="tns:CustomerDemographics" />
+  <xs:element name="CustomerDemographics_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerDemographics_QueryForCollectionResult" nillable="true" type="tns:CustomerDemographicsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerDemographics_QueryForEntityResult" nillable="true" type="tns:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerTypeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerDemographics_GetByPrimaryKeyResult" nillable="true" type="tns:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:CustomerDemographicsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerDemographics_SaveCollectionResult" nillable="true" type="tns:CustomerDemographicsCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CustomerDemographics_SaveEntityResult" nillable="true" type="tns:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Customers_LoadAllResult" nillable="true" type="tns:CustomersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="CustomersCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfCustomers">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomersCollection" nillable="true" type="tns:CustomersCollection" />
+  <xs:complexType name="ArrayOfCustomers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Customers" nillable="true" type="tns:Customers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomers" nillable="true" type="tns:ArrayOfCustomers" />
+  <xs:complexType name="Customers">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a4" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a5" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a6" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a7" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a8" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a9" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q23:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q24:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Customers" nillable="true" type="tns:Customers" />
+  <xs:element name="Customers_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Customers_QueryForCollectionResult" nillable="true" type="tns:CustomersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Customers_QueryForEntityResult" nillable="true" type="tns:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Customers_GetByPrimaryKeyResult" nillable="true" type="tns:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:CustomersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Customers_SaveCollectionResult" nillable="true" type="tns:CustomersCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Customers_SaveEntityResult" nillable="true" type="tns:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Employees_LoadAllResult" nillable="true" type="tns:EmployeesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="EmployeesCollection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Collection" nillable="true" type="tns:ArrayOfEmployees">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeesCollection" nillable="true" type="tns:EmployeesCollection" />
+  <xs:complexType name="ArrayOfEmployees">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" nillable="true" type="tns:Employees" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmployees" nillable="true" type="tns:ArrayOfEmployees" />
+  <xs:complexType name="Employees">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="a0" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a1" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a2" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a3" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a4" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a5" nillable="true" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a6" nillable="true" type="xs:dateTime">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a7" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a8" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a9" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a11" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a12" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a13" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a14" nillable="true" type="xs:base64Binary">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a15" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a16" nillable="true" type="xs:int">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a17" nillable="true" type="xs:string">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="a10000" nillable="true" type="xs:string" />
+      <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10001" nillable="true" type="q25:ArrayOfstring">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+      <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="a10002" nillable="true" type="q26:ArrayOfKeyValueOfstringanyType">
+        <xs:annotation>
+          <xs:appinfo>
+            <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Employees" nillable="true" type="tns:Employees" />
+  <xs:element name="Employees_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Employees_QueryForCollectionResult" nillable="true" type="tns:EmployeesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Employees_QueryForEntityResult" nillable="true" type="tns:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Employees_GetByPrimaryKeyResult" nillable="true" type="tns:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="collection" nillable="true" type="tns:EmployeesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Employees_SaveCollectionResult" nillable="true" type="tns:EmployeesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="entity" nillable="true" type="tns:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Employees_SaveEntityResult" nillable="true" type="tns:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeTerritories_LoadAllResult" nillable="true" type="tns:EmployeeTerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EmployeeTerritories_QueryForCollectionResult" nillable="true" type="tns:EmployeeTerritoriesCollection" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

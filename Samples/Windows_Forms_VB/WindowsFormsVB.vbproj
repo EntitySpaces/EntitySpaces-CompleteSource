@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E080AE1E-8A16-41C3-B1BC-017955D4D4A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsFormsVB.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsFormsVB</RootNamespace>
+    <AssemblyName>WindowsFormsVB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsFormsVB.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsFormsVB.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core, Version=2011.1.509.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery, Version=2010.1.621.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces, Version=2010.1.621.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader, Version=2010.1.621.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Profiler, Version=2011.0.228.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\EntitySpaces.Profiler.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider, Version=2010.1.621.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="XDMessaging, Version=2.0.3.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Runtimes\.NET 3.5\XDMessaging.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Categories.vb" />
+    <Compile Include="Custom\CategoriesCollection.vb" />
+    <Compile Include="Custom\CategoriesQuery.vb" />
+    <Compile Include="Custom\CustomerCustomerDemo.vb" />
+    <Compile Include="Custom\CustomerCustomerDemoCollection.vb" />
+    <Compile Include="Custom\CustomerCustomerDemoQuery.vb" />
+    <Compile Include="Custom\CustomerDemographics.vb" />
+    <Compile Include="Custom\CustomerDemographicsCollection.vb" />
+    <Compile Include="Custom\CustomerDemographicsQuery.vb" />
+    <Compile Include="Custom\Customers.vb" />
+    <Compile Include="Custom\CustomersCollection.vb" />
+    <Compile Include="Custom\CustomersQuery.vb" />
+    <Compile Include="Custom\Employees.vb" />
+    <Compile Include="Custom\EmployeesCollection.vb" />
+    <Compile Include="Custom\EmployeesQuery.vb" />
+    <Compile Include="Custom\EmployeeTerritories.vb" />
+    <Compile Include="Custom\EmployeeTerritoriesCollection.vb" />
+    <Compile Include="Custom\EmployeeTerritoriesQuery.vb" />
+    <Compile Include="Custom\OrderDetails.vb" />
+    <Compile Include="Custom\OrderDetailsCollection.vb" />
+    <Compile Include="Custom\OrderDetailsQuery.vb" />
+    <Compile Include="Custom\Orders.vb" />
+    <Compile Include="Custom\OrdersCollection.vb" />
+    <Compile Include="Custom\OrdersQuery.vb" />
+    <Compile Include="Custom\Products.vb" />
+    <Compile Include="Custom\ProductsCollection.vb" />
+    <Compile Include="Custom\ProductsQuery.vb" />
+    <Compile Include="Custom\Region.vb" />
+    <Compile Include="Custom\RegionCollection.vb" />
+    <Compile Include="Custom\RegionQuery.vb" />
+    <Compile Include="Custom\Shippers.vb" />
+    <Compile Include="Custom\ShippersCollection.vb" />
+    <Compile Include="Custom\ShippersQuery.vb" />
+    <Compile Include="Custom\Suppliers.vb" />
+    <Compile Include="Custom\SuppliersCollection.vb" />
+    <Compile Include="Custom\SuppliersQuery.vb" />
+    <Compile Include="Custom\Territories.vb" />
+    <Compile Include="Custom\TerritoriesCollection.vb" />
+    <Compile Include="Custom\TerritoriesQuery.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generated\Categories.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\CustomerCustomerDemo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\CustomerDemographics.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Customers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Employees.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\EmployeeTerritories.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\OrderDetails.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Orders.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Products.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Region.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Shippers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Suppliers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Generated\Territories.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hierarchical.Designer.vb">
+      <DependentUpon>Hierarchical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hierarchical.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hierarchical.resx">
+      <DependentUpon>Hierarchical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Windows Forms VB Sample.pdf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

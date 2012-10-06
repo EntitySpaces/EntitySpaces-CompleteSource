@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e8cc8c7-1acc-40b0-86cd-b9bac257ce96" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.ComponentModel.BindingList`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4504/NonProxyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NonProxyService.disco" MetadataType="Disco" ID="1a6240d2-ef4a-431d-a5de-55db9fc5fa33" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?disco" />
+    <MetadataFile FileName="NonProxyService.xsd" MetadataType="Schema" ID="93a2414d-4d74-4d4d-928e-18ede0ed4b32" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?xsd=xsd5" />
+    <MetadataFile FileName="NonProxyService.wsdl" MetadataType="Wsdl" ID="4f0b272d-4c0f-47cd-ac7e-19285aeebb51" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?wsdl" />
+    <MetadataFile FileName="NonProxyService1.xsd" MetadataType="Schema" ID="3a208aba-ff28-49e4-87ff-eb31b925d792" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NonProxyService2.xsd" MetadataType="Schema" ID="c61021fd-0d89-40b6-be6b-2a927258a521" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NonProxyService3.xsd" MetadataType="Schema" ID="1087b1e9-2685-41af-8eab-c73a32ea3c8c" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NonProxyService4.xsd" MetadataType="Schema" ID="c3e6ca10-4c4c-43f6-a695-d5c518fc143c" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?xsd=xsd4" />
+    <MetadataFile FileName="NonProxyService5.xsd" MetadataType="Schema" ID="542dcce9-0e5d-4039-8052-d557a0ff2ec6" SourceId="1" SourceUrl="http://localhost:4504/NonProxyService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

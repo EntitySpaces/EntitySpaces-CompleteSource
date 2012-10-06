@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED3F1C7F-901F-4ECF-A7E9-4822DD6DD6EA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WcfService</RootNamespace>
+    <AssemblyName>WcfService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core, Version=2010.1.1122.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery, Version=2010.1.1122.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces, Version=2010.1.1122.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader, Version=2010.1.1122.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider, Version=2010.1.1122.0, Culture=neutral, PublicKeyToken=127bcb8ceedbe220, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Northwind.svc" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Categories.cs" />
+    <Compile Include="Custom\CategoriesCollection.cs" />
+    <Compile Include="Custom\CategoriesQuery.cs" />
+    <Compile Include="Custom\CustomerCustomerDemo.cs" />
+    <Compile Include="Custom\CustomerCustomerDemoCollection.cs" />
+    <Compile Include="Custom\CustomerCustomerDemoQuery.cs" />
+    <Compile Include="Custom\CustomerDemographics.cs" />
+    <Compile Include="Custom\CustomerDemographicsCollection.cs" />
+    <Compile Include="Custom\CustomerDemographicsQuery.cs" />
+    <Compile Include="Custom\Customers.cs" />
+    <Compile Include="Custom\CustomersCollection.cs" />
+    <Compile Include="Custom\CustomersQuery.cs" />
+    <Compile Include="Custom\Employees.cs" />
+    <Compile Include="Custom\EmployeesCollection.cs" />
+    <Compile Include="Custom\EmployeesQuery.cs" />
+    <Compile Include="Custom\EmployeeTerritories.cs" />
+    <Compile Include="Custom\EmployeeTerritoriesCollection.cs" />
+    <Compile Include="Custom\EmployeeTerritoriesQuery.cs" />
+    <Compile Include="Custom\OrderDetails.cs" />
+    <Compile Include="Custom\OrderDetailsCollection.cs" />
+    <Compile Include="Custom\OrderDetailsQuery.cs" />
+    <Compile Include="Custom\Orders.cs" />
+    <Compile Include="Custom\OrdersCollection.cs" />
+    <Compile Include="Custom\OrdersQuery.cs" />
+    <Compile Include="Custom\Products.cs" />
+    <Compile Include="Custom\ProductsCollection.cs" />
+    <Compile Include="Custom\ProductsQuery.cs" />
+    <Compile Include="Custom\Region.cs" />
+    <Compile Include="Custom\RegionCollection.cs" />
+    <Compile Include="Custom\RegionQuery.cs" />
+    <Compile Include="Custom\Shippers.cs" />
+    <Compile Include="Custom\ShippersCollection.cs" />
+    <Compile Include="Custom\ShippersQuery.cs" />
+    <Compile Include="Custom\Suppliers.cs" />
+    <Compile Include="Custom\SuppliersCollection.cs" />
+    <Compile Include="Custom\SuppliersQuery.cs" />
+    <Compile Include="Custom\Territories.cs" />
+    <Compile Include="Custom\TerritoriesCollection.cs" />
+    <Compile Include="Custom\TerritoriesQuery.cs" />
+    <Compile Include="Generated\Categories.cs" />
+    <Compile Include="Generated\CustomerCustomerDemo.cs" />
+    <Compile Include="Generated\CustomerDemographics.cs" />
+    <Compile Include="Generated\Customers.cs" />
+    <Compile Include="Generated\Employees.cs" />
+    <Compile Include="Generated\EmployeeTerritories.cs" />
+    <Compile Include="Generated\OrderDetails.cs" />
+    <Compile Include="Generated\Orders.cs" />
+    <Compile Include="Generated\Products.cs" />
+    <Compile Include="Generated\Region.cs" />
+    <Compile Include="Generated\Shippers.cs" />
+    <Compile Include="Generated\Suppliers.cs" />
+    <Compile Include="Generated\Territories.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="INorthwind.cs" />
+    <Compile Include="Northwind.svc.cs">
+      <DependentUpon>Northwind.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1183</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

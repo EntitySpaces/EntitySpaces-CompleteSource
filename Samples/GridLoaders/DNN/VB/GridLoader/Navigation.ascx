@@ -1,0 +1,2 @@
+<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="Navigation.ascx.vb" Inherits="EntitySpaces.Modules.GridLoader.Navigation" %>
+<asp:PlaceHolder ID="NavigationMenuStripPlaceHolder" runat="server"></asp:PlaceHolder>

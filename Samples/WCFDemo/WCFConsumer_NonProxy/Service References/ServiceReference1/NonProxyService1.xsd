@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:4504/NonProxyService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BusinessObjects" />
+  <xs:element name="Shippers_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q1:ShippersCollection.ShippersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Shippers_SaveCollectionResult" nillable="true" type="q2:ShippersCollection.ShippersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q3:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Shippers_SaveEntityResult" nillable="true" type="q4:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Suppliers_LoadAllResult" nillable="true" type="q5:SuppliersCollection.SuppliersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Suppliers_QueryForCollectionResult" nillable="true" type="q6:SuppliersCollection.SuppliersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Suppliers_QueryForEntityResult" nillable="true" type="q7:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="supplierID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Suppliers_GetByPrimaryKeyResult" nillable="true" type="q8:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q9:SuppliersCollection.SuppliersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Suppliers_SaveCollectionResult" nillable="true" type="q10:SuppliersCollection.SuppliersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q11:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Suppliers_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Suppliers_SaveEntityResult" nillable="true" type="q12:Suppliers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Territories_LoadAllResult" nillable="true" type="q13:TerritoriesCollection.TerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Territories_QueryForCollectionResult" nillable="true" type="q14:TerritoriesCollection.TerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Territories_QueryForEntityResult" nillable="true" type="q15:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="territoryID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Territories_GetByPrimaryKeyResult" nillable="true" type="q16:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q17:TerritoriesCollection.TerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Territories_SaveCollectionResult" nillable="true" type="q18:TerritoriesCollection.TerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q19:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Territories_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Territories_SaveEntityResult" nillable="true" type="q20:Territories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="EmployeeTerritories_QueryForEntityResult" nillable="true" type="q21:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeID" type="xs:int" />
+        <xs:element minOccurs="0" name="territoryID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="EmployeeTerritories_GetByPrimaryKeyResult" nillable="true" type="q22:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q23:EmployeeTerritoriesCollection.EmployeeTerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="EmployeeTerritories_SaveCollectionResult" nillable="true" type="q24:EmployeeTerritoriesCollection.EmployeeTerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q25:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="EmployeeTerritories_SaveEntityResult" nillable="true" type="q26:EmployeeTerritories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="OrderDetails_LoadAllResult" nillable="true" type="q27:OrderDetailsCollection.OrderDetailsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="OrderDetails_QueryForCollectionResult" nillable="true" type="q28:OrderDetailsCollection.OrderDetailsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="OrderDetails_QueryForEntityResult" nillable="true" type="q29:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderID" type="xs:int" />
+        <xs:element minOccurs="0" name="productID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="OrderDetails_GetByPrimaryKeyResult" nillable="true" type="q30:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q31:OrderDetailsCollection.OrderDetailsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="OrderDetails_SaveCollectionResult" nillable="true" type="q32:OrderDetailsCollection.OrderDetailsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q33:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OrderDetails_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="OrderDetails_SaveEntityResult" nillable="true" type="q34:OrderDetails" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Orders_LoadAllResult" nillable="true" type="q35:OrdersCollection.OrdersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Orders_QueryForCollectionResult" nillable="true" type="q36:OrdersCollection.OrdersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Orders_QueryForEntityResult" nillable="true" type="q37:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="orderID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Orders_GetByPrimaryKeyResult" nillable="true" type="q38:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q39:OrdersCollection.OrdersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Orders_SaveCollectionResult" nillable="true" type="q40:OrdersCollection.OrdersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q41:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Orders_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Orders_SaveEntityResult" nillable="true" type="q42:Orders" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Products_LoadAllResult" nillable="true" type="q43:ProductsCollection.ProductsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Products_QueryForCollectionResult" nillable="true" type="q44:ProductsCollection.ProductsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Products_QueryForEntityResult" nillable="true" type="q45:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="productID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Products_GetByPrimaryKeyResult" nillable="true" type="q46:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q47:ProductsCollection.ProductsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Products_SaveCollectionResult" nillable="true" type="q48:ProductsCollection.ProductsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q49:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Products_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Products_SaveEntityResult" nillable="true" type="q50:Products" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Region_LoadAllResult" nillable="true" type="q51:RegionCollection.RegionCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Region_QueryForCollectionResult" nillable="true" type="q52:RegionCollection.RegionCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Region_QueryForEntityResult" nillable="true" type="q53:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="regionID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Region_GetByPrimaryKeyResult" nillable="true" type="q54:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q55:RegionCollection.RegionCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Region_SaveCollectionResult" nillable="true" type="q56:RegionCollection.RegionCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q57:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Region_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Region_SaveEntityResult" nillable="true" type="q58:Region" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Shippers_LoadAllResult" nillable="true" type="q59:ShippersCollection.ShippersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Shippers_QueryForCollectionResult" nillable="true" type="q60:ShippersCollection.ShippersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Shippers_QueryForEntityResult" nillable="true" type="q61:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="shipperID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Shippers_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Shippers_GetByPrimaryKeyResult" nillable="true" type="q62:Shippers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Categories_LoadAllResult" nillable="true" type="q63:CategoriesCollection.CategoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Categories_QueryForCollectionResult" nillable="true" type="q64:CategoriesCollection.CategoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Categories_QueryForEntityResult" nillable="true" type="q65:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="categoryID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Categories_GetByPrimaryKeyResult" nillable="true" type="q66:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q67:CategoriesCollection.CategoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Categories_SaveCollectionResult" nillable="true" type="q68:CategoriesCollection.CategoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q69:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Categories_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Categories_SaveEntityResult" nillable="true" type="q70:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerCustomerDemo_LoadAllResult" nillable="true" type="q71:CustomerCustomerDemoCollection.CustomerCustomerDemoCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerCustomerDemo_QueryForCollectionResult" nillable="true" type="q72:CustomerCustomerDemoCollection.CustomerCustomerDemoCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerCustomerDemo_QueryForEntityResult" nillable="true" type="q73:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerTypeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerCustomerDemo_GetByPrimaryKeyResult" nillable="true" type="q74:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q75:CustomerCustomerDemoCollection.CustomerCustomerDemoCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerCustomerDemo_SaveCollectionResult" nillable="true" type="q76:CustomerCustomerDemoCollection.CustomerCustomerDemoCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q77:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerCustomerDemo_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerCustomerDemo_SaveEntityResult" nillable="true" type="q78:CustomerCustomerDemo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerDemographics_LoadAllResult" nillable="true" type="q79:CustomerDemographicsCollection.CustomerDemographicsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerDemographics_QueryForCollectionResult" nillable="true" type="q80:CustomerDemographicsCollection.CustomerDemographicsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerDemographics_QueryForEntityResult" nillable="true" type="q81:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerTypeID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerDemographics_GetByPrimaryKeyResult" nillable="true" type="q82:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q83:CustomerDemographicsCollection.CustomerDemographicsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerDemographics_SaveCollectionResult" nillable="true" type="q84:CustomerDemographicsCollection.CustomerDemographicsCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q85:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustomerDemographics_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="CustomerDemographics_SaveEntityResult" nillable="true" type="q86:CustomerDemographics" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Customers_LoadAllResult" nillable="true" type="q87:CustomersCollection.CustomersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Customers_QueryForCollectionResult" nillable="true" type="q88:CustomersCollection.CustomersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Customers_QueryForEntityResult" nillable="true" type="q89:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="customerID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Customers_GetByPrimaryKeyResult" nillable="true" type="q90:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q91:CustomersCollection.CustomersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Customers_SaveCollectionResult" nillable="true" type="q92:CustomersCollection.CustomersCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q93:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Customers_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Customers_SaveEntityResult" nillable="true" type="q94:Customers" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Employees_LoadAllResult" nillable="true" type="q95:EmployeesCollection.EmployeesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Employees_QueryForCollectionResult" nillable="true" type="q96:EmployeesCollection.EmployeesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_QueryForEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Employees_QueryForEntityResult" nillable="true" type="q97:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_GetByPrimaryKey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_GetByPrimaryKeyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Employees_GetByPrimaryKeyResult" nillable="true" type="q98:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="collection" nillable="true" type="q99:EmployeesCollection.EmployeesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Employees_SaveCollectionResult" nillable="true" type="q100:EmployeesCollection.EmployeesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveEntity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="entity" nillable="true" type="q101:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Employees_SaveEntityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="Employees_SaveEntityResult" nillable="true" type="q102:Employees" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_LoadAll">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_LoadAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="EmployeeTerritories_LoadAllResult" nillable="true" type="q103:EmployeeTerritoriesCollection.EmployeeTerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForCollection">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="serializedQuery" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EmployeeTerritories_QueryForCollectionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/BusinessObjects" minOccurs="0" name="EmployeeTerritories_QueryForCollectionResult" nillable="true" type="q104:EmployeeTerritoriesCollection.EmployeeTerritoriesCollectionWCFPacket" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

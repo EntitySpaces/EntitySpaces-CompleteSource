@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{00000000-0000-0000-0000-000000000000}") = "EntitySpaces.Modules.GridLoader", "EntitySpaces.Modules.GridLoader.vbproj", "{3C72611B-3C3A-4095-BEBA-20434E89BB18}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C72611B-3C3A-4095-BEBA-20434E89BB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C72611B-3C3A-4095-BEBA-20434E89BB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C72611B-3C3A-4095-BEBA-20434E89BB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C72611B-3C3A-4095-BEBA-20434E89BB18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

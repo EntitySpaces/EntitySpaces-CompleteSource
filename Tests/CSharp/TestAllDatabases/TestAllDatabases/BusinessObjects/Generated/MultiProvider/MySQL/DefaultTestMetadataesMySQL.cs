@@ -1,0 +1,76 @@
+/*
+===============================================================================
+                    EntitySpaces Studio by EntitySpaces, LLC
+             Persistence Layer and Business Objects for Microsoft .NET
+             EntitySpaces(TM) is a legal trademark of EntitySpaces, LLC
+                          http://www.entityspaces.net
+===============================================================================
+EntitySpaces Version : 2012.1.0319.0
+EntitySpaces Driver  : MySql
+Date Generated       : 3/17/2012 4:44:06 AM
+===============================================================================
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Data;
+
+using EntitySpaces.Interfaces;
+using EntitySpaces.Core;
+
+namespace BusinessObjects
+{
+    public partial class DefaultTestMetadata : esMetadata, IMetadata
+    {
+		static private int RegisterDelegateesMySQL()
+		{
+			// This is only executed once per the life of the application
+			lock (typeof(DefaultTestMetadata))
+			{
+				if(DefaultTestMetadata.mapDelegates == null)
+				{
+					DefaultTestMetadata.mapDelegates = new Dictionary<string,MapToMeta>();
+				}
+				
+				if (DefaultTestMetadata.meta == null)
+				{
+					DefaultTestMetadata.meta = new DefaultTestMetadata();
+				}
+				
+				MapToMeta mapMethod = new MapToMeta(meta.esMySQL);
+				mapDelegates.Add("esMySQL", mapMethod);
+				mapMethod("esMySQL");
+			}
+			return 0;	
+		}		
+		
+		private esProviderSpecificMetadata esMySQL(string mapName)
+		{
+			if(!m_providerMetadataMaps.ContainsKey(mapName))
+			{
+				esProviderSpecificMetadata meta = new esProviderSpecificMetadata();	
+				
+
+				meta.AddTypeMap("TestId", new esTypeMap("INT", "System.Int32"));
+				meta.AddTypeMap("DefaultNotNull", new esTypeMap("INT", "System.Int32"));				
+				meta.Catalog = "aggregatedb";
+				
+				meta.Source = "defaulttest";
+				meta.Destination = "defaulttest";
+				
+				meta.spInsert = "proc_defaulttestInsert";				
+				meta.spUpdate = "proc_defaulttestUpdate";		
+				meta.spDelete = "proc_defaulttestDelete";
+				meta.spLoadAll = "proc_defaulttestLoadAll";
+				meta.spLoadByPrimaryKey = "proc_defaulttestLoadByPrimaryKey";
+				
+				m_providerMetadataMaps["esMySQL"] = meta;
+			}
+			
+			return m_providerMetadataMaps["esMySQL"];
+		}
+		
+		static private int _esMySQL = RegisterDelegateesMySQL();
+    }
+}

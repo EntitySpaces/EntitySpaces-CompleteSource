@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\svnroot\Code\ES2012\Tests\CSharp\TestSqlServer35\TestSqlServer35\TestsSqlServerDyn.nunit" total="517" errors="0" failures="0" not-run="15" inconclusive="0" ignored="15" skipped="0" invalid="0" date="2012-02-11" time="15:13:58">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.5448" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\svnroot\Code\ES2012\Tests\CSharp\TestSqlServer35\TestSqlServer35" machine-name="GRIFCOM1" user="Mike" user-domain="GRIFCOM1" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\svnroot\Code\ES2012\Tests\CSharp\TestSqlServer35\TestSqlServer35\TestsSqlServerDyn.nunit" executed="True" result="Success" success="True" time="6.016" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\svnroot\Code\ES2012\Tests\CSharp\TestSqlServer35\TestSqlServer35\bin\Debug\TestSqlServer35.exe" executed="True" result="Success" success="True" time="5.969" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="5.928" asserts="0">
+            <results>
+              <test-suite type="SetUpFixture" name="Base" executed="True" result="Success" success="True" time="5.926" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="AggregateFixture" executed="True" result="Success" success="True" time="0.189" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateAvg" executed="True" result="Success" success="True" time="0.056" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateCount" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateCountAll" executed="True" result="Success" success="True" time="0.004" asserts="3" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateCountAllAliasReversed" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateCountAllDefaultAlias" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateMax" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateMin" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateStdDev" executed="True" result="Success" success="True" time="0.030" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateSum" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddAggregateVar" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AddTwoAggregates" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AggregateWithTearoff" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AggregateWithWhere" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.AliasAndGetColumn" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.AggregateFixture.DistinctAggregate" executed="True" result="Success" success="True" time="0.040" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.EmptyAliasUsesColumnName" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.AggregateFixture.EmptyQueryReturnsSelectAll" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CaseWhenThen" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.CaseWhenThen.SimpleSyntaxCheck" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                      <test-case name="Tests.Base.CaseWhenThen.SimpleSyntaxCheckWithLike" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CastingFixture" executed="True" result="Success" success="True" time="0.079" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.CastingFixture.CastToBoolean" executed="True" result="Success" success="True" time="0.006" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToByte" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToChar" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.CastingFixture.CastToCharWithSizePadded" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToCharWithSizeTrunc" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToDateTime" executed="True" result="Success" success="True" time="0.009" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToDecimal" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToDecimalPrecisionScale" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToDouble" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToGuid" executed="True" result="Success" success="True" time="0.016" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToInt16" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToInt32" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToInt64" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToSingle" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToString" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.CastToStringLength" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.CastingFixture.SelectCollection" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CollectionFixture" executed="True" result="Success" success="True" time="0.343" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.CollectionFixture.CollectionFilter" executed="True" result="Success" success="True" time="0.161" asserts="8" />
+                      <test-case name="Tests.Base.CollectionFixture.CollectionFilterDate" executed="True" result="Success" success="True" time="0.024" asserts="2" />
+                      <test-case name="Tests.Base.CollectionFixture.CollectionFindByPrimaryKey" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.CollectionFixture.CollectionSort" executed="True" result="Success" success="True" time="0.005" asserts="51" />
+                      <test-case name="Tests.Base.CollectionFixture.CollectionSortDate" executed="True" result="Success" success="True" time="0.004" asserts="24" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineBuildOriginal" executed="True" result="Success" success="True" time="0.019" asserts="7" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineCollections" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineFilteredCombine" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineFilteredOriginal" executed="True" result="Success" success="True" time="0.003" asserts="5" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineFilteredOriginalAndCombine" executed="True" result="Success" success="True" time="0.004" asserts="6" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineJoinQueriedCollections" executed="True" result="Success" success="True" time="0.009" asserts="50" />
+                      <test-case name="Tests.Base.CollectionFixture.CombineQueriedCollections" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.CollectionFixture.FilteredDeleteAll" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CollectionFixture.TestAttachDetachEntityAdded" executed="True" result="Success" success="True" time="0.033" asserts="3" />
+                      <test-case name="Tests.Base.CollectionFixture.TestAttachDetachEntityModified" executed="True" result="Success" success="True" time="0.046" asserts="3" />
+                      <test-case name="Tests.Base.CollectionFixture.TestCustomForEach" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.Base.CollectionFixture.TestForEach" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CollectionViewFixture" executed="True" result="Success" success="True" time="0.038" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.CollectionViewFixture.FilteredViewOnFilteredCollection" executed="True" result="Success" success="True" time="0.019" asserts="5" />
+                      <test-case name="Tests.Base.CollectionViewFixture.IterateSortedViewAndCollection" executed="True" result="Success" success="True" time="0.007" asserts="60" />
+                      <test-case name="Tests.Base.CollectionViewFixture.TwoFilteredViewsOnFilteredCollection" executed="True" result="Success" success="True" time="0.004" asserts="9" />
+                      <test-case name="Tests.Base.CollectionViewFixture.ViewOnCollection" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.CollectionViewFixture.ViewOnFilteredCollection" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ConcurrencyFixture" executed="True" result="Success" success="True" time="0.108" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ConcurrencyFixture.ConcurrencyOnDelete" executed="True" result="Success" success="True" time="0.010" asserts="1" />
+                      <test-case name="Tests.Base.ConcurrencyFixture.ConcurrencyOnDeleteAutoKey" executed="True" result="Success" success="True" time="0.046" asserts="1" />
+                      <test-case name="Tests.Base.ConcurrencyFixture.ConcurrencyOnUpdate" executed="True" result="Success" success="True" time="0.016" asserts="4" />
+                      <test-case name="Tests.Base.ConcurrencyFixture.ConcurrencyOnUpdateAutoKey" executed="True" result="Success" success="True" time="0.020" asserts="4" />
+                      <test-case name="Tests.Base.ConcurrencyFixture.ConcurrencyOnUpdateDelete" executed="True" result="Success" success="True" time="0.007" asserts="1" />
+                      <test-case name="Tests.Base.ConcurrencyFixture.ConcurrencyOnUpdateDeleteAutoKey" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="CustomFieldsFixture" executed="True" result="Success" success="True" time="0.128" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.CustomFieldsFixture.ClientSide" executed="True" result="Success" success="True" time="0.023" asserts="41" />
+                      <test-case name="Tests.Base.CustomFieldsFixture.ClientSideAliased" executed="True" result="Success" success="True" time="0.024" asserts="41" />
+                      <test-case name="Tests.Base.CustomFieldsFixture.ServerSide" executed="True" result="Success" success="True" time="0.040" asserts="41" />
+                      <test-case name="Tests.Base.CustomFieldsFixture.ServerSideAliased" executed="True" result="Success" success="True" time="0.038" asserts="41" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="DataContractSerializationFixture" executed="True" result="Success" success="True" time="0.744" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.DataContractSerializationFixture.TestJSONSerialization" executed="True" result="Success" success="True" time="0.528" asserts="0" />
+                      <test-case name="Tests.Base.DataContractSerializationFixture.TestProxiesDirtyRowsOnly" executed="True" result="Success" success="True" time="0.069" asserts="0" />
+                      <test-case name="Tests.Base.DataContractSerializationFixture.TestSerializeQuery" executed="True" result="Success" success="True" time="0.146" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="DataTypeFixture" executed="True" result="Success" success="True" time="0.022" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.DataTypeFixture.TestDateTime" executed="True" result="Success" success="True" time="0.006" asserts="3" />
+                      <test-case name="Tests.Base.DataTypeFixture.TestDateTimeMicroSeconds" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Requires SQL Server 2008 and datetime2 data type.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.DataTypeFixture.TestDateTimeMilliSeconds" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Requires SQL Server 2008 and datetime2 data type.]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ExpressionsFixture" executed="True" result="Success" success="True" time="0.039" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ExpressionsFixture.ConcatTwoStrings" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.ConcatTwoStringsAndLiteral" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.ConcatTwoStringsAndTwoLiterals" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.MultiExpression" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneAddAggregate" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneAddDecimals" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneAddIntegers" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneDivideDecimals" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneModIntegers" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneModLiteral" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneMultiplyDecimals" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneSubtractDecimals" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.OneWhereSubtract" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.TwoAddStringsThenConcatenated" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.TwoAddStringsWithOrderBy" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.TwoAddStringsWithToUpper" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ExpressionsFixture.TwoAddStringsWithToUpperCollection" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="GroupByFixture" executed="True" result="Success" success="True" time="0.058" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.GroupByFixture.AggregateInOrderBy" executed="True" result="Success" success="True" time="0.012" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithDistinct" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithOrderByCountAll" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithRollup" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithTearoff" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithTop" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithWhere" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.GroupByWithWhereAndOrderBy" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.HavingWithComplexExpression" executed="True" result="Success" success="True" time="0.011" asserts="3" />
+                      <test-case name="Tests.Base.GroupByFixture.HavingWithSimpleExpression" executed="True" result="Success" success="True" time="0.004" asserts="3" />
+                      <test-case name="Tests.Base.GroupByFixture.OneGroupBy" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.TwoGroupBy" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.GroupByFixture.TwoGroupByWithHaving" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="JoinDaisyChainingFixture" executed="True" result="Success" success="True" time="0.569" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.CrossDbJoin" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.FullSimple" executed="True" result="Success" success="True" time="0.011" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.InnerJoinFourTables" executed="True" result="Success" success="True" time="0.005" asserts="3" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.InnerSelectAllPrimaryQuery" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.InnerSelectAllSecondaryQuery" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.InnerSimple" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.JoinCompositeFK" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.JoinFourTablesInnerLeft" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.JoinWithArithmeticExpressionOrderByCalulatedColumn" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.JoinWithPaging" executed="True" result="Success" success="True" time="0.010" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftIsNotNull" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftIsNull" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftJoinFourTables" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftJoinFourTablesWithWhere" executed="True" result="Success" success="True" time="0.035" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftRawSelect" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftSelfJoin" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftSimple" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftWithContains" executed="True" result="Success" success="True" time="0.412" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftWithOperatorsInOn" executed="True" result="Success" success="True" time="0.010" asserts="3" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.LeftWithWhere" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.MixedANDAndORInOn" executed="True" result="Success" success="True" time="0.015" asserts="2" />
+                      <test-case name="Tests.Base.JoinDaisyChainingFixture.RightSimple" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="JoinFixture" executed="True" result="Success" success="True" time="0.070" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.JoinFixture.CrossDbJoin" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.CustomMultiInnerWithDistinct" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.FullSimple" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.InnerAlias" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.JoinFixture.InnerJoinFourTables" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.JoinFixture.InnerSelectAllPrimaryQuery" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.JoinFixture.InnerSelectAllSecondaryQuery" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.JoinFixture.InnerSimple" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.JoinCompositeFK" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.JoinFourTablesInnerLeft" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.JoinWithArithmeticExpressionOrderByCalulatedColumn" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.JoinWithPaging" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftIsNotNull" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftIsNull" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftJoinFourTables" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftJoinFourTablesWithWhere" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftRawSelect" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftSelfJoin" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftSimple" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftWithContains" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftWithDateComparisonInOn" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftWithExplicitParen" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.LeftWithOperatorsInOn" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.JoinFixture.LeftWithWhere" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.MixedANDAndORInOn" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.RightSimple" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.RightWithFromSubQuery" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.RightWithOnIn" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.JoinFixture.RightWithWhereIn" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="LinqFixture" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.LinqFixture.LinqTest" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Needs provider independent DataContext]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="LoadFixture" executed="True" result="Success" success="True" time="0.088" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.LoadFixture.CollectionCustomLoadFromView" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionCustomLoadFromViewByDept" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionCustomLoadFromViewNoParams" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionLoadAll" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionLoadAllFalse" executed="True" result="Success" success="True" time="0.024" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionQueryLoad" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionQueryReset" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+                      <test-case name="Tests.Base.LoadFixture.CollectionTop" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.LoadFixture.EntityLoadByPrimaryKey" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                      <test-case name="Tests.Base.LoadFixture.EntityLoadByPrimaryKeyChar" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.EntityLoadByPrimaryKeyFalse" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.EntityMultiFail" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.EntityQueryLoadFalse" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.EntityQueryReset" executed="True" result="Success" success="True" time="0.011" asserts="4" />
+                      <test-case name="Tests.Base.LoadFixture.EntityTop" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.LoadFixture.LoadText" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.LoadTextEsParams" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.LoadFixture.TestCommandTimeout" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Tests.Base.LoadFixture.TestCommandTimeoutConfig" executed="True" result="Success" success="True" time="0.003" asserts="8" />
+                      <test-case name="Tests.Base.LoadFixture.TestHasData" executed="True" result="Success" success="True" time="0.002" asserts="10" />
+                      <test-case name="Tests.Base.LoadFixture.TestSpecialBinder" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ManyToManyFixture" executed="True" result="Success" success="True" time="0.210" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ManyToManyFixture.TestAssociateDissociate" executed="True" result="Success" success="True" time="0.013" asserts="2" />
+                      <test-case name="Tests.Base.ManyToManyFixture.TestAssociateDissociateNew" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.ManyToManyFixture.TestAssociateDissociateNewComposite" executed="True" result="Success" success="True" time="0.179" asserts="8" />
+                      <test-case name="Tests.Base.ManyToManyFixture.TestNullReferences" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.ManyToManyFixture.TestReferences" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.ManyToManyFixture.TestSettingNull" executed="True" result="Success" success="True" time="0.004" asserts="3" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ManyToOneFixture" executed="True" result="Success" success="True" time="0.144" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ManyToOneFixture.TestAssignReference" executed="True" result="Success" success="True" time="0.125" asserts="2" />
+                      <test-case name="Tests.Base.ManyToOneFixture.TestCompositeForeignKey" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.ManyToOneFixture.TestMultipleReferences" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ManyToOneFixture.TestNullReferences" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="Tests.Base.ManyToOneFixture.TestSelfReference" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MetadataFixture" executed="True" result="Success" success="True" time="0.016" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.MetadataFixture.ChangeMetadata" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.MetadataFixture.ConfigNotReadOnly" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Tests.Base.MetadataFixture.DescriptionWithBackSlash" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.MetadataFixture.DescriptionWithDoubleQuote" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.Base.MetadataFixture.GetColumnName" executed="True" result="Success" success="True" time="0.001" asserts="8" />
+                      <test-case name="Tests.Base.MetadataFixture.GetColumnWithAliasCollection" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.MetadataFixture.GetColumnWithAliasEntity" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.Base.MetadataFixture.GetColumnWithAliasEntityView" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="MiscellaneousFixture" executed="True" result="Success" success="True" time="0.043" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestEsUtilityClass" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure test only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestMarkAllColumnsAsDirtyAndAdded" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestMarkAllColumnsAsDirtyAndModified" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestQueryExecuteReader" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestQueryExecuteScalar" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestUtilityClass" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure test only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.MiscellaneousFixture.TestUtilityClassReturnNullExecuteScalar" executed="True" result="Success" success="True" time="0.029" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="NamingFixture" executed="True" result="Success" success="True" time="0.089" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.NamingFixture.ColumnWithDot" executed="True" result="Success" success="True" time="0.043" asserts="2" />
+                      <test-case name="Tests.Base.NamingFixture.ColumnWithDotAndSetGuids" executed="True" result="Success" success="True" time="0.008" asserts="3" />
+                      <test-case name="Tests.Base.NamingFixture.ColumnWithSpaceAndAlias" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.NamingFixture.ColumnWithSpaceWithoutAlias" executed="True" result="Success" success="True" time="0.008" asserts="2" />
+                      <test-case name="Tests.Base.NamingFixture.ColumnWithUnderScoreAndAlias" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.NamingFixture.ColumnWithUnderScoreWithoutAlias" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="NaturalQuerySyntax" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.NaturalQuerySyntax.TestSimpleAnd" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="OneToOneFixture" executed="True" result="Success" success="True" time="0.033" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.OneToOneFixture.TestNullReferences" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                      <test-case name="Tests.Base.OneToOneFixture.TestReferences" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.OneToOneFixture.TestSaveWithAutoKey" executed="True" result="Success" success="True" time="0.015" asserts="4" />
+                      <test-case name="Tests.Base.OneToOneFixture.TestSaveWithoutAutoKey" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.OneToOneFixture.TestUpTo" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="PrefetchFixture" executed="True" result="Success" success="True" time="0.065" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.PrefetchFixture.DisableLazyLoad" executed="True" result="Success" success="True" time="0.003" asserts="9" />
+                      <test-case name="Tests.Base.PrefetchFixture.NestedZeroToMany" executed="True" result="Success" success="True" time="0.018" asserts="13" />
+                      <test-case name="Tests.Base.PrefetchFixture.NestedZeroToManyCollection" executed="True" result="Success" success="True" time="0.018" asserts="12" />
+                      <test-case name="Tests.Base.PrefetchFixture.NestedZeroToManyEntity" executed="True" result="Success" success="True" time="0.013" asserts="6" />
+                      <test-case name="Tests.Base.PrefetchFixture.NestedZeroToManyEntity2" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.PrefetchFixture.SingleZeroToMany" executed="True" result="Success" success="True" time="0.004" asserts="5" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="RowStateIsDirty" executed="True" result="Success" success="True" time="0.023" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.RowStateIsDirty.TestAcceptChangesOnCollection" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestAcceptChangesOnEntity" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestAddNewOnCollection" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestAddNewOnEntity" executed="True" result="Success" success="True" time="0.000" asserts="7" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestDeleteOnCollection" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestDeleteOnEntity" executed="True" result="Success" success="True" time="0.000" asserts="12" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestRejectChangesOnCollection" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestRejectChangesOnCollection2" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestRejectChangesOnEntity1" executed="True" result="Success" success="True" time="0.000" asserts="6" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestRejectChangesOnEntity2" executed="True" result="Success" success="True" time="0.000" asserts="12" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestTrueIsDirtyLogicOnCollection" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Tests.Base.RowStateIsDirty.TestTrueIsDirtyLogicOnEntity" executed="True" result="Success" success="True" time="0.001" asserts="24" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SaveFixture" executed="True" result="Success" success="True" time="0.348" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SaveFixture.AddNewEmptySave" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SaveFixture.ChangeWithoutLoading" executed="True" result="Success" success="True" time="0.007" asserts="3" />
+                      <test-case name="Tests.Base.SaveFixture.CollectionMixedInsUpdDel" executed="True" result="Success" success="True" time="0.011" asserts="5" />
+                      <test-case name="Tests.Base.SaveFixture.DefaultInConstructorIsDirtyCollection" executed="True" result="Success" success="True" time="0.023" asserts="43" />
+                      <test-case name="Tests.Base.SaveFixture.DefaultIsDirtyCollection" executed="True" result="Success" success="True" time="0.009" asserts="12" />
+                      <test-case name="Tests.Base.SaveFixture.DefaultNotNullOnInsert" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SaveFixture.DeleteWithoutLoading" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SaveFixture.DynamicSaveNull" executed="True" result="Success" success="True" time="0.006" asserts="5" />
+                      <test-case name="Tests.Base.SaveFixture.EmptyCollection" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.EmptyEntity" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SaveFixture.ErrorsWithContinueDefaultFalse" executed="True" result="Success" success="True" time="0.080" asserts="6" />
+                      <test-case name="Tests.Base.SaveFixture.ErrorsWithContinueTrueDel" executed="True" result="Success" success="True" time="0.014" asserts="6" />
+                      <test-case name="Tests.Base.SaveFixture.ErrorsWithContinueTrueInsUpd" executed="True" result="Success" success="True" time="0.017" asserts="18" />
+                      <test-case name="Tests.Base.SaveFixture.ErrorsWithContinueTrueInsUpdDel" executed="True" result="Success" success="True" time="0.016" asserts="12" />
+                      <test-case name="Tests.Base.SaveFixture.ErrorsWithContinueTrueNoFailures" executed="True" result="Success" success="True" time="0.005" asserts="5" />
+                      <test-case name="Tests.Base.SaveFixture.FilteredDeleteAll" executed="True" result="Success" success="True" time="0.008" asserts="4" />
+                      <test-case name="Tests.Base.SaveFixture.IsDirtyCollection" executed="True" result="Success" success="True" time="0.008" asserts="9" />
+                      <test-case name="Tests.Base.SaveFixture.IsDirtyEntity" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                      <test-case name="Tests.Base.SaveFixture.LoadAllDeleteAllSave" executed="True" result="Success" success="True" time="0.033" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.NoAddNew" executed="True" result="Success" success="True" time="0.004" asserts="3" />
+                      <test-case name="Tests.Base.SaveFixture.PrimaryKeyNotFirstColumn" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.RejectChangesCollection" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SaveFixture.RetrieveAutoIncrementingKey" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SaveFixture.RetrieveComputed" executed="True" result="Success" success="True" time="0.009" asserts="2" />
+                      <test-case name="Tests.Base.SaveFixture.RetrieveDefaultOnInsert" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.SaveAlternateConnection" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SaveFixture.SaveComposite" executed="True" result="Success" success="True" time="0.010" asserts="5" />
+                      <test-case name="Tests.Base.SaveFixture.SaveTwice_LoadEntity" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.SaveTwice_NewEntity" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.SaveWithExtraColumns" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                      <test-case name="Tests.Base.SaveFixture.SetIdentityKeyIgnored" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SaveFixture.UpdateEntity" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.SaveFixture.UpdateOrInsertEntity" executed="True" result="Success" success="True" time="0.004" asserts="6" />
+                      <test-case name="Tests.Base.SaveFixture.UpdateOrInsertEntityCustom" executed="True" result="Success" success="True" time="0.003" asserts="5" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SerializeFixture" executed="True" result="Success" success="True" time="0.592" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SerializeFixture.CollectionChangesBinary" executed="True" result="Success" success="True" time="0.062" asserts="4" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeCollectionBinary" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeDynamicQuery" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeFindEntityBinary" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeJoin" executed="True" result="Success" success="True" time="0.008" asserts="2" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeLoadEntityBinary" executed="True" result="Success" success="True" time="0.005" asserts="1" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeNewEntityBinary" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeProxyStubCollection" executed="True" result="Success" success="True" time="0.381" asserts="2" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeProxyStubEntity" executed="True" result="Success" success="True" time="0.107" asserts="2" />
+                      <test-case name="Tests.Base.SerializeFixture.SerializeDeserializeProxyStubEntityQuery" executed="True" result="Success" success="True" time="0.005" asserts="4" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SetOperatorFixture" executed="True" result="Success" success="True" time="0.116" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SetOperatorFixture.MultipleUnion" executed="True" result="Success" success="True" time="0.033" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SimpleExcept" executed="True" result="Success" success="True" time="0.009" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SimpleIntersect" executed="True" result="Success" success="True" time="0.014" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SimpleUnion" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleExcept" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleExceptWithNoOverlap" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleIntersect" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleIntersectWithNoOverlap" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnion" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnionAll" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnionAllWithOverlap" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnionWithJoin" executed="True" result="Success" success="True" time="0.005" asserts="3" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnionWithOrderBy" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnionWithOverlap" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SetOperatorFixture.SingleUnionWithSubSelect" executed="True" result="Success" success="True" time="0.007" asserts="3" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SpecialTextFunctionsFixture" executed="True" result="Success" success="True" time="0.135" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.ExecuteNonQueryText" executed="True" result="Success" success="True" time="0.041" asserts="2" />
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.ExecuteNonQueryTextEsParams" executed="True" result="Success" success="True" time="0.009" asserts="2" />
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.ExecuteReaderTextEsParams" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.ExecuteScalarTextEsParams" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.FillDataSetText" executed="True" result="Success" success="True" time="0.069" asserts="1" />
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.FillDataSetTextNoParams" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SpecialTextFunctionsFixture.FillDataTableText" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SqlServerFixture" executed="True" result="Success" success="True" time="0.081" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SqlServerFixture.ConcurrencyOnDelete" executed="True" result="Success" success="True" time="0.021" asserts="1" />
+                      <test-case name="Tests.Base.SqlServerFixture.ConcurrencyOnUpdate" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.SqlServerFixture.DataTypeBigInt" executed="True" result="Success" success="True" time="0.009" asserts="6" />
+                      <test-case name="Tests.Base.SqlServerFixture.DataTypeLargeMoneyMax" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.SqlServerFixture.DataTypeLargeMoneyMin" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SqlServerFixture.DataTypeNChar" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.SqlServerFixture.DataTypeVarCharMax" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.SqlServerFixture.GuidDynamicQuery" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.SqlServerFixture.IdentityKeyPlusGuidNewid" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+                      <test-case name="Tests.Base.SqlServerFixture.InsertGuidPrimaryKey" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SqlServerFixture.SetGuidPrimaryKey" executed="True" result="Success" success="True" time="0.009" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="StoredProcFixture" executed="True" result="Inconclusive" success="False" time="0.013" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.StoredProcFixture.ExecuteNonQueryNoParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.ExecuteNonQueryNoParamsWithCatalog" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.ExecuteReaderNoParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.ExecuteScalarNoParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.FillDataSetNoParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.FillDataTableNoParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.StoredProcWithOutputParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.TestNullParams" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored Procedure mode only.]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.StoredProcFixture.TestScaleAndPrecision" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Stored procedure test only.]]></message>
+                        </reason>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SubOperatorFixture" executed="True" result="Success" success="True" time="0.076" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SubOperatorFixture.TestCoalesceInSelect" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestCoalesceInWhere" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDateInSelect" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDateInWhere" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDatePartInOrderBy" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDatePartInSelect" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDatePartInWhere" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDatePartInWhereGreaterThan" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestDateWithPaging" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestLength" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestLTrim" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestLTrimWithBetween" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRoundInSelect" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRoundInSelectPositive" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRoundInWhereNegative" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRoundInWherePositive" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRoundInWhereZero" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRTrim" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestRTrimWithEqual" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestSubstring" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestSubstringNoStart" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestSubstringWithNotNull" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestToLower" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestToLowerWithIn" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestToUpper" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestToUpperInSelect" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestToUpperWithLike" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestTrim" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.TestTrimWithNotEqual" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                      <test-case name="Tests.Base.SubOperatorFixture.WhereLikeEscapedMultiWithSubOp" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SubQueryDaisyChainingFixture" executed="True" result="Success" success="True" time="0.081" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.AllSubQuery" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.AnyNestedBySubQuery" executed="True" result="Success" success="True" time="0.008" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.Correlated" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.FromClause" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.FromClauseUsingInstance" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.FromClauseWithAlias" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.Nested" executed="True" result="Success" success="True" time="0.012" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.NestedBySubQuery" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.SelectAllExceptOne" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.SelectAllExceptTwo" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.SelectAllPlusSubQuery" executed="True" result="Success" success="True" time="0.003" asserts="4" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.SelectStatement" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.SimpleJoinOn" executed="True" result="Success" success="True" time="0.011" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.WhereExists" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.WhereExistsFalse" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.WhereNotIn" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryDaisyChainingFixture.WhereWithJoin" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="SubQueryFixture" executed="True" result="Success" success="True" time="0.061" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.SubQueryFixture.AllSubQuery" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.AnyNestedBySubQuery" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.Correlated" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.FromClause" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryFixture.FromClauseUsingInstance" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryFixture.FromClauseWithAlias" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryFixture.Nested" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.NestedBySubQuery" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.SelectAllExceptOne" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                      <test-case name="Tests.Base.SubQueryFixture.SelectAllExceptTwo" executed="True" result="Success" success="True" time="0.001" asserts="6" />
+                      <test-case name="Tests.Base.SubQueryFixture.SelectAllPlusSubQuery" executed="True" result="Success" success="True" time="0.001" asserts="4" />
+                      <test-case name="Tests.Base.SubQueryFixture.SelectStatement" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryFixture.SimpleJoinOn" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.SubQueryWithBetween" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.SubQueryWithGT_LT" executed="True" result="Success" success="True" time="0.007" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereExists" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereExistsANDed" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereExistsANDedTogether" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereExistsFalse" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereInANDedTogether" executed="True" result="Success" success="True" time="0.006" asserts="5" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereInANDedTogetherOperator" executed="True" result="Success" success="True" time="0.006" asserts="5" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereNotIn" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.SubQueryFixture.WhereWithJoin" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="TransactionFixture" executed="True" result="Success" success="True" time="0.015" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.TransactionFixture.TestFailedTransaction" executed="True" result="Success" success="True" time="0.010" asserts="2" />
+                      <test-case name="Tests.Base.TransactionFixture.TestTransactions" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.TransactionFixture.TestTransactionWithoutComplete" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ViewAggregateFixture" executed="True" result="Success" success="True" time="0.026" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateAvg" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateCount" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateCountAll" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateMax" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateMin" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateStdDev" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateSum" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddAggregateVar" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AddTwoAggregates" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AggregateWithTearoff" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.AggregateWithWhere" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.DistinctAggregate" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.EmptyAliasUsesColumnName" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewAggregateFixture.EmptyQueryReturnsSelectAll" executed="True" result="Success" success="True" time="0.002" asserts="5" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ViewGroupByFixture" executed="True" result="Success" success="True" time="0.030" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByFullName" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithDistinct" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithOrderByCountAll" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithRollup" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithTearoff" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithTop" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithWhere" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.GroupByWithWhereAndOrderBy" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.OneGroupBy" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ViewGroupByFixture.TwoGroupBy" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="WhereDaisyChainingFixture" executed="True" result="Success" success="True" time="0.088" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.ContainsCaseInsensitive" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.ContainsMultiTerms" executed="True" result="Success" success="True" time="0.011" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.ContainsNear" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.ContainsWildCard" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.ContainswithSubOperator" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.MultiWhereClausesExternal" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.PagingSimple" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.PagingSimpleSelectAll" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.PagingWithDistinct" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.PagingWithGroupBy" executed="True" result="Success" success="True" time="0.007" asserts="6" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.PagingWithTop" executed="True" result="Success" success="True" time="0.005" asserts="6" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.PagingWithWhere" executed="True" result="Success" success="True" time="0.006" asserts="6" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.SelectWithAlias" executed="True" result="Success" success="True" time="0.002" asserts="62" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.WhereMixMultiAndOrDefaultOr" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.WhereMixMultiAndOrNested" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.WhereMixMultiAndOrNested2" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.WhereMixMultiAndOrNestedOperators" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.WhereMixMultiAndOrNestedOperators2" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereDaisyChainingFixture.WhereMixMultiWithParenNested" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="WhereFixture" executed="True" result="Success" success="True" time="0.178" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.WhereFixture.CacheQueryObject" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.ContainsCaseInsensitive" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.ContainsMultiTerms" executed="True" result="Success" success="True" time="0.011" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.ContainsNear" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.ContainsWildCard" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.ContainswithSubOperator" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.MultiWhereClausesExternal" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.MultiWhereClausesExternalOr" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.MultiWhereClausesInternal" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.OneWhere" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.WhereFixture.OrderByWithAlias" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Tests.Base.WhereFixture.PagingSimple" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+                      <test-case name="Tests.Base.WhereFixture.PagingSimpleSelectAll" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+                      <test-case name="Tests.Base.WhereFixture.PagingWithDistinct" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+                      <test-case name="Tests.Base.WhereFixture.PagingWithGroupBy" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                      <test-case name="Tests.Base.WhereFixture.PagingWithTop" executed="True" result="Success" success="True" time="0.003" asserts="6" />
+                      <test-case name="Tests.Base.WhereFixture.PagingWithWhere" executed="True" result="Success" success="True" time="0.002" asserts="6" />
+                      <test-case name="Tests.Base.WhereFixture.SelectWithAlias" executed="True" result="Success" success="True" time="0.002" asserts="62" />
+                      <test-case name="Tests.Base.WhereFixture.SkipTake" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[Not supported]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="Tests.Base.WhereFixture.TwoWhere" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereBetweenDate" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereBetweenInteger" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereBetweenNumeric" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereBetweenText" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereCompareColumns" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionAndNotNested" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionAndNotOperator" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionAndNotSeparateLines" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionAndOperator" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionOrNotNested" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionOrNotOperator" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionOrNotSeparateLines" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereConjunctionOrOperator" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereDefaultConjunction" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereDefaultConjunctionOr" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereEqual" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereEqualDecimal" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereEqualOperator" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereGreaterThan" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereGreaterThanOperator" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereGreaterThanOrEqual" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereGreaterThanOrEqualOperator" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereInDate" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereInInteger" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereInListNumeric" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereInListText" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereInNumeric" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereInText" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereIsNotNull" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereIsNull" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLessThan" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLessThanOperator" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLessThanOrEqual" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLessThanOrEqualOperator" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLikeDate" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLikeInteger" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLikeNumeric" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLikeText" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereLikeTextEscaped" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixAndOr" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixAndOrOperators" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiAndOr" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiAndOrDefaultOr" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiAndOrNested" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiAndOrNested2" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiAndOrNestedOperators" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiAndOrNestedOperators2" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiWithParen" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereMixMultiWithParenNested" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotEqual" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotEqualOperator" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotInDate" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotInInteger" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotInListNumeric" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotInListText" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotInNumeric" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotInText" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotLikeDate" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotLikeInteger" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotLikeNumeric" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotLikeText" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereNotLikeTextEscaped" executed="True" result="Success" success="True" time="0.003" asserts="2" />
+                      <test-case name="Tests.Base.WhereFixture.WhereWithOrderBy" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="ZeroToManyFixture" executed="True" result="Success" success="True" time="0.109" asserts="0">
+                    <results>
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestCollectionDeleteAll" executed="True" result="Success" success="True" time="0.011" asserts="4" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestCompositeForeignKey" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestEntityDeleteAll" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestForeach" executed="True" result="Success" success="True" time="0.002" asserts="36" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestMultiDeleteEntity" executed="True" result="Success" success="True" time="0.057" asserts="7" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestMultipleReferences" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestNullReferences" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSave" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSaveComposite" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSaveFromCollection" executed="True" result="Success" success="True" time="0.005" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSaveSelfReference" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSaveSimple" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSaveSimpleCollection" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Tests.Base.ZeroToManyFixture.TestSelfReference" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

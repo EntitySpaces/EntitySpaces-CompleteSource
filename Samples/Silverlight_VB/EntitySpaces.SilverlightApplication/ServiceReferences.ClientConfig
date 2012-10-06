@@ -1,0 +1,32 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_INorthwind" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None">
+                        <transport>
+                            <extendedProtectionPolicy policyEnforcement="Never" />
+                        </transport>
+                    </security>
+                </binding>
+                <binding name="BasicHttpBinding_INorthwind1" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None">
+                        <transport realm="">
+                            <extendedProtectionPolicy policyEnforcement="Never" />
+                        </transport>
+                    </security>
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:2936/Northwind.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_INorthwind" contract="INorthwind"
+                name="BasicHttpBinding_INorthwind" />
+            <endpoint address="http://localhost:2936/Northwind.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_INorthwind1" contract="NorthwindClient.INorthwind"
+                name="BasicHttpBinding_INorthwind1" />
+        </client>
+    </system.serviceModel>
+</configuration>

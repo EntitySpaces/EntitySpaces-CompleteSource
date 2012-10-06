@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<esSettings Version="2011.0.0321.0">
+  <Driver>SQLCE</Driver>
+  <ConnectionString>Data Source=C:\SVNData\EntitySpacesNew\Databases\SqlCe\4.0\ForeignKeyTest.sdf;Version="4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91";</ConnectionString>
+  <TemplatePath>C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\Templates</TemplatePath>
+  <OutputPath>C:\SVNData\EntitySpacesNew\Code\ES2010\Tests\CommonFiles</OutputPath>
+  <UIAssemblyPath>C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\ClassLibraries\EntitySpaces.TemplateUI\bin\Debug</UIAssemblyPath>
+  <CompilerAssemblyPath>C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\StandAlone\bin\Debug</CompilerAssemblyPath>
+  <LanguageMappingFile>C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\esLanguages.xml</LanguageMappingFile>
+  <UserMetadataFile>C:\SVNData\EntitySpacesNew\Code\ES2010\Tests\CommonFiles\esUserData.xml</UserMetadataFile>
+  <AbstractPrefix>es</AbstractPrefix>
+  <EntitySuffix />
+  <CollectionSuffix>Collection</CollectionSuffix>
+  <QuerySuffix>Query</QuerySuffix>
+  <MetadataSuffix>Metadata</MetadataSuffix>
+  <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+  <PrefixWithSchema>false</PrefixWithSchema>
+  <ProcPrefix>proc_</ProcPrefix>
+  <ProcInsert>Insert</ProcInsert>
+  <ProcUpdate>Update</ProcUpdate>
+  <ProcDelete>Delete</ProcDelete>
+  <ProcLoadAll>LoadAll</ProcLoadAll>
+  <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+  <ProcSuffix />
+  <ProcVerbFirst>false</ProcVerbFirst>
+  <OnePrefix />
+  <OneSeparator>By</OneSeparator>
+  <OneSuffix />
+  <ManyPrefix />
+  <ManySeparator>By</ManySeparator>
+  <ManySuffix>Collection</ManySuffix>
+  <SelfOnly>false</SelfOnly>
+  <SwapNames>false</SwapNames>
+  <UseAssociativeName>false</UseAssociativeName>
+  <UseUpToPrefix>true</UseUpToPrefix>
+  <PreserveUnderscores>false</PreserveUnderscores>
+  <UseRawNames>false</UseRawNames>
+  <UseNullableTypesAlways>true</UseNullableTypesAlways>
+  <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+  <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+  <LicenseProxyEnable>false</LicenseProxyEnable>
+  <LicenseProxyUrl />
+  <LicenseProxyUserName />
+  <LicenseProxyPassword />
+  <LicenseProxyDomainName />
+  <DriverInfoCollection>
+    <esSettingsDriverInfo>
+      <Driver>SQLCE</Driver>
+      <ConnectionString>Data Source=C:\SVNData\EntitySpacesNew\Databases\SqlCe\4.0\ForeignKeyTest.sdf;Version="4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91";</ConnectionString>
+      <DateAdded>
+        <IsEnabled>false</IsEnabled>
+        <Type>Unassigned</Type>
+        <ClientType>Unassigned</ClientType>
+      </DateAdded>
+      <DateModified>
+        <IsEnabled>false</IsEnabled>
+        <Type>Unassigned</Type>
+        <ClientType>Unassigned</ClientType>
+      </DateModified>
+      <AddedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+      </AddedBy>
+      <ModifiedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+      </ModifiedBy>
+      <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+    </esSettingsDriverInfo>
+  </DriverInfoCollection>
+</esSettings>

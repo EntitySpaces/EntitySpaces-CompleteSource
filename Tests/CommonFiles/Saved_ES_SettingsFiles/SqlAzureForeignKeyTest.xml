@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<esSettings Name="esCustom">
+    <esSetting Name="Driver" Value="SQLAzure" />
+    <esSetting Name="ConnectionString" Value="Server=tcp:ejkei409co.database.windows.net;Database=ForeignKeyTest;User ID=EntitySpaces@ejkei409co;Password=zBOY6XrVSanEuL9LUQJn;Trusted_Connection=False;Encrypt=True;" />
+    <esSetting Name="TemplatePath" Value="C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\Templates" />
+    <esSetting Name="OutputPath" Value="C:\SVNData\EntitySpacesNew\Code\ES2010\Tests\CommonFiles" />
+    <esSetting Name="UIAssemblyPath" Value="C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\ClassLibraries\EntitySpaces.TemplateUI\bin\Debug" />
+    <esSetting Name="CompilerAssemblyPath" Value="C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\StandAlone\bin\Debug" />
+    <esSetting Name="LanguageMappingFile" Value="C:\SVNData\EntitySpacesNew\Code\ES2010\CodeGeneration\esLanguages.xml" />
+    <esSetting Name="UserMetadataFile" Value="C:\SVNData\EntitySpacesNew\Code\ES2010\Tests\CommonFiles\esUserData.xml" />
+    <esSetting Name="AbstractPrefix" Value="es" />
+    <esSetting Name="EntitySuffix" Value="" />
+    <esSetting Name="CollectionSuffix" Value="Collection" />
+    <esSetting Name="QuerySuffix" Value="Query" />
+    <esSetting Name="MetadataSuffix" Value="Metadata" />
+    <esSetting Name="ProxyStubSuffix" Value="ProxyStub" />
+    <esSetting Name="ProcPrefix" Value="proc_" />
+    <esSetting Name="ProcSuffix" Value="" />
+    <esSetting Name="ProcInsert" Value="Insert" />
+    <esSetting Name="ProcUpdate" Value="Update" />
+    <esSetting Name="ProcDelete" Value="Delete" />
+    <esSetting Name="ProcLoadAll" Value="LoadAll" />
+    <esSetting Name="ProcLoadByPK" Value="LoadByPrimaryKey" />
+    <esSetting Name="ProcVerbFirst" Value="False" />
+    <esSetting Name="OneToOnePrefix" Value="" />
+    <esSetting Name="OneToOneSeparator" Value="By" />
+    <esSetting Name="OneToOneSuffix" Value="" />
+    <esSetting Name="ManyToManyPrefix" Value="" />
+    <esSetting Name="ManyToManySeparator" Value="By" />
+    <esSetting Name="ManyToManySuffix" Value="Collection" />
+    <esSetting Name="SelfOnly" Value="False" />
+    <esSetting Name="SwapNames" Value="False" />
+    <esSetting Name="UseAssociativeName" Value="False" />
+    <esSetting Name="UseUpToPrefix" Value="True" />
+    <esSetting Name="PreserveUnderscores" Value="False" />
+    <esSetting Name="UseRawNames" Value="False" />
+    <esSetting Name="UseNullableTypesAlways" Value="True" />
+    <esSetting Name="TurnOffDateTimeInClassHeaders" Value="False" />
+    <esSetting Name="DefaultTemplateDoubleClickAction" Value="Execute" />
+    <esSetting Name="LicenseProxyEnable" Value="False" />
+    <esSetting Name="LicenseProxyUrl" Value="" />
+    <esSetting Name="LicenseProxyUserName" Value="" />
+    <esSetting Name="LicenseProxyPassword" Value="" />
+    <esSetting Name="LicenseProxyDomainName" Value="" />
+</esSettings>

@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9D72C80-97AB-4DC0-AA90-63314D026B4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestAllDatabases</RootNamespace>
+    <AssemblyName>TestAllDatabases</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\EntitySpaces\Providers\EntitySpaces.Npgsql2Provider\Driver\NET 3.5\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\CustomBase\CollectionBase.cs" />
+    <Compile Include="BusinessObjects\CustomBase\EntityBase.cs" />
+    <Compile Include="BusinessObjects\CustomBase\QueryBase.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\AggregateTestCollectionCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\AggregateTestCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\ComputedTestCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\FullNameViewCollectionCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\ForeignKeyTest\ProductCollectionCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\Utility.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChild.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChildCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChildQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomClientAliased.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomClientAliasedCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomClientAliasedQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsClient.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsClientCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsClientQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsServer.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsServerCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsServerQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomServerAliased.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomServerAliasedCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomServerAliasedQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameView.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameViewCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameViewQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirst.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirstCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirstQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\MSC_ADMIN.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\MSC_ADMINCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\MSC_ADMINQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2Collection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2Query.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\PgDataTypes.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\PgDataTypesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\PgDataTypesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Course.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CourseCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CourseQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Customer.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroup.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroupCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroupQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Employee.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritoryCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritoryQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Group.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\GroupCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\GroupQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Order.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItem.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItemCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItemQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Product.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ProductCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ProductQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployee.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployeeCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployeeQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChild.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChildCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChildQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParent.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParentCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParentQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Student.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClass.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClassCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClassQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Territory.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryEx.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryExCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryExQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest2.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest2Collection.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\Mysqltypetest2Query.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MysqltypetestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MysqltypetestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MySqlUnicodeTest.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MySqlUnicodeTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\MySQL\MySqlUnicodeTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Categories.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CategoriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CategoriesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemoCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemoQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographics.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographicsCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographicsQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Customers.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Employees.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritories.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritoriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritoriesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetailsCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetailsQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Orders.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrdersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrdersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Products.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ProductsCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ProductsQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Region.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\RegionCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\RegionQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Shippers.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ShippersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ShippersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Suppliers.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\SuppliersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\SuppliersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Territories.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\TerritoriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\TerritoriesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleDataTypes.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleDataTypesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleDataTypesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleTest.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleTest2.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleTest2Collection.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleTest2Query.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleXmlTest.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleXmlTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Oracle\OracleXmlTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\SqlCeDesktop\GuidTest.cs" />
+    <Compile Include="BusinessObjects\Custom\SqlCeDesktop\GuidTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\SqlCeDesktop\GuidTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\SqlCeDesktop\SqlCeDataTypes.cs" />
+    <Compile Include="BusinessObjects\Custom\SqlCeDesktop\SqlCeDataTypesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\SqlCeDesktop\SqlCeDataTypesQuery.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AggregateTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ComputedTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConcurrencyTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConcurrencyTestChild.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConstructorTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomClientAliased.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomFieldsClient.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomFieldsServer.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomServerAliased.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\DefaultTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\FullNameView.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\KeyNotFirst.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\MSC_ADMIN.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\NamingTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\NamingTest2.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\SqlServerTypeTest.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Course.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Customer.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\CustomerGroup.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Employee.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\EmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Group.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Order.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\OrderItem.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Product.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReferredEmployee.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReverseCompositeChild.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReverseCompositeParent.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Student.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\StudentClass.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Territory.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\TerritoryEx.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\AggregateTestMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CategoriesMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ConcurrencyTestChildMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ConcurrencyTestMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CustomerGroupMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CustomerMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\CustomersMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\EmployeeMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\EmployeesMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\EmployeeTerritoryMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\FullNameViewMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\GroupMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrderDetailsMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrderItemMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrderMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\OrdersMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ProductMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ProductsMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ReferredEmployeeMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\ShippersMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\SuppliersMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\TerritoryExMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MSAccess\TerritoryMetadataesAccess.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\AggregateTestMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CategoriesMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ConcurrencyTestChildMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ConcurrencyTestMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CustomerGroupMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CustomerMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\CustomersMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\DefaultTestMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\EmployeeMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\EmployeesMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\EmployeeTerritoryMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\FullNameViewMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\GroupMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\Mysqltypetest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\Mysqltypetest2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\Mysqltypetest2MetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\MysqltypetestMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\MySqlUnicodeTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\MySqlUnicodeTestMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrderDetailsMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrderItemMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrderMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\OrdersMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ProductMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ProductsMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ReferredEmployeeMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ReverseCompositeChildMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ReverseCompositeParentMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\ShippersMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\SuppliersMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\TerritoryExMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\MySQL\TerritoryMetadataesMySQL.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\AggregateTestMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\ConcurrencyTestChildMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\ConcurrencyTestMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\CustomerGroupMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\CustomerMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\DefaultTestMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\EmployeeMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\EmployeeTerritoryMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\FullNameViewMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\GroupMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleDataTypes.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleDataTypesMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleTest.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleTest2.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleTest2MetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleTestMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleXmlTest.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OracleXmlTestMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OrderItemMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\OrderMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\ProductMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\ReferredEmployeeMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\TerritoryExMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Oracle\TerritoryMetadataesOracle.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\AggregateTestMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\ConcurrencyTestChildMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\ConcurrencyTestMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\CustomerGroupMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\CustomerMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\EmployeeMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\EmployeeTerritoryMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\FullNameViewMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\GroupMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\OrderItemMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\OrderMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\PgDataTypes.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\PgDataTypesMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\ProductMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\ReferredEmployeeMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\ReverseCompositeChildMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\ReverseCompositeParentMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\TerritoryExMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\PostgreSQL\TerritoryMetadataesPgsql.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\AggregateTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\ComputedTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\ConcurrencyTestChildMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\ConcurrencyTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\ConstructorTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\CustomerGroupMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\CustomerMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\DefaultTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\EmployeeMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\EmployeeTerritoryMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\FullNameViewMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\GroupMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\KeyNotFirstMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\NamingTest2MetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\NamingTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\OrderItemMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\OrderMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\ProductMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\ReferredEmployeeMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\SqlServerTypeTestMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\TerritoryExMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlAzure\TerritoryMetadataesSqlAzure.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\AggregateTestMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\CategoriesMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\ConcurrencyTestChildMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\ConcurrencyTestMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\CustomerGroupMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\CustomerMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\CustomersMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\EmployeeMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\EmployeesMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\EmployeeTerritoryMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\GroupMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\GuidTestMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\OrderDetailsMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\OrderItemMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\OrderMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\OrdersMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\ProductMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\ProductsMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\ReferredEmployeeMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\ShippersMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\SqlCeDataTypesMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\SuppliersMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\TerritoryExMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCe4Desktop\TerritoryMetadataesSqlCe4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\AggregateTestMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\CategoriesMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\ConcurrencyTestChildMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\ConcurrencyTestMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\CustomerGroupMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\CustomerMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\CustomersMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\EmployeeMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\EmployeesMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\EmployeeTerritoryMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\GroupMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\GuidTest.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\GuidTestMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\OrderDetailsMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\OrderItemMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\OrderMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\OrdersMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\ProductMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\ProductsMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\ReferredEmployeeMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\ShippersMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\SqlCeDataTypes.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\SqlCeDataTypesMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\SuppliersMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\TerritoryExMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SqlCeDesktop\TerritoryMetadataesSqlCe.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\AggregateTestMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\CategoriesMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\ConcurrencyTestChildMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\ConcurrencyTestMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\CustomerCustomerDemoMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\CustomerDemographicsMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\CustomerGroupMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\CustomerMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\CustomersMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\EmployeeMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\EmployeesMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\EmployeeTerritoriesMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\EmployeeTerritoryMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\FullNameViewMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\GroupMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\OrderDetailsMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\OrderItemMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\OrderMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\OrdersMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\ProductMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\ProductsMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\ReferredEmployeeMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\RegionMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\ShippersMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\SuppliersMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\TerritoriesMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\TerritoryExMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\SQLite\TerritoryMetadataesSQLite.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\AggregateTestMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\CategoriesMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ComputedTestMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ConcurrencyTestChildMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ConcurrencyTestMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\CustomerCustomerDemoMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\CustomerDemographicsMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\CustomerGroupMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\CustomerMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\CustomersMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\EmployeeMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\EmployeesMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\EmployeeTerritoriesMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\EmployeeTerritoryMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\FullNameViewMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\GroupMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\KeyNotFirstMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\OrderDetailsMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\OrderItemMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\OrderMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\OrdersMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ProductMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ProductsMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ReferredEmployeeMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\RegionMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\ShippersMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\SuppliersMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\TerritoriesMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\TerritoryExMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\Sybase\TerritoryMetadataesSybase.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\AggregateTestMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\CategoriesMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\ConcurrencyTestChildMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\ConcurrencyTestMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\CustomerGroupMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\CustomerMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\CustomersMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\EmployeeMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\EmployeesMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\EmployeeTerritoryMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\FullNameViewMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\GroupMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\OrderDetailsMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\OrderItemMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\OrderMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\OrdersMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\ProductMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\ProductsMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\ReferredEmployeeMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\ShippersMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\SuppliersMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\TerritoryExMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\MultiProvider\VistaDB4\TerritoryMetadataesVistaDB4.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Categories.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\CustomerDemographics.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Customers.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Employees.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\EmployeeTerritories.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Orders.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Products.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Region.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Shippers.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Suppliers.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Territories.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Connections.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TestFixtures\CollectionFixture.cs" />
+    <Compile Include="TestFixtures\CollectionViewFixture.cs" />
+    <Compile Include="TestFixtures\ConcurrencyFixture.cs" />
+    <Compile Include="TestFixtures\CustomFieldsFixture.cs" />
+    <Compile Include="TestFixtures\DataContractSerializationFixture.cs" />
+    <Compile Include="TestFixtures\DataTypeFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\AggregateFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\CaseWhenThen.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\CastingFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\ExpressionsFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\GroupByFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\JoinDaisyChainingFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\JoinFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\NaturalQuerySyntax.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\SetOperatorFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\SubOperatorFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\SubQueryDaisyChainingFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\SubQueryFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\ViewAggregateFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\ViewGroupByFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\WhereDaisyChainingFixture.cs" />
+    <Compile Include="TestFixtures\DynamicQuery\WhereFixture.cs" />
+    <Compile Include="TestFixtures\Hierarchical\ManyToManyFixture.cs" />
+    <Compile Include="TestFixtures\Hierarchical\ManyToOneFixture.cs" />
+    <Compile Include="TestFixtures\Hierarchical\OneToOneFixture.cs" />
+    <Compile Include="TestFixtures\Hierarchical\PrefetchFixture.cs" />
+    <Compile Include="TestFixtures\Hierarchical\ZeroToManyFixture.cs" />
+    <Compile Include="TestFixtures\LinqFixture.cs" />
+    <Compile Include="TestFixtures\LoadFixture.cs" />
+    <Compile Include="TestFixtures\MetadataFixture.cs" />
+    <Compile Include="TestFixtures\MiscellaneousFixture.cs" />
+    <Compile Include="TestFixtures\NamingFixture.cs" />
+    <Compile Include="TestFixtures\PerformanceFixture.cs" />
+    <Compile Include="TestFixtures\Provider\MySQLFixture.cs" />
+    <Compile Include="TestFixtures\Provider\OracleFixture.cs" />
+    <Compile Include="TestFixtures\Provider\PgFixture.cs" />
+    <Compile Include="TestFixtures\Provider\SqlCeFixture.cs" />
+    <Compile Include="TestFixtures\Provider\SqlServerFixture.cs" />
+    <Compile Include="TestFixtures\Provider\SybaseFixture.cs" />
+    <Compile Include="TestFixtures\RowStateIsDirty.cs" />
+    <Compile Include="TestFixtures\SaveFixture.cs" />
+    <Compile Include="TestFixtures\SerializeFixture.cs" />
+    <Compile Include="TestFixtures\Setup\Base.cs" />
+    <Compile Include="TestFixtures\Setup\SetupTests.cs" />
+    <Compile Include="TestFixtures\SpecialTextFunctionsFixture.cs" />
+    <Compile Include="TestFixtures\StoredProcFixture.cs" />
+    <Compile Include="TestFixtures\TransactionFixture.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Core\EntitySpaces.Core35.csproj">
+      <Project>{81B80C15-74F7-480A-B3C1-D8792785B357}</Project>
+      <Name>EntitySpaces.Core35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.DebuggerVisualizer\EntitySpaces.DebuggerVisualizer35.csproj">
+      <Project>{A82A0BF9-2C70-4396-BD4B-9F287B0B347D}</Project>
+      <Name>EntitySpaces.DebuggerVisualizer35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.DynamicQuery\EntitySpaces.DynamicQuery35.csproj">
+      <Project>{9AA003D3-6DBB-4C6C-BDC5-F3E1F3BBB0DD}</Project>
+      <Name>EntitySpaces.DynamicQuery35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Interfaces\EntitySpaces.Interfaces35.csproj">
+      <Project>{B13AC54D-1CEE-4B91-BEAE-98CF0A4AA180}</Project>
+      <Name>EntitySpaces.Interfaces35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.LoaderMT\EntitySpaces.LoaderMT35.csproj">
+      <Project>{646DE25E-4951-4174-B8E2-16E6D6D5008A}</Project>
+      <Name>EntitySpaces.LoaderMT35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Loader\EntitySpaces.Loader35.csproj">
+      <Project>{7DFF20D6-C320-4920-AE92-4F096D8DFE61}</Project>
+      <Name>EntitySpaces.Loader35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Profiler\EntitySpaces.Profiler35.csproj">
+      <Project>{14CB78FC-1839-4F28-9F59-6522F2BFEFE7}</Project>
+      <Name>EntitySpaces.Profiler35</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

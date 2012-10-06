@@ -1,0 +1,73 @@
+//===============================================================================
+//                    EntitySpaces Studio by EntitySpaces, LLC
+//             Persistence Layer and Business Objects for Microsoft .NET
+//             EntitySpaces(TM) is a legal trademark of EntitySpaces, LLC
+//                          http://www.entityspaces.net
+//===============================================================================
+// EntitySpaces Version : 2012.1.0319.0
+// EntitySpaces Driver  : SQL
+// Date Generated       : 3/18/2012 8:05:02 AM
+//===============================================================================
+
+(function (es) { //myNS = "myNameSpace" ... for example purposes
+
+	if (typeof (es) === undefined) {
+		throw "Please Load EntitySpaces.Core First";
+	}
+
+	es.objects.CustomerDemographics = es.defineEntity(function () {
+
+		// core columns
+		this.CustomerTypeID = ko.observable();
+		this.CustomerDesc = ko.observable();
+
+		// Primary Key(s)
+		this.esPrimaryKeys = function() {
+			return this.CustomerTypeID();
+		}
+
+		// extended columns
+		this.esExtendedData = undefined;
+
+		// Hierarchical Properties
+		this.UpToCustomersCollection = es.defineLazyLoader(this, 'UpToCustomersCollection');
+		this.CustomerCustomerDemoCollectionByCustomerTypeID = es.defineLazyLoader(this, 'CustomerCustomerDemoCollectionByCustomerTypeID');
+	});
+
+	//#region Prototype Level Information
+
+	es.objects.CustomerDemographics.prototype.esTypeDefs = {
+		UpToCustomersCollection: "CustomersCollection",
+		CustomerCustomerDemoCollectionByCustomerTypeID: "CustomerCustomerDemoCollection"
+	};
+
+	es.objects.CustomerDemographics.prototype.esRoutes = {
+		commit: { method: 'PUT', url: 'CustomerDemographics_Save', response: 'entity' },
+		loadByPrimaryKey: { method: 'GET', url: 'CustomerDemographics_LoadByPrimaryKey', response: 'entity' },
+		UpToCustomersCollection: { method: 'GET', url: 'CustomerDemographics_UpToCustomersCollection', response: 'collection'},
+		CustomerCustomerDemoCollectionByCustomerTypeID: { method: 'GET', url: 'CustomerDemographics_CustomerCustomerDemoCollectionByCustomerTypeID', response: 'collection'}
+	};
+
+	es.objects.CustomerDemographics.prototype.esColumnMap = {
+		'CustomerTypeID': 1,
+		'CustomerDesc': 1
+	};
+
+	//#endregion
+
+}(window.es, window.myNS));
+
+(function (es) {
+
+	es.objects.CustomerDemographicsCollection = es.defineCollection('CustomerDemographicsCollection', 'CustomerDemographics');
+
+	//#region Prototype Level Information
+
+	es.objects.CustomerDemographicsCollection.prototype.esRoutes = {
+		commit: { method: 'PUT', url: 'CustomerDemographicsCollection_Save', response: 'collection' },
+		loadAll: { method: 'GET', url: 'CustomerDemographicsCollection_LoadAll', response: 'collection' }
+	};
+
+	//#endregion
+
+}(window.es, window.myNS));

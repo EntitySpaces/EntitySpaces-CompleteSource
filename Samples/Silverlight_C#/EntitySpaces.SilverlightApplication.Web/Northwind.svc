@@ -1,0 +1,1 @@
+<%@ ServiceHost Language="C#" Debug="true" Service="EntitySpaces.SilverlightApplication.Web.Northwind" CodeBehind="Northwind.svc.cs" %>

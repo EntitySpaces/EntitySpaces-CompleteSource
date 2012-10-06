@@ -1,0 +1,132 @@
+﻿<navigation:Page x:Class="Silverlight_RiaServices.Views.Prefetch" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Prefetch Page" xmlns:riaControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.DomainServices" xmlns:my="clr-namespace:BusinessObjects" xmlns:my1="clr-namespace:Silverlight_RiaServices.Web" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <sdk:Page.Resources>
+        <CollectionViewSource x:Key="employeesOrdersCollectionByEmployeeIDViewSource" Source="{Binding Path=Data.OrdersCollectionByEmployeeID, ElementName=employeesDomainDataSource}" />
+        <CollectionViewSource x:Key="employeesOrdersCollectionByEmployeeIDOrderDetailsCollectionByOrderIDViewSource" Source="{Binding Path=OrderDetailsCollectionByOrderID, Source={StaticResource employeesOrdersCollectionByEmployeeIDViewSource}}" />
+    </sdk:Page.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="480*" />
+            <RowDefinition Height="0*" />
+        </Grid.RowDefinitions>
+        <riaControls:DomainDataSource AutoLoad="True" d:DesignData="{d:DesignInstance my:Employees, CreateList=true}" Height="0" LoadedData="employeesDomainDataSource_LoadedData" Name="employeesDomainDataSource" QueryName="Employees_Prefetch" Width="0" Margin="0,0,640,275">
+            <riaControls:DomainDataSource.DomainContext>
+                <my1:esDomainContext />
+            </riaControls:DomainDataSource.DomainContext>
+        </riaControls:DomainDataSource>
+        <sdk:DataGrid AutoGenerateColumns="False" Height="133" ItemsSource="{Binding ElementName=employeesDomainDataSource, Path=Data}" Name="employeesDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" VerticalAlignment="Top" Margin="12,42,12,0">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="employeeIDColumn" Binding="{Binding Path=EmployeeID, Mode=OneWay}" Header="Employee ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="firstNameColumn" Binding="{Binding Path=FirstName}" Header="First Name" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="lastNameColumn" Binding="{Binding Path=LastName}" Header="Last Name" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="addressColumn" Binding="{Binding Path=Address}" Header="Address" Width="SizeToHeader" />
+                <sdk:DataGridTemplateColumn x:Name="birthDateColumn" Header="Birth Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=BirthDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=BirthDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTextColumn x:Name="cityColumn" Binding="{Binding Path=City}" Header="City" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="countryColumn" Binding="{Binding Path=Country}" Header="Country" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="extensionColumn" Binding="{Binding Path=Extension}" Header="Extension" Width="SizeToHeader" />
+                <sdk:DataGridTemplateColumn x:Name="hireDateColumn" Header="Hire Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=HireDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=HireDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTextColumn x:Name="homePhoneColumn" Binding="{Binding Path=HomePhone}" Header="Home Phone" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="notesColumn" Binding="{Binding Path=Notes}" Header="Notes" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="photoPathColumn" Binding="{Binding Path=PhotoPath}" Header="Photo Path" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="postalCodeColumn" Binding="{Binding Path=PostalCode}" Header="Postal Code" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="regionColumn" Binding="{Binding Path=Region}" Header="Region" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="reportsToColumn" Binding="{Binding Path=ReportsTo}" Header="Reports To" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="titleColumn" Binding="{Binding Path=Title}" Header="Title" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="titleOfCourtesyColumn" Binding="{Binding Path=TitleOfCourtesy}" Header="Title Of Courtesy" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="rowStateColumn" Binding="{Binding Path=RowState}" Header="Row State" Width="SizeToHeader" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <sdk:DataGrid AutoGenerateColumns="False" Height="166" ItemsSource="{Binding Source={StaticResource employeesOrdersCollectionByEmployeeIDViewSource}}" Margin="12,181,12,0" Name="ordersCollectionByEmployeeIDDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" VerticalAlignment="Top">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="orderIDColumn" Binding="{Binding Path=OrderID, Mode=OneWay}" Header="Order ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="employeeIDColumn1" Binding="{Binding Path=EmployeeID}" Header="Employee ID" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="customerIDColumn" Binding="{Binding Path=CustomerID}" Header="Customer ID" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="freightColumn" Binding="{Binding Path=Freight}" Header="Freight" Width="SizeToHeader" />
+                <sdk:DataGridTemplateColumn x:Name="orderDateColumn" Header="Order Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=OrderDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=OrderDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTemplateColumn x:Name="requiredDateColumn" Header="Required Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=RequiredDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=RequiredDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTextColumn x:Name="shipAddressColumn" Binding="{Binding Path=ShipAddress}" Header="Ship Address" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="shipCityColumn" Binding="{Binding Path=ShipCity}" Header="Ship City" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="shipCountryColumn" Binding="{Binding Path=ShipCountry}" Header="Ship Country" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="shipNameColumn" Binding="{Binding Path=ShipName}" Header="Ship Name" Width="SizeToHeader" />
+                <sdk:DataGridTemplateColumn x:Name="shippedDateColumn" Header="Shipped Date" Width="SizeToHeader">
+                    <sdk:DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <sdk:DatePicker SelectedDate="{Binding Path=ShippedDate, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true, TargetNullValue=''}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellEditingTemplate>
+                    <sdk:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=ShippedDate, StringFormat=\{0:d\}}" />
+                        </DataTemplate>
+                    </sdk:DataGridTemplateColumn.CellTemplate>
+                </sdk:DataGridTemplateColumn>
+                <sdk:DataGridTextColumn x:Name="shipPostalCodeColumn" Binding="{Binding Path=ShipPostalCode}" Header="Ship Postal Code" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="shipRegionColumn" Binding="{Binding Path=ShipRegion}" Header="Ship Region" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="shipViaColumn" Binding="{Binding Path=ShipVia}" Header="Ship Via" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="rowStateColumn1" Binding="{Binding Path=RowState}" Header="Row State" Width="SizeToHeader" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <sdk:DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Source={StaticResource employeesOrdersCollectionByEmployeeIDOrderDetailsCollectionByOrderIDViewSource}}" Margin="12,353,12,12" Name="orderDetailsCollectionByOrderIDDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="orderIDColumn1" Binding="{Binding Path=OrderID, Mode=OneWay}" Header="Order ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="productIDColumn" Binding="{Binding Path=ProductID, Mode=OneWay}" Header="Product ID" IsReadOnly="True" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="discountColumn" Binding="{Binding Path=Discount}" Header="Discount" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="quantityColumn" Binding="{Binding Path=Quantity}" Header="Quantity" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="unitPriceColumn" Binding="{Binding Path=UnitPrice}" Header="Unit Price" Width="SizeToHeader" />
+                <sdk:DataGridTextColumn x:Name="rowStateColumn2" Binding="{Binding Path=RowState}" Header="Row State" Width="SizeToHeader" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <sdk:Label Height="24" Margin="12,12,12,0" Name="label1" VerticalAlignment="Top" Content="Demonstrates how to use the Hierarchical Model with Prefetch, this calls Employees_LoadWithPrefetch()" />
+    </Grid>
+</navigation:Page>

@@ -1,0 +1,251 @@
+/* EntitySpaces ASPX Style Sheet */
+
+/* Global HTML Overrides */
+html 
+{
+	height: 100%;
+}
+
+body 
+{
+	border-right-width: 10px;
+	border-right-style: solid;
+	border-right-color: #6B3F36;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-left-color: #6B3F36;
+	height: 100%;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color:White;
+}
+
+a 
+{
+	color:#B62A2B;
+}
+
+a:hover 
+{
+	text-decoration: none;
+}
+
+form 
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.checkbox 
+{
+	border: none;
+}
+
+input, select, textarea
+{
+	border: 1px solid #003366;
+	font-size: 11px;
+	padding: 1px 0 1px 2px;
+	color:#143757;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The main Div of the form */
+.es_page 
+{
+    /* We give 20px on each side of the form, rather than 100% width */
+	padding: 0 20px 0 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/* Records X of Y */
+.es_pager_count 
+{
+	font-weight: bold;
+	margin-left: 3px;
+}
+
+/* Content Styles */
+.es_title 
+{
+	font-size: 16px;
+	font-weight: bold;
+	color:#6B3F36;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	vertical-align:middle;
+}
+
+.es_float_right 
+{
+	float: right;
+}
+
+.es_clear 
+{
+	clear: both;
+	padding-bottom: 15px;
+}
+
+.es_button 
+{
+	background-color: #6B3F36; 
+	border: 1px solid #000000;
+	margin-right: 3px;
+	margin-top: 10px;
+	color:White; 
+}
+
+.es_requiredfield
+{
+	background-image:url(bg_required.gif);
+	background-repeat:repeat-x;
+	background-position: 0 2px;
+}
+
+/* Error Styles */
+.es_error_label 
+{
+	font-weight: bold;
+	color:#df6400;
+	margin-left: 5px;
+}
+
+.es_error_box 
+{
+	padding: 5px 20px 5px 5px;
+	border: 1px solid #df6400;
+	font-weight: bold;
+	color:#df6400;
+	margin-bottom: 5px;
+}
+
+.es_error_box ul 
+{
+	margin: 0 5px 2px 20px;
+	list-style-position: outside;
+}
+
+/* Grid Styles - List */
+.es_grid
+{
+	margin: 2px 0 0 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #f2ebba;
+	width: 100%;
+	background-color:#6B3F36;	
+}
+
+.es_grid td, .es_grid th 
+{
+	padding: 1px 0 0 3px;
+	text-align: left;
+	border-left: solid 0 #FFFFFF;
+	height: 22px;
+}
+
+.es_grid th 
+{
+	background-color: #6B3F36;
+}
+
+.es_grid a 
+{
+	color:#B62A2B;
+}
+
+/* The Next/Prev Area for scrolling through pages */
+.es_grid_pager
+{
+	background-color: #DE5521;
+	height: 1%;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+}
+
+/* The links on the Pager */
+.es_grid_pager a 
+{
+	color:White;
+}
+
+.es_grid_odd 
+{
+	background-color: #E8D49F;
+}
+
+.es_grid_even 
+{
+	background-color: #EFE8CC;
+}
+
+.es_grid_header
+{
+	background-color:#6B3F36;	
+	color :White;
+	font-style:normal;	
+}
+
+.es_grid_header a
+{
+	background-color:#6B3F36;	
+	color :White;
+}
+
+.es_grid_select_col 
+{
+	width: 50px;
+}
+
+.es_grid_select_btn a 
+{
+	font-size: 9px;
+	background-color: #EBF3FA;
+	border: 1px solid #C4DDF4;
+	text-decoration: none;
+	padding: 1px 2px 0px 2px;
+	text-transform:uppercase;
+	color:#005494;
+	display:block;
+	text-align: center;
+	margin: 0 4px 0 2px;
+}
+
+.es_grid_select_btn a:hover 
+{
+	color:#005494;
+	border: 1px solid #005494;
+}
+
+/* Grid Styles - Detail */
+.es_grid_detail 
+{
+	margin: 2px 0 0 0;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C4DDF4;
+}
+
+.es_grid_detail td, .es_grid_detail th 
+{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #bad6f2;
+	padding: 2px 3px 0 3px;
+	text-align: left;
+	height: 22px;
+}
+
+.es_grid_detail th 
+{
+	padding-right: 10px;
+}

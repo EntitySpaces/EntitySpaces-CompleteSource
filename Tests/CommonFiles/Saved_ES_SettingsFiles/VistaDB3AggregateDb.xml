@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<esSettings Version="2011.1.0627.0">
+  <Driver>VistaDB</Driver>
+  <ConnectionString>Data Source=C:\SVNData\EntitySpacesNew\Databases\VistaDB\3.3\AggregateDb.vdb3;Cypher= None;Password=;Exclusive=False;Readonly=False;</ConnectionString>
+  <TemplatePath>C:\SVNData\EntitySpacesNew\Code\ES2011\CodeGeneration\Templates</TemplatePath>
+  <OutputPath>C:\SVNData\EntitySpacesNew\Code\ES2011\Samples\WindowsForms\</OutputPath>
+  <UIAssemblyPath>C:\SVNData\EntitySpacesNew\Code\ES2011\CodeGeneration\StandAlone\bin\Debug</UIAssemblyPath>
+  <CompilerAssemblyPath>C:\SVNData\EntitySpacesNew\Code\ES2011\CodeGeneration\StandAlone\bin\Debug</CompilerAssemblyPath>
+  <LanguageMappingFile>C:\SVNData\EntitySpacesNew\Code\ES2011\CodeGeneration\esLanguages.xml</LanguageMappingFile>
+  <UserMetadataFile>C:\svn\architecture\ES2009Q2\Tests\CommonFiles\esUserData.xml</UserMetadataFile>
+  <AbstractPrefix>es</AbstractPrefix>
+  <EntitySuffix />
+  <CollectionSuffix>Collection</CollectionSuffix>
+  <QuerySuffix>Query</QuerySuffix>
+  <MetadataSuffix>Metadata</MetadataSuffix>
+  <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+  <PrefixWithSchema>false</PrefixWithSchema>
+  <ProcPrefix>proc_</ProcPrefix>
+  <ProcInsert>Insert</ProcInsert>
+  <ProcUpdate>Update</ProcUpdate>
+  <ProcDelete>Delete</ProcDelete>
+  <ProcLoadAll>LoadAll</ProcLoadAll>
+  <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+  <ProcSuffix />
+  <ProcVerbFirst>false</ProcVerbFirst>
+  <OnePrefix />
+  <OneSeparator>By</OneSeparator>
+  <OneSuffix />
+  <ManyPrefix />
+  <ManySeparator>By</ManySeparator>
+  <ManySuffix>Collection</ManySuffix>
+  <SelfOnly>false</SelfOnly>
+  <SwapNames>false</SwapNames>
+  <UseAssociativeName>false</UseAssociativeName>
+  <UseUpToPrefix>true</UseUpToPrefix>
+  <PreserveUnderscores>false</PreserveUnderscores>
+  <UseRawNames>false</UseRawNames>
+  <UseNullableTypesAlways>true</UseNullableTypesAlways>
+  <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+  <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+  <LicenseProxyEnable>false</LicenseProxyEnable>
+  <LicenseProxyUrl />
+  <LicenseProxyUserName />
+  <LicenseProxyPassword />
+  <LicenseProxyDomainName />
+  <DriverInfoCollection>
+    <esSettingsDriverInfo>
+      <Driver>VistaDB</Driver>
+      <ConnectionString>Data Source=C:\SVNData\EntitySpacesNew\Databases\VistaDB\3.3\AggregateDb.vdb3;Cypher= None;Password=;Exclusive=False;Readonly=False;</ConnectionString>
+      <DateAdded>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName />
+        <Type>ClientSide</Type>
+        <ClientType>UtcNow</ClientType>
+        <ServerSideText />
+      </DateAdded>
+      <DateModified>
+        <IsEnabled>false</IsEnabled>
+        <ColumnName />
+        <Type>ClientSide</Type>
+        <ClientType>UtcNow</ClientType>
+        <ServerSideText />
+      </DateModified>
+      <AddedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+        <ColumnName />
+        <ServerSideText />
+      </AddedBy>
+      <ModifiedBy>
+        <IsEnabled>false</IsEnabled>
+        <UseEventHandler>false</UseEventHandler>
+        <ColumnName />
+        <ServerSideText />
+      </ModifiedBy>
+      <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+      <ConcurrencyColumn />
+    </esSettingsDriverInfo>
+  </DriverInfoCollection>
+</esSettings>

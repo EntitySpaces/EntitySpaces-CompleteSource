@@ -1,0 +1,339 @@
+<esUserData Version="2009.2.0831.0">
+  <Drivers>
+    <Driver Name="SQL">
+      <Databases>
+        <Database Name="AggregateDb">
+          <Tables>
+            <Table Name="Naming.Test">
+              <Columns>
+                <Column Name="GuidKey" Alias="GuidKeyAlias" />
+                <Column Name="Test AliasSpace" Alias="TestAliasSpace" />
+                <Column Name="Test_AliasUnderscore" Alias="Test_Alias_Underscore" />
+                <Column Name="TestAliasPascal" Alias="TestAlias" />
+              </Columns>
+            </Table>
+            <Table Name="ComputedTest">
+              <Columns>
+                <Column Name="ComputedTest" Alias="ComputedField" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="VB_AliasTest">
+              <Columns>
+                <Column Name="Table" Alias="TableName" />
+                <Column Name="Date" Alias="[Date]" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="custom_client_aliased">
+              <Columns>
+                <Column Name="date_added" Alias="DateAddedAlias" />
+                <Column Name="modified_by" Alias="ModifiedByAlias" />
+              </Columns>
+            </Table>
+            <Table Name="CUSTOM_SERVER_ALIASED">
+              <Columns>
+                <Column Name="DATE_MODIFIED" Alias="DateModifiedAlias" />
+                <Column Name="ADDED_BY" Alias="AddedByAlias" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+        <Database Name="AdventureWorks2008R2">
+          <Tables>
+            <Table Name="EmailAddress" Alias="EmailAddressTable" />
+            <Table Name="Document" Alias="DocumentTable" />
+          </Tables>
+        </Database>
+        <Database Name="ForeignKeyTest">
+          <Tables>
+            <Table Name="Class" Alias="Course" />
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="ORACLE">
+      <Databases>
+        <Database Name="ENTITYSPACES">
+          <Tables>
+            <Table Name="AggregateTest">
+              <Columns>
+                <Column Name="ID" IsAutoKey="True" AutoKeyText="SEQ_ID" />
+              </Columns>
+            </Table>
+            <Table Name="OracleTest">
+              <Columns>
+                <Column Name="Id" IsAutoKey="True" AutoKeyText="seq_OracleId" />
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="OracleTest2">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="TB_LINKMAN">
+              <Columns>
+                <Column Name="ID" AutoKeyText="seq_LinkManId" IsAutoKey="True" />
+                <Column Name="TIME_STAMP" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="Id" IsAutoKey="True" AutoKeyText="CHILD_SEQ" />
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="DefaultTest">
+              <Columns>
+                <Column Name="TestId" IsAutoKey="True" AutoKeyText="DEFAULTTEST_SEQ" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+        <Database Name="HIERARCHICAL">
+          <Tables>
+            <Table Name="Employee">
+              <Columns>
+                <Column Name="EmployeeID" AutoKeyText="seq_Employee" IsAutoKey="True" />
+              </Columns>
+            </Table>
+            <Table Name="Territory">
+              <Columns>
+                <Column Name="TerritoryID" AutoKeyText="seq_Territory" IsAutoKey="True" />
+              </Columns>
+            </Table>
+            <Table Name="Product">
+              <Columns>
+                <Column Name="ProductID" AutoKeyText="seq_Product" IsAutoKey="True" />
+              </Columns>
+            </Table>
+            <Table Name="Order">
+              <Columns>
+                <Column Name="OrderID" AutoKeyText="seq_Order" IsAutoKey="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="MYSQL">
+      <Databases>
+        <Database Name="aggregatedb">
+          <Tables>
+            <Table Name="aggregatetest" Alias="AggregateTest" />
+            <Table Name="computedtest" Alias="ComputedTest" />
+            <Table Name="realtablename" Alias="AliasedTableName" />
+            <Table Name="mysqlunicodetest" Alias="MySqlUnicodeTest" />
+            <Table Name="concurrencytest" Alias="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="concurrencytestchild" Alias="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="defaulttest" Alias="DefaultTest" />
+          </Tables>
+          <Views>
+            <View Name="fullnameview" Alias="FullNameView" />
+          </Views>
+        </Database>
+        <Database Name="foreignkeytest">
+          <Tables>
+            <Table Name="customergroup" Alias="CustomerGroup" />
+            <Table Name="employeeterritory" Alias="EmployeeTerritory" />
+            <Table Name="orderitem" Alias="OrderItem" />
+            <Table Name="referredemployee" Alias="ReferredEmployee" />
+            <Table Name="territoryex" Alias="TerritoryEx" />
+            <Table Name="reversecompositechild" Alias="ReverseCompositeChild" />
+            <Table Name="reversecompositeparent" Alias="ReverseCompositeParent" />
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="SYBASE">
+      <Databases>
+        <Database Name="AggregateDb">
+          <Tables>
+            <Table Name="ComputedTest">
+              <Columns>
+                <Column Name="ComputedTest" Alias="ComputedField" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="ACCESS">
+      <Databases>
+        <Database Name="AggregateDb.mdb">
+          <Tables>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="VB_AliasTest">
+              <Columns>
+                <Column Name="Table" Alias="TableName" />
+                <Column Name="Date" Alias="[Date]" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="POSTGRESQL">
+      <Databases>
+        <Database Name="AggregateDb">
+          <Tables>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="SQLCE">
+      <Databases>
+        <Database Name="AggregateDb.sdf">
+          <Tables>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="VISTADB">
+      <Databases>
+        <Database Name="AggregateDb.vdb3">
+          <Tables>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="VISTADB4">
+      <Databases>
+        <Database Name="AggregateDb.vdb4">
+          <Tables>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="SQLITE">
+      <Databases>
+        <Database Name="main">
+          <Tables>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+    <Driver Name="SQLAZURE">
+      <Databases>
+        <Database Name="AggregateDB">
+          <Tables>
+            <Table Name="Naming.Test">
+              <Columns>
+                <Column Name="GuidKey" Alias="GuidKeyAlias" />
+                <Column Name="Test AliasSpace" Alias="TestAliasSpace" />
+                <Column Name="Test_AliasUnderscore" Alias="Test_Alias_Underscore" />
+                <Column Name="TestAliasPascal" Alias="TestAlias" />
+              </Columns>
+            </Table>
+            <Table Name="ComputedTest">
+              <Columns>
+                <Column Name="ComputedTest" Alias="ComputedField" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTest">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+            <Table Name="ConcurrencyTestChild">
+              <Columns>
+                <Column Name="ConcurrencyCheck" IsEntitySpacesConcurrency="True" />
+              </Columns>
+            </Table>
+          </Tables>
+        </Database>
+      </Databases>
+    </Driver>
+  </Drivers>
+</esUserData>

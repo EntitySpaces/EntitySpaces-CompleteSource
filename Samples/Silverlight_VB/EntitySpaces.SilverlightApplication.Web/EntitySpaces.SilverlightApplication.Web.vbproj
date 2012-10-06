@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EF906B8-7759-4F6B-9CDC-6941CC14AA58}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EntitySpaces.SilverlightApplication.Web</RootNamespace>
+    <AssemblyName>EntitySpaces.SilverlightApplication.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SilverlightApplicationList>{EC7ABA71-5071-4D4D-978B-A2B85FED1325}|..\EntitySpaces.SilverlightApplication\EntitySpaces.SilverlightApplication.vbproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>EntitySpaces.SilverlightApplication.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>EntitySpaces.SilverlightApplication.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core, Version=2010.0.0.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 3.5\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery, Version=2010.0.0.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 3.5\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces, Version=2010.0.0.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 3.5\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader, Version=2010.0.0.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 3.5\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider, Version=2010.0.0.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Runtimes\.NET 3.5\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\EntitySpaces.SilverlightApplication.xap" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Northwind.svc" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Categories.vb" />
+    <Compile Include="Custom\CategoriesCollection.vb" />
+    <Compile Include="Custom\CategoriesQuery.vb" />
+    <Compile Include="Custom\CustomerCustomerDemo.vb" />
+    <Compile Include="Custom\CustomerCustomerDemoCollection.vb" />
+    <Compile Include="Custom\CustomerCustomerDemoQuery.vb" />
+    <Compile Include="Custom\CustomerDemographics.vb" />
+    <Compile Include="Custom\CustomerDemographicsCollection.vb" />
+    <Compile Include="Custom\CustomerDemographicsQuery.vb" />
+    <Compile Include="Custom\Customers.vb" />
+    <Compile Include="Custom\CustomersCollection.vb" />
+    <Compile Include="Custom\CustomersQuery.vb" />
+    <Compile Include="Custom\Employees.vb" />
+    <Compile Include="Custom\EmployeesCollection.vb" />
+    <Compile Include="Custom\EmployeesQuery.vb" />
+    <Compile Include="Custom\EmployeeTerritories.vb" />
+    <Compile Include="Custom\EmployeeTerritoriesCollection.vb" />
+    <Compile Include="Custom\EmployeeTerritoriesQuery.vb" />
+    <Compile Include="Custom\OrderDetails.vb" />
+    <Compile Include="Custom\OrderDetailsCollection.vb" />
+    <Compile Include="Custom\OrderDetailsQuery.vb" />
+    <Compile Include="Custom\Orders.vb" />
+    <Compile Include="Custom\OrdersCollection.vb" />
+    <Compile Include="Custom\OrdersQuery.vb" />
+    <Compile Include="Custom\Products.vb" />
+    <Compile Include="Custom\ProductsCollection.vb" />
+    <Compile Include="Custom\ProductsQuery.vb" />
+    <Compile Include="Custom\Region.vb" />
+    <Compile Include="Custom\RegionCollection.vb" />
+    <Compile Include="Custom\RegionQuery.vb" />
+    <Compile Include="Custom\Shippers.vb" />
+    <Compile Include="Custom\ShippersCollection.vb" />
+    <Compile Include="Custom\ShippersQuery.vb" />
+    <Compile Include="Custom\Suppliers.vb" />
+    <Compile Include="Custom\SuppliersCollection.vb" />
+    <Compile Include="Custom\SuppliersQuery.vb" />
+    <Compile Include="Custom\Territories.vb" />
+    <Compile Include="Custom\TerritoriesCollection.vb" />
+    <Compile Include="Custom\TerritoriesQuery.vb" />
+    <Compile Include="Generated\Categories.vb" />
+    <Compile Include="Generated\CustomerCustomerDemo.vb" />
+    <Compile Include="Generated\CustomerDemographics.vb" />
+    <Compile Include="Generated\Customers.vb" />
+    <Compile Include="Generated\Employees.vb" />
+    <Compile Include="Generated\EmployeeTerritories.vb" />
+    <Compile Include="Generated\OrderDetails.vb" />
+    <Compile Include="Generated\Orders.vb" />
+    <Compile Include="Generated\Products.vb" />
+    <Compile Include="Generated\Region.vb" />
+    <Compile Include="Generated\Shippers.vb" />
+    <Compile Include="Generated\Suppliers.vb" />
+    <Compile Include="Generated\Territories.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="INorthwind.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Northwind.svc.vb">
+      <DependentUpon>Northwind.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>2936</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

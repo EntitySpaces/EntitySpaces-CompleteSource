@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8FEEF5DF-7679-4326-B353-1626BF71B5CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Silverlight_RiaServices.Web</RootNamespace>
+    <AssemblyName>Silverlight_RiaServices.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{29451476-8F7E-4CE3-A9C0-AC1A945EE23B}|..\Silverlight_RiaServices\Silverlight_RiaServices.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ServiceModel.DomainServices.Server" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Hosting" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\Silverlight_RiaServices.xap" />
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Categories.cs" />
+    <Compile Include="Custom\CategoriesCollection.cs" />
+    <Compile Include="Custom\CategoriesQuery.cs" />
+    <Compile Include="Custom\CustomerCustomerDemo.cs" />
+    <Compile Include="Custom\CustomerCustomerDemoCollection.cs" />
+    <Compile Include="Custom\CustomerCustomerDemoQuery.cs" />
+    <Compile Include="Custom\CustomerDemographics.cs" />
+    <Compile Include="Custom\CustomerDemographicsCollection.cs" />
+    <Compile Include="Custom\CustomerDemographicsQuery.cs" />
+    <Compile Include="Custom\Customers.cs" />
+    <Compile Include="Custom\CustomersCollection.cs" />
+    <Compile Include="Custom\CustomersQuery.cs" />
+    <Compile Include="Custom\Employees.cs" />
+    <Compile Include="Custom\EmployeesCollection.cs" />
+    <Compile Include="Custom\EmployeesQuery.cs" />
+    <Compile Include="Custom\EmployeeTerritories.cs" />
+    <Compile Include="Custom\EmployeeTerritoriesCollection.cs" />
+    <Compile Include="Custom\EmployeeTerritoriesQuery.cs" />
+    <Compile Include="Custom\OrderDetails.cs" />
+    <Compile Include="Custom\OrderDetailsCollection.cs" />
+    <Compile Include="Custom\OrderDetailsQuery.cs" />
+    <Compile Include="Custom\Orders.cs" />
+    <Compile Include="Custom\OrdersCollection.cs" />
+    <Compile Include="Custom\OrdersQuery.cs" />
+    <Compile Include="Custom\Products.cs" />
+    <Compile Include="Custom\ProductsCollection.cs" />
+    <Compile Include="Custom\ProductsQuery.cs" />
+    <Compile Include="Custom\Region.cs" />
+    <Compile Include="Custom\RegionCollection.cs" />
+    <Compile Include="Custom\RegionQuery.cs" />
+    <Compile Include="Custom\Shippers.cs" />
+    <Compile Include="Custom\ShippersCollection.cs" />
+    <Compile Include="Custom\ShippersQuery.cs" />
+    <Compile Include="Custom\Suppliers.cs" />
+    <Compile Include="Custom\SuppliersCollection.cs" />
+    <Compile Include="Custom\SuppliersQuery.cs" />
+    <Compile Include="Custom\Territories.cs" />
+    <Compile Include="Custom\TerritoriesCollection.cs" />
+    <Compile Include="Custom\TerritoriesQuery.cs" />
+    <Compile Include="Generated\Categories.cs" />
+    <Compile Include="Generated\Categories.Shared.cs" />
+    <Compile Include="Generated\CustomerCustomerDemo.cs" />
+    <Compile Include="Generated\CustomerCustomerDemo.Shared.cs" />
+    <Compile Include="Generated\CustomerDemographics.cs" />
+    <Compile Include="Generated\CustomerDemographics.Shared.cs" />
+    <Compile Include="Generated\Customers.cs" />
+    <Compile Include="Generated\Customers.Shared.cs" />
+    <Compile Include="Generated\Employees.cs" />
+    <Compile Include="Generated\Employees.Shared.cs" />
+    <Compile Include="Generated\EmployeeTerritories.cs" />
+    <Compile Include="Generated\EmployeeTerritories.Shared.cs" />
+    <Compile Include="Generated\OrderDetails.cs" />
+    <Compile Include="Generated\OrderDetails.Shared.cs" />
+    <Compile Include="Generated\Orders.cs" />
+    <Compile Include="Generated\Orders.Shared.cs" />
+    <Compile Include="Generated\Products.cs" />
+    <Compile Include="Generated\Products.Shared.cs" />
+    <Compile Include="Generated\Region.cs" />
+    <Compile Include="Generated\Region.Shared.cs" />
+    <Compile Include="Generated\Shippers.cs" />
+    <Compile Include="Generated\Shippers.Shared.cs" />
+    <Compile Include="Generated\Suppliers.cs" />
+    <Compile Include="Generated\Suppliers.Shared.cs" />
+    <Compile Include="Generated\Territories.cs" />
+    <Compile Include="Generated\Territories.Shared.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Resources\ValidationErrorResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidationErrorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RegistrationDataResources.Designer.cs">
+      <DependentUpon>RegistrationDataResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\RegistrationData.cs" />
+    <Compile Include="Services\esDomainService.cs" />
+    <Compile Include="Services\esDomainService.Custom.cs" />
+    <Compile Include="Services\UserRegistrationService.cs" />
+    <Compile Include="Models\Shared\User.shared.cs" />
+    <Compile Include="Validators\Categories.Validation.cs" />
+    <Compile Include="Validators\CustomerCustomerDemo.Validation.cs" />
+    <Compile Include="Validators\CustomerDemographics.Validation.cs" />
+    <Compile Include="Validators\Customers.Validation.cs" />
+    <Compile Include="Validators\Employees.Validation.cs" />
+    <Compile Include="Validators\EmployeeTerritories.Validation.cs" />
+    <Compile Include="Validators\OrderDetails.Validation.cs" />
+    <Compile Include="Validators\Orders.Validation.cs" />
+    <Compile Include="Validators\Products.Validation.cs" />
+    <Compile Include="Validators\Region.Validation.cs" />
+    <Compile Include="Validators\Shippers.Validation.cs" />
+    <Compile Include="Validators\Suppliers.Validation.cs" />
+    <Compile Include="Validators\Territories.Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ValidationErrorResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationErrorResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RegistrationDataResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RegistrationDataResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52878</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

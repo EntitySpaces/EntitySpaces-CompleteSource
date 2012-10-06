@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms.csproj", "{1DB424E1-A944-496C-814F-1BBCC47A1B70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		DebugDavidTests|Any CPU = DebugDavidTests|Any CPU
+		DebugDavidTests|x64 = DebugDavidTests|x64
+		DebugMikeTests|Any CPU = DebugMikeTests|Any CPU
+		DebugMikeTests|x64 = DebugMikeTests|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.DebugDavidTests|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.DebugDavidTests|Any CPU.Build.0 = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.DebugDavidTests|x64.ActiveCfg = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.DebugMikeTests|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.DebugMikeTests|Any CPU.Build.0 = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.DebugMikeTests|x64.ActiveCfg = Debug|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB424E1-A944-496C-814F-1BBCC47A1B70}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

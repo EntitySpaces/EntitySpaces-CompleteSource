@@ -1,0 +1,45 @@
+- TestSqlServer35
+    - Overridden Template UI defaults
+        - AggregateDb
+            - Use Custom Base checked
+            - Target Multiple Providers checked
+            - Ignore Schema un-checked
+            - Ignore Catalog un-checked
+            - Generate Hierarchical Model un-checked
+            - LINQ to SQL checked
+            - Serializable Queries checked
+            - Debugger DisplayAttribute un-checked
+            - Generate Proxy/Stub checked
+            - Enable DataContract checked
+            - Client Proxies
+                - INotifyPropertyChanged
+                - BindingList<>
+        - ForeignKeyTest
+            - Target Multiple Providers checked
+            - Ignore Schema un-checked
+            - Ignore Catalog un-checked
+            - Support INotify checked
+            - LINQ to SQL checked
+            - Serializable Queries checked
+            - Debugger DisplayAttribute un-checked
+            - Generate Proxy/Stub checked
+            - Enable DataContract checked
+            - Client Proxies
+                - INotifyPropertyChanged
+                - BindingList<>
+        - Northwind
+            - Use Custom Base checked
+            - Target Multiple Providers checked
+            - Ignore Schema un-checked
+            - Ignore Catalog un-checked
+            - Support INotify checked
+            - LINQ to SQL checked
+            - Serializable Queries checked
+            - DebugVisualizer checked
+            - Generate Proxy/Stub checked
+            - Enable DataContract checked
+            - Compact XML checked
+            - Client Proxies
+                - INotifyPropertyChanged
+                - Compact XML
+                - BindingList<>

@@ -1,0 +1,1302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntitySpacesProject Version="2011.1.0509.0">
+  <Folder Name="TestSqlServer35">
+    <Folder Name="AggregateDb">
+      <RecordedTemplate Name="Tables">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="False" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="False" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="(null)" Key="View" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.AggregateTest,dbo.ComputedTest,dbo.ConcurrencyTest,dbo.ConcurrencyTestChild,dbo.ConstructorTest,dbo.DefaultTest,dbo.KeyNotFirst,dbo.Naming Test2,dbo.Naming.Test,dbo.SqlServerTypeTest" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="True" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\aggregatedb\}" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn />
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="TablesClient">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="False" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="False" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="False" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="(null)" Key="View" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.CustomFieldsClient" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="False" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\aggregatedb\}" />
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>DateAdded</ColumnName>
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>DateModified</ColumnName>
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>true</UseEventHandler>
+                <ColumnName>AddedBy</ColumnName>
+                <ServerSideText />
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>true</UseEventHandler>
+                <ColumnName>ModifiedBy</ColumnName>
+                <ServerSideText />
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>true</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn>esVersion</ConcurrencyColumn>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="TablesClientAliased">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="False" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="False" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="False" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.custom_client_aliased" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="False" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\aggregatedb\}" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>date_added</ColumnName>
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>date_modified</ColumnName>
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>true</UseEventHandler>
+                <ColumnName>added_by</ColumnName>
+                <ServerSideText />
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>true</UseEventHandler>
+                <ColumnName>modified_by</ColumnName>
+                <ServerSideText />
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>true</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn>es_version</ConcurrencyColumn>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="TablesServer">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="False" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="False" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="False" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="(null)" Key="View" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.CustomFieldsServer" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="False" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\aggregatedb\}" />
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>DateAdded</ColumnName>
+                <Type>ServerSide</Type>
+                <ClientType>Now</ClientType>
+                <ServerSideText>getutcdate()</ServerSideText>
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>DateModified</ColumnName>
+                <Type>ServerSide</Type>
+                <ClientType>Now</ClientType>
+                <ServerSideText>getutcdate()</ServerSideText>
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName>AddedBy</ColumnName>
+                <ServerSideText>dbo.GetCustomUser()</ServerSideText>
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName>ModifiedBy</ColumnName>
+                <ServerSideText>dbo.GetCustomUser()</ServerSideText>
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>true</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn>esVersion</ConcurrencyColumn>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="TablesServerAliased">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="False" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="False" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="False" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.CUSTOM_SERVER_ALIASED" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="False" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\aggregatedb\}" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>DATE_ADDED</ColumnName>
+                <Type>ServerSide</Type>
+                <ClientType>Now</ClientType>
+                <ServerSideText>getutcdate()</ServerSideText>
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>true</IsEnabled>
+                <ColumnName>DATE_MODIFIED</ColumnName>
+                <Type>ServerSide</Type>
+                <ClientType>Now</ClientType>
+                <ServerSideText>getutcdate()</ServerSideText>
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName>ADDED_BY</ColumnName>
+                <ServerSideText>dbo.GetCustomUser()</ServerSideText>
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>true</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName>MODIFIED_BY</ColumnName>
+                <ServerSideText>dbo.GetCustomUser()</ServerSideText>
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>true</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn>ES_VERSION</ConcurrencyColumn>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="Views">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="False" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="False" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.FullNameView" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="True" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Views" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\aggregatedb\}" />
+          <Item Type="(null)" Key="Table" />
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn />
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="Client Side Proxy/Stub Tables">
+        <Template Name="Client Side Proxy/Stub" Path="{fixup}\C#\ProxyStub\Client Side Proxy Stub (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="Proxies" />
+          <Item Type="System.Boolean" Key="INotifyPropertyChanged" Value="True" />
+          <Item Type="System.Boolean" Key="BindingList" Value="True" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="EnableDynamicQueryAPI" Value="True" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="TargetSilverlight" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.AggregateTest,dbo.ComputedTest,dbo.ConcurrencyTest,dbo.ConcurrencyTestChild,dbo.ConstructorTest,dbo.DefaultTest,dbo.KeyNotFirst,dbo.Naming Test2,dbo.Naming.Test,dbo.SqlServerTypeTest" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\clientproxies\aggregatedb\}" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="ObservableCollection" Value="False" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn />
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="Client Side Proxy/Stub Views">
+        <Template Name="Client Side Proxy/Stub" Path="{fixup}\C#\ProxyStub\Client Side Proxy Stub (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="Proxies" />
+          <Item Type="System.Boolean" Key="INotifyPropertyChanged" Value="True" />
+          <Item Type="System.Boolean" Key="BindingList" Value="True" />
+          <Item Type="System.String" Key="Database" Value="AggregateDb" />
+          <Item Type="System.Boolean" Key="EnableDynamicQueryAPI" Value="True" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="TargetSilverlight" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Views" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.FullNameView" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\clientproxies\aggregatedb\}" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="ObservableCollection" Value="False" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <ColumnName />
+                <Type>ClientSide</Type>
+                <ClientType>UtcNow</ClientType>
+                <ServerSideText />
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+                <ColumnName />
+                <ServerSideText />
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+              <ConcurrencyColumn />
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+    </Folder>
+    <Folder Name="ForeignKeyTest">
+      <RecordedTemplate Name="Tables">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="True" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="True" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="(null)" Key="View" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateStrProperties" Value="True" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.String" Key="Database" Value="ForeignKeyTest" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.Class,dbo.Customer,dbo.CustomerGroup,dbo.Employee,dbo.EmployeeTerritory,dbo.Group,dbo.Order,dbo.OrderItem,dbo.Product,dbo.ReferredEmployee,dbo.ReverseCompositeChild,dbo.ReverseCompositeParent,dbo.Student,dbo.StudentClass,dbo.Territory,dbo.TerritoryEx" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="True" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalDataContracts" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalRiaServicesSupport" Value="False" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="False" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\foreignkeytest\}" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="False" />
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="Client Side Proxy/Stub Tables">
+        <Template Name="Client Side Proxy/Stub" Path="{fixup}\C#\ProxyStub\Client Side Proxy Stub (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="False" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="Proxies" />
+          <Item Type="System.Boolean" Key="INotifyPropertyChanged" Value="True" />
+          <Item Type="System.Boolean" Key="BindingList" Value="True" />
+          <Item Type="System.String" Key="Database" Value="ForeignKeyTest" />
+          <Item Type="System.Boolean" Key="EnableDynamicQueryAPI" Value="True" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="TargetSilverlight" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.Customer,dbo.CustomerGroup,dbo.Employee,dbo.EmployeeTerritory,dbo.Group,dbo.Order,dbo.OrderItem,dbo.Product,dbo.ReferredEmployee,dbo.ReverseCompositeChild,dbo.ReverseCompositeParent,dbo.Territory,dbo.TerritoryEx" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\clientproxies\foreignkeytest\}" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="ObservableCollection" Value="False" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+    </Folder>
+    <Folder Name="Northwind">
+      <RecordedTemplate Name="Tables">
+        <Template Name="Generated - Classes Master (C#)" Path="{fixup}\C#\Generated - Classes Master (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="True" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreSchema" Value="False" />
+          <Item Type="System.Boolean" Key="LINQtoSQL" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="BusinessObjects" />
+          <Item Type="System.Boolean" Key="DebugVisualizer" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModel" Value="True" />
+          <Item Type="System.Boolean" Key="SupportINotifyChanged" Value="True" />
+          <Item Type="System.Boolean" Key="TargetMultipleDatabases" Value="True" />
+          <Item Type="System.Boolean" Key="TargetTheCompactFramework" Value="False" />
+          <Item Type="(null)" Key="View" />
+          <Item Type="System.Boolean" Key="MetadataClassShouldIgnoreCatalog" Value="False" />
+          <Item Type="System.Boolean" Key="UseDnnObjectQualifier" Value="False" />
+          <Item Type="System.String" Key="ConnectionName" Value="" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="UseCustomBaseClass" Value="True" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.Categories,dbo.CustomerCustomerDemo,dbo.CustomerDemographics,dbo.Customers,dbo.Employees,dbo.EmployeeTerritories,dbo.Order Details,dbo.Orders,dbo.Products,dbo.Region,dbo.Shippers,dbo.Suppliers,dbo.Territories" />
+          <Item Type="System.Boolean" Key="GenerateProxyStub" Value="True" />
+          <Item Type="System.Boolean" Key="SerializableQueries" Value="True" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\generated\northwind\}" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="DebuggerDisplay" Value="True" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+          <Item Type="System.Boolean" Key="GenerateSingleFile" Value="True" />
+          <Item Type="System.String" Key="Database" Value="Northwind" />
+          <Item Type="System.Boolean" Key="GenerateHierarchicalModelSelectedTablesOnly" Value="False" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+      <RecordedTemplate Name="Client Side Proxy/Stub Tables">
+        <Template Name="Client Side Proxy/Stub" Path="{fixup}\C#\ProxyStub\Client Side Proxy Stub (C#).est" Version="2011.0.0.0" />
+        <Input>
+          <Item Type="System.Boolean" Key="WcfIsRequired" Value="False" />
+          <Item Type="System.Boolean" Key="WcfSupport" Value="True" />
+          <Item Type="System.Boolean" Key="CompactXML" Value="True" />
+          <Item Type="System.Boolean" Key="WcfEmitDefaultValue" Value="True" />
+          <Item Type="System.String" Key="Namespace" Value="Proxies" />
+          <Item Type="System.Boolean" Key="INotifyPropertyChanged" Value="True" />
+          <Item Type="System.Boolean" Key="BindingList" Value="True" />
+          <Item Type="System.String" Key="Database" Value="Northwind" />
+          <Item Type="System.Boolean" Key="EnableDynamicQueryAPI" Value="True" />
+          <Item Type="System.Boolean" Key="IncludeRowStateInXml" Value="True" />
+          <Item Type="System.Boolean" Key="TargetSilverlight" Value="False" />
+          <Item Type="System.String" Key="EntityType" Value="Tables" />
+          <Item Type="System.Collections.ArrayList" Key="Entities" Value="dbo.Categories,dbo.CustomerCustomerDemo,dbo.CustomerDemographics,dbo.Customers,dbo.Employees,dbo.EmployeeTerritories,dbo.Order Details,dbo.Orders,dbo.Products,dbo.Region,dbo.Shippers,dbo.Suppliers,dbo.Territories" />
+          <Item Type="System.String" Key="OutputPath" Value="{fixup\businessobjects\clientproxies\northwind\}" />
+          <Item Type="System.String" Key="WcfDataContract" Value="http://tempuri.org/" />
+          <Item Type="System.Boolean" Key="ObservableCollection" Value="False" />
+          <Item Type="System.Boolean" Key="WcfOrder" Value="True" />
+        </Input>
+        <esSettings>
+          <Driver>SQL</Driver>
+          <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+          <TemplatePath>{fixup}</TemplatePath>
+          <OutputPath>{fixup}</OutputPath>
+          <UIAssemblyPath>{fixup}</UIAssemblyPath>
+          <CompilerAssemblyPath>{fixup}</CompilerAssemblyPath>
+          <LanguageMappingFile>{fixup}</LanguageMappingFile>
+          <UserMetadataFile>{fixup}</UserMetadataFile>
+          <AbstractPrefix>es</AbstractPrefix>
+          <EntitySuffix />
+          <CollectionSuffix>Collection</CollectionSuffix>
+          <QuerySuffix>Query</QuerySuffix>
+          <MetadataSuffix>Metadata</MetadataSuffix>
+          <ProxyStubSuffix>ProxyStub</ProxyStubSuffix>
+          <PrefixWithSchema>false</PrefixWithSchema>
+          <ProcPrefix>proc_</ProcPrefix>
+          <ProcInsert>Insert</ProcInsert>
+          <ProcUpdate>Update</ProcUpdate>
+          <ProcDelete>Delete</ProcDelete>
+          <ProcLoadAll>LoadAll</ProcLoadAll>
+          <ProcLoadByPK>LoadByPrimaryKey</ProcLoadByPK>
+          <ProcSuffix />
+          <ProcVerbFirst>false</ProcVerbFirst>
+          <OnePrefix />
+          <OneSeparator>By</OneSeparator>
+          <OneSuffix />
+          <ManyPrefix />
+          <ManySeparator>By</ManySeparator>
+          <ManySuffix>Collection</ManySuffix>
+          <SelfOnly>false</SelfOnly>
+          <SwapNames>false</SwapNames>
+          <UseAssociativeName>false</UseAssociativeName>
+          <UseUpToPrefix>true</UseUpToPrefix>
+          <PreserveUnderscores>false</PreserveUnderscores>
+          <UseRawNames>false</UseRawNames>
+          <UseNullableTypesAlways>true</UseNullableTypesAlways>
+          <TurnOffDateTimeInClassHeaders>false</TurnOffDateTimeInClassHeaders>
+          <DefaultTemplateDoubleClickAction>Execute</DefaultTemplateDoubleClickAction>
+          <LicenseProxyEnable>false</LicenseProxyEnable>
+          <LicenseProxyUrl />
+          <LicenseProxyUserName />
+          <LicenseProxyPassword />
+          <LicenseProxyDomainName />
+          <DriverInfoCollection>
+            <esSettingsDriverInfo>
+              <Driver>SQL</Driver>
+              <ConnectionString>Provider=SQLOLEDB.1;Integrated Security=sspi;Initial Catalog=Northwind;Data Source=localhost</ConnectionString>
+              <DateAdded>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateAdded>
+              <DateModified>
+                <IsEnabled>false</IsEnabled>
+                <Type>Unassigned</Type>
+                <ClientType>Unassigned</ClientType>
+              </DateModified>
+              <AddedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </AddedBy>
+              <ModifiedBy>
+                <IsEnabled>false</IsEnabled>
+                <UseEventHandler>false</UseEventHandler>
+              </ModifiedBy>
+              <ConcurrencyColumnEnabled>false</ConcurrencyColumnEnabled>
+            </esSettingsDriverInfo>
+          </DriverInfoCollection>
+        </esSettings>
+      </RecordedTemplate>
+    </Folder>
+  </Folder>
+</EntitySpacesProject>

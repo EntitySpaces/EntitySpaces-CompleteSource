@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitySpacesJS", "EntitySpacesJS.csproj", "{C46C64EC-FD97-4918-84B0-EA5E3625F128}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		DebugDavidTests|Any CPU = DebugDavidTests|Any CPU
+		DebugDavidTests|x64 = DebugDavidTests|x64
+		DebugDavidTests|x86 = DebugDavidTests|x86
+		DebugMikeTests|Any CPU = DebugMikeTests|Any CPU
+		DebugMikeTests|x64 = DebugMikeTests|x64
+		DebugMikeTests|x86 = DebugMikeTests|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugDavidTests|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugDavidTests|Any CPU.Build.0 = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugDavidTests|x64.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugDavidTests|x86.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugMikeTests|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugMikeTests|Any CPU.Build.0 = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugMikeTests|x64.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.DebugMikeTests|x86.ActiveCfg = Debug|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Release|x64.ActiveCfg = Release|Any CPU
+		{C46C64EC-FD97-4918-84B0-EA5E3625F128}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

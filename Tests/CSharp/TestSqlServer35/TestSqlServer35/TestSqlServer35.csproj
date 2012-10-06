@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5252DE39-1745-4878-91DF-C19C5E582A2C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestSqlServer35</RootNamespace>
+    <AssemblyName>TestSqlServer35</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\CollectionFixture.cs">
+      <Link>TestFixtures\CollectionFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\CollectionViewFixture.cs">
+      <Link>TestFixtures\CollectionViewFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\ConcurrencyFixture.cs">
+      <Link>TestFixtures\ConcurrencyFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\CustomFieldsFixture.cs">
+      <Link>TestFixtures\CustomFieldsFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DataContractSerializationFixture.cs">
+      <Link>TestFixtures\DataContractSerializationFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DataTypeFixture.cs">
+      <Link>TestFixtures\DataTypeFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\AggregateFixture.cs">
+      <Link>TestFixtures\DynamicQuery\AggregateFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\CaseWhenThen.cs">
+      <Link>TestFixtures\DynamicQuery\CaseWhenThen.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\CastingFixture.cs">
+      <Link>TestFixtures\DynamicQuery\CastingFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\ExpressionsFixture.cs">
+      <Link>TestFixtures\DynamicQuery\ExpressionsFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\GroupByFixture.cs">
+      <Link>TestFixtures\DynamicQuery\GroupByFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\JoinDaisyChainingFixture.cs">
+      <Link>TestFixtures\DynamicQuery\JoinDaisyChainingFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\JoinFixture.cs">
+      <Link>TestFixtures\DynamicQuery\JoinFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\NaturalQuerySyntax.cs">
+      <Link>TestFixtures\DynamicQuery\NaturalQuerySyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\SetOperatorFixture.cs">
+      <Link>TestFixtures\DynamicQuery\SetOperatorFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\SubOperatorFixture.cs">
+      <Link>TestFixtures\DynamicQuery\SubOperatorFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\SubQueryDaisyChainingFixture.cs">
+      <Link>TestFixtures\DynamicQuery\SubQueryDaisyChainingFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\SubQueryFixture.cs">
+      <Link>TestFixtures\DynamicQuery\SubQueryFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\ViewAggregateFixture.cs">
+      <Link>TestFixtures\DynamicQuery\ViewAggregateFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\ViewGroupByFixture.cs">
+      <Link>TestFixtures\DynamicQuery\ViewGroupByFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\WhereDaisyChainingFixture.cs">
+      <Link>TestFixtures\DynamicQuery\WhereDaisyChainingFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\DynamicQuery\WhereFixture.cs">
+      <Link>TestFixtures\DynamicQuery\WhereFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Hierarchical\ManyToManyFixture.cs">
+      <Link>TestFixtures\Hierarchichal\ManyToManyFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Hierarchical\ManyToOneFixture.cs">
+      <Link>TestFixtures\Hierarchichal\ManyToOneFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Hierarchical\OneToOneFixture.cs">
+      <Link>TestFixtures\Hierarchichal\OneToOneFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Hierarchical\PrefetchFixture.cs">
+      <Link>TestFixtures\Hierarchichal\PrefetchFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Hierarchical\ZeroToManyFixture.cs">
+      <Link>TestFixtures\Hierarchichal\ZeroToManyFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\LinqFixture.cs">
+      <Link>TestFixtures\LinqFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\LoadFixture.cs">
+      <Link>TestFixtures\LoadFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\MetadataFixture.cs">
+      <Link>TestFixtures\MetadataFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\MiscellaneousFixture.cs">
+      <Link>TestFixtures\MiscellaneousFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\NamingFixture.cs">
+      <Link>TestFixtures\NamingFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Provider\SqlServerFixture.cs">
+      <Link>TestFixtures\Provider\SqlServerFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\RowStateIsDirty.cs">
+      <Link>TestFixtures\RowStateIsDirty.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\SaveFixture.cs">
+      <Link>TestFixtures\SaveFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\SerializeFixture.cs">
+      <Link>TestFixtures\SerializeFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Setup\Base.cs">
+      <Link>TestFixtures\Setup\Base.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\Setup\SetupTests.cs">
+      <Link>TestFixtures\Setup\SetupTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\SpecialTextFunctionsFixture.cs">
+      <Link>TestFixtures\SpecialTextFunctionsFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\StoredProcFixture.cs">
+      <Link>TestFixtures\StoredProcFixture.cs</Link>
+    </Compile>
+    <Compile Include="..\..\TestAllDatabases\TestAllDatabases\TestFixtures\TransactionFixture.cs">
+      <Link>TestFixtures\TransactionFixture.cs</Link>
+    </Compile>
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\AggregateTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\ComputedTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\ConcurrencyTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\ConcurrencyTestChild.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\ConstructorTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\DefaultTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\FullNameView.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\KeyNotFirst.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\NamingTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\NamingTest2.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\AggregateDb\SqlServerTypeTest.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\Customer.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\CustomerGroup.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\Employee.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\EmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\Group.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\Order.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\OrderItem.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\Product.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\ReferredEmployee.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\Territory.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\ForeignKeyTest\TerritoryEx.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Categories.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\CustomerDemographics.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Customers.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Employees.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\EmployeeTerritories.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Orders.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Products.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Region.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Shippers.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Suppliers.cs" />
+    <Compile Include="BusinessObjects\ClientProxies\Northwind\Territories.cs" />
+    <Compile Include="BusinessObjects\CustomBase\CollectionBase.cs" />
+    <Compile Include="BusinessObjects\CustomBase\EntityBase.cs" />
+    <Compile Include="BusinessObjects\CustomBase\QueryBase.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\AggregateTestCollectionCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\AggregateTestCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\ComputedTestCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\AggregateDb\FullNameViewCollectionCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\ForeignKeyTest\ProductCollectionCustom.cs" />
+    <Compile Include="BusinessObjects\CustomObjects\Utility.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AggregateTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\Annotation.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlot.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotAxis.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotAxisCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotAxisData.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotAxisDataCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotAxisDataQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotAxisQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotSeries.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotSeriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationPlotSeriesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnotationQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\Announcement.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnouncementCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\AnnouncementQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ComputedTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChild.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChildCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestChildQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConcurrencyTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\ConstructorTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomClientAliased.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomClientAliasedCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomClientAliasedQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsClient.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsClientCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsClientQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsServer.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsServerCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomFieldsServerQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomServerAliased.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomServerAliasedCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\CustomServerAliasedQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\DefaultTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameView.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameViewCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\FullNameViewQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirst.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirstCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\KeyNotFirstQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2Collection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTest2Query.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\NamingTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTest.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTestCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\SqlServerTypeTestQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\User.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\UserCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\AggregateDb\UserQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Course.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CourseCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CourseQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Customer.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroup.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroupCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerGroupQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\CustomerQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Employee.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritoryCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\EmployeeTerritoryQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Group.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\GroupCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\GroupQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\NewTable.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\NewTableCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\NewTableQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Order.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItem.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItemCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderItemQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\OrderQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Product.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ProductCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ProductQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployee.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployeeCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReferredEmployeeQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChild.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChildCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeChildQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParent.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParentCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\ReverseCompositeParentQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Student.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClass.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClassCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentClassQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\StudentQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\Territory.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryEx.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryExCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryExQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\ForeignKeyTest\TerritoryQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Categories.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CategoriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CategoriesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemoCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerCustomerDemoQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographics.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographicsCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomerDemographicsQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Customers.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\CustomersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Employees.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritories.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritoriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\EmployeeTerritoriesQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetailsCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrderDetailsQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Orders.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrdersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\OrdersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Products.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ProductsCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ProductsQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Region.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\RegionCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\RegionQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Shippers.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ShippersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\ShippersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Suppliers.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\SuppliersCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\SuppliersQuery.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\Territories.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\TerritoriesCollection.cs" />
+    <Compile Include="BusinessObjects\Custom\Northwind\TerritoriesQuery.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AggregateTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\Annotation.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AnnotationPlot.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AnnotationPlotAxis.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AnnotationPlotAxisData.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\AnnotationPlotSeries.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\Announcement.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ComputedTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConcurrencyTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConcurrencyTestChild.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\ConstructorTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomClientAliased.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomFieldsClient.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomFieldsServer.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\CustomServerAliased.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\DefaultTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\FullNameView.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\KeyNotFirst.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\NamingTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\NamingTest2.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\SqlServerTypeTest.cs" />
+    <Compile Include="BusinessObjects\Generated\AggregateDb\User.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Course.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Customer.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\CustomerGroup.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Employee.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\EmployeeTerritory.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Group.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\NewTable.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Order.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\OrderItem.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Product.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReferredEmployee.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReverseCompositeChild.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\ReverseCompositeParent.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Student.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\StudentClass.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\Territory.cs" />
+    <Compile Include="BusinessObjects\Generated\ForeignKeyTest\TerritoryEx.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Categories.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\Generated\Northwind\CustomerCustomerDemo.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\CustomerDemographics.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Customers.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Employees.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\EmployeeTerritories.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\OrderDetails.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Orders.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Products.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Region.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Shippers.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Suppliers.cs" />
+    <Compile Include="BusinessObjects\Generated\Northwind\Territories.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Connections.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\DataSources\BusinessObjects.EmployeesCollection.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Core\EntitySpaces.Core35.csproj">
+      <Project>{81B80C15-74F7-480A-B3C1-D8792785B357}</Project>
+      <Name>EntitySpaces.Core35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.DebuggerVisualizer\EntitySpaces.DebuggerVisualizer35.csproj">
+      <Project>{A82A0BF9-2C70-4396-BD4B-9F287B0B347D}</Project>
+      <Name>EntitySpaces.DebuggerVisualizer35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.DynamicQuery\EntitySpaces.DynamicQuery35.csproj">
+      <Project>{9AA003D3-6DBB-4C6C-BDC5-F3E1F3BBB0DD}</Project>
+      <Name>EntitySpaces.DynamicQuery35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Interfaces\EntitySpaces.Interfaces35.csproj">
+      <Project>{B13AC54D-1CEE-4B91-BEAE-98CF0A4AA180}</Project>
+      <Name>EntitySpaces.Interfaces35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Loader\EntitySpaces.Loader35.csproj">
+      <Project>{7DFF20D6-C320-4920-AE92-4F096D8DFE61}</Project>
+      <Name>EntitySpaces.Loader35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\EntitySpaces.Profiler\EntitySpaces.Profiler35.csproj">
+      <Project>{14CB78FC-1839-4F28-9F59-6522F2BFEFE7}</Project>
+      <Name>EntitySpaces.Profiler35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\EntitySpaces\Providers\EntitySpaces.SqlClientProvider\EntitySpaces.SqlClientProvider35.csproj">
+      <Project>{96219C55-952F-4CCC-BF91-D91CA5EE5D56}</Project>
+      <Name>EntitySpaces.SqlClientProvider35</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

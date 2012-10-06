@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4FA793A-65B6-4EB8-A616-2B341269ADF2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Silverlight_RiaServices</RootNamespace>
+    <AssemblyName>Silverlight_RiaServices.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SilverlightApplicationList>{C3D543E2-887A-4275-95FC-DC817F8F3102}|..\Silverlight_RiaServices\Silverlight_RiaServices.vbproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Silverlight_RiaServices.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Silverlight_RiaServices.Web.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.DynamicQuery">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.DynamicQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider">
+      <HintPath>..\..\..\Runtimes\.NET 4.0\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ServiceModel.DomainServices.Server" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.DomainServices.Hosting" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\Silverlight_RiaServices.xap" />
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\Categories.vb" />
+    <Compile Include="Custom\CategoriesCollection.vb" />
+    <Compile Include="Custom\CategoriesQuery.vb" />
+    <Compile Include="Custom\CustomerCustomerDemo.vb" />
+    <Compile Include="Custom\CustomerCustomerDemoCollection.vb" />
+    <Compile Include="Custom\CustomerCustomerDemoQuery.vb" />
+    <Compile Include="Custom\CustomerDemographics.vb" />
+    <Compile Include="Custom\CustomerDemographicsCollection.vb" />
+    <Compile Include="Custom\CustomerDemographicsQuery.vb" />
+    <Compile Include="Custom\Customers.vb" />
+    <Compile Include="Custom\CustomersCollection.vb" />
+    <Compile Include="Custom\CustomersQuery.vb" />
+    <Compile Include="Custom\Employees.vb" />
+    <Compile Include="Custom\EmployeesCollection.vb" />
+    <Compile Include="Custom\EmployeesQuery.vb" />
+    <Compile Include="Custom\EmployeeTerritories.vb" />
+    <Compile Include="Custom\EmployeeTerritoriesCollection.vb" />
+    <Compile Include="Custom\EmployeeTerritoriesQuery.vb" />
+    <Compile Include="Custom\OrderDetails.vb" />
+    <Compile Include="Custom\OrderDetailsCollection.vb" />
+    <Compile Include="Custom\OrderDetailsQuery.vb" />
+    <Compile Include="Custom\Orders.vb" />
+    <Compile Include="Custom\OrdersCollection.vb" />
+    <Compile Include="Custom\OrdersQuery.vb" />
+    <Compile Include="Custom\Products.vb" />
+    <Compile Include="Custom\ProductsCollection.vb" />
+    <Compile Include="Custom\ProductsQuery.vb" />
+    <Compile Include="Custom\Region.vb" />
+    <Compile Include="Custom\RegionCollection.vb" />
+    <Compile Include="Custom\RegionQuery.vb" />
+    <Compile Include="Custom\Shippers.vb" />
+    <Compile Include="Custom\ShippersCollection.vb" />
+    <Compile Include="Custom\ShippersQuery.vb" />
+    <Compile Include="Custom\Suppliers.vb" />
+    <Compile Include="Custom\SuppliersCollection.vb" />
+    <Compile Include="Custom\SuppliersQuery.vb" />
+    <Compile Include="Custom\Territories.vb" />
+    <Compile Include="Custom\TerritoriesCollection.vb" />
+    <Compile Include="Custom\TerritoriesQuery.vb" />
+    <Compile Include="Generated\Categories.Shared.vb" />
+    <Compile Include="Generated\Categories.vb" />
+    <Compile Include="Generated\CustomerCustomerDemo.Shared.vb" />
+    <Compile Include="Generated\CustomerCustomerDemo.vb" />
+    <Compile Include="Generated\CustomerDemographics.Shared.vb" />
+    <Compile Include="Generated\CustomerDemographics.vb" />
+    <Compile Include="Generated\Customers.Shared.vb" />
+    <Compile Include="Generated\Customers.vb" />
+    <Compile Include="Generated\Employees.Shared.vb" />
+    <Compile Include="Generated\Employees.vb" />
+    <Compile Include="Generated\EmployeeTerritories.Shared.vb" />
+    <Compile Include="Generated\EmployeeTerritories.vb" />
+    <Compile Include="Generated\OrderDetails.Shared.vb" />
+    <Compile Include="Generated\OrderDetails.vb" />
+    <Compile Include="Generated\Orders.Shared.vb" />
+    <Compile Include="Generated\Orders.vb" />
+    <Compile Include="Generated\Products.Shared.vb" />
+    <Compile Include="Generated\Products.vb" />
+    <Compile Include="Generated\Region.Shared.vb" />
+    <Compile Include="Generated\Region.vb" />
+    <Compile Include="Generated\Shippers.Shared.vb" />
+    <Compile Include="Generated\Shippers.vb" />
+    <Compile Include="Generated\Suppliers.Shared.vb" />
+    <Compile Include="Generated\Suppliers.vb" />
+    <Compile Include="Generated\Territories.Shared.vb" />
+    <Compile Include="Generated\Territories.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.vb" />
+    <Compile Include="Resources\ValidationErrorResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidationErrorResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RegistrationDataResources.Designer.vb">
+      <DependentUpon>RegistrationDataResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="Services\esDomainService.Custom.vb" />
+    <Compile Include="Services\esDomainService.vb" />
+    <Compile Include="Validators\Categories.Validation.vb" />
+    <Compile Include="Validators\CustomerCustomerDemo.Validation.vb" />
+    <Compile Include="Validators\CustomerDemographics.Validation.vb" />
+    <Compile Include="Validators\Customers.Validation.vb" />
+    <Compile Include="Validators\Employees.Validation.vb" />
+    <Compile Include="Validators\EmployeeTerritories.Validation.vb" />
+    <Compile Include="Validators\OrderDetails.Validation.vb" />
+    <Compile Include="Validators\Orders.Validation.vb" />
+    <Compile Include="Validators\Products.Validation.vb" />
+    <Compile Include="Validators\Region.Validation.vb" />
+    <Compile Include="Validators\Shippers.Validation.vb" />
+    <Compile Include="Validators\Suppliers.Validation.vb" />
+    <Compile Include="Validators\Territories.Validation.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\AuthenticationService.vb" />
+    <Compile Include="Services\UserRegistrationService.vb" />
+    <Compile Include="Models\User.vb" />
+    <Compile Include="Models\RegistrationData.vb" />
+    <Compile Include="Models\Shared\User.shared.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ValidationErrorResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationErrorResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RegistrationDataResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RegistrationDataResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52878</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
