@@ -9,7 +9,7 @@ WE WILL BE WORKING ON THIS ALL WEEKEND.
 
 <table border="0" width="100%">
     <tr align=center">
-        <td>
+        <td style="text-align:center">
 			<img src="https://raw.github.com/EntitySpaces/EntitySpaces-CompleteSource/master/logo.png" border="0">
         </td>
     </tr>
