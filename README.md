@@ -2,18 +2,19 @@ EntitySpaces-CompleteSource
 ===========================
 
 ###NOT READY FOR PRIME TIME YET###
-*DO NOT DOWNLOAD THIS. 
-*IT IS NOT READY YET. 
-*YOU WILL NOT BE ABLE TO BUILD AND THE NEXT TIME YOU SYNC YOUR REPOSITORY WILL BE SEVERELY MESSED UP. 
-*WAIT FOR THE ANNOUNCEMENT ON OUR BLOG. 
-*WE WILL BE WORKING ON THIS ALL WEEKEND.
+* [DO NOT DOWNLOAD THIS] 
+* [IT IS NOT READY YET] 
+* [YOU WILL NOT BE ABLE TO BUILD AND THE NEXT TIME YOU SYNC YOUR REPOSITORY WILL BE SEVERELY MESSED UP] 
+* [WAIT FOR THE ANNOUNCEMENT ON OUR BLOG] 
+* [WE WILL BE WORKING ON THIS ALL WEEKEND]
+* [DETAILED BUILD INSTRUCTION ARE COMING]
 
 ###LICENSE###
 
-											New BSD License
+														New BSD License
 
-								Copyright (c) 2006-2012, EntitySpaces, LLC
-										All rights reserved.
+											Copyright (c) 2006-2012, EntitySpaces, LLC
+													All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
