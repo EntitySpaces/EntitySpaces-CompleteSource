@@ -1,16 +1,16 @@
 EntitySpaces-CompleteSource
 ===========================
 
-##NOT READY FOR PRIME TIME YET##
+###NOT READY FOR PRIME TIME YET###
 *DO NOT DOWNLOAD THIS. 
 *IT IS NOT READY YET. 
 *YOU WILL NOT BE ABLE TO BUILD AND THE NEXT TIME YOU SYNC YOUR REPOSITORY WILL BE SEVERELY MESSED UP. 
 *WAIT FOR THE ANNOUNCEMENT ON OUR BLOG. 
 *WE WILL BE WORKING ON THIS ALL WEEKEND.
 
-##LICENSE##
+###LICENSE###
                                New BSD License
-* * *
+
                     Copyright (c) 2006-2012, EntitySpaces, LLC
                             All rights reserved.
 
@@ -35,12 +35,12 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-* * *
 
 
-##INSTALL THE OFFICIAL, FREE 2012.1.0930.0 RELEASE##
+
+###INSTALL THE OFFICIAL, FREE 2012.1.0930.0 RELEASE###
 * [To install click here] (http://download.cnet.com/EntitySpaces-Studio/3000-10250_4-10590953.html?tag=mncol;1)
-To install click HERE
+
 
 <table border="0px" width="100%" style="border:0px !important>
     <tr align=center">
