@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitySpaces.Loader35.CF", "EntitySpaces.Loader35.CF.csproj", "{ED15DE70-B20E-43DD-8BD8-11E63791808D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitySpaces.Interfaces35.CF", "..\EntitySpaces.Interfaces\EntitySpaces.Interfaces35.CF.csproj", "{44BE68AE-0FD1-4677-8155-84A886E0642F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED15DE70-B20E-43DD-8BD8-11E63791808D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED15DE70-B20E-43DD-8BD8-11E63791808D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED15DE70-B20E-43DD-8BD8-11E63791808D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED15DE70-B20E-43DD-8BD8-11E63791808D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

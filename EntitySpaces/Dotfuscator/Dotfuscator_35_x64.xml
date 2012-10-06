@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.3.dtd">
+<dotfuscator version="2.3">
+  <!--This is application generated code. Do not edit manually.-->
+  <global>
+    <option>suppressildasm</option>
+  </global>
+  <input>
+    <loadpaths />
+    <asmlist>
+      <inputassembly refid="dceb8a7c-884a-4312-a4e6-5c62dfdec966">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.Core\bin\x64\Release" name="EntitySpaces.Core.dll" />
+      </inputassembly>
+      <inputassembly refid="b7215199-51d1-4f65-a827-5d32cc72f631">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.SqlClientProvider\bin\x64\Release" name="EntitySpaces.SqlClientProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="d62c418f-e4c2-43e2-89b3-c117584c3e00">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.MSAccessProvider\bin\x64\Release" name="EntitySpaces.MSAccessProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="c3c730b5-6b3c-4fc9-b37a-1a8fc057b3f9">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.MySqlClientProvider\bin\x64\Release" name="EntitySpaces.MySqlClientProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="d498dd44-f790-4404-93a4-843b7a8edf2d">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.Npgsql2Provider\bin\x64\Release" name="EntitySpaces.Npgsql2Provider.dll" />
+      </inputassembly>
+      <inputassembly refid="70754df9-f3dc-4261-a5e6-d753a8d436f2">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.OracleClientProvider\bin\x64\Release" name="EntitySpaces.OracleClientProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="19bfa062-cfc9-4ca8-bbf5-3e6bc419c87f">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.SQLiteProvider\bin\x64\Release" name="EntitySpaces.SQLiteProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="bf916632-f888-4d9f-9330-be773dfe6018">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.SqlServerCeProvider\bin\x64\Release" name="EntitySpaces.SqlServerCeProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="802126e9-0fa0-4d1e-85ba-4f54bad378cc">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.SybaseSqlAnywhereProvider\bin\x64\Release" name="EntitySpaces.SybaseSqlAnywhereProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="12996e7c-5c0a-49ad-9d64-c3788e865db5">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.VistaDB4Provider\bin\x64\Release" name="EntitySpaces.VistaDB4Provider.dll" />
+      </inputassembly>
+      <inputassembly refid="25ce5868-6532-45db-823d-abdf1618bf63">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.VistaDBProvider\bin\x64\Release" name="EntitySpaces.VistaDBProvider.dll" />
+      </inputassembly>
+      <inputassembly refid="59f693cd-1c4b-44d0-9c95-ffb46d2b2826">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.Interfaces\bin\x64\Release" name="EntitySpaces.Interfaces.dll" />
+      </inputassembly>
+      <inputassembly refid="bac1be2f-682a-452a-97d6-34329e07c70e">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.DynamicQuery\bin\x64\Release" name="EntitySpaces.DynamicQuery.dll" />
+      </inputassembly>
+      <inputassembly refid="9c941674-7b64-4a6b-8557-a1fe390b8602">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.Web\bin\x64\Release" name="EntitySpaces.Web.dll" />
+      </inputassembly>
+      <inputassembly refid="9d66a45e-8ecf-43a9-9094-0a3ba4798893">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.Web.Design\bin\x64\Release" name="EntitySpaces.Web.Design.dll" />
+      </inputassembly>
+      <inputassembly refid="d7640ba2-aa57-4094-b9a2-88a620d2246d">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.DebuggerVisualizer\bin\x64\Release" name="EntitySpaces.DebuggerVisualizer.dll" />
+      </inputassembly>
+      <inputassembly refid="fe2ca4be-a0f0-46fd-9ef8-5cbccd215ec7">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.Loader\bin\x64\Release" name="EntitySpaces.Loader.dll" />
+      </inputassembly>
+      <inputassembly refid="d2f9917c-f9be-414f-a16f-b5eb8eb6d005">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.LoaderMT\bin\x64\Release" name="EntitySpaces.LoaderMT.dll" />
+      </inputassembly>
+      <inputassembly refid="558dedfa-e0dd-4660-a57d-1642e29053fe">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\Providers\EntitySpaces.SqlServerCe4Provider\bin\x64\Release" name="EntitySpaces.SqlServerCe4Provider.dll" />
+      </inputassembly>
+      <inputassembly refid="0933a900-6301-4410-9464-5c54e87caa8f">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\EntitySpaces.Profiler\bin\x64\Release" name="EntitySpaces.Profiler.dll" />
+      </inputassembly>
+      <inputassembly refid="1c5e9495-5a6d-4072-b8cb-acd37721ff7a">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <option>transformxaml</option>
+        <file dir="${configdir}\..\EntitySpaces.js\bin\x64\Release" name="EntitySpaces.js.dll" />
+      </inputassembly>	  
+      <inputassembly refid="39f99c3d-26e3-4fea-8f9f-232dab45a82c">
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\..\..\XDMessaging\bin\x64\Release" name="XDMessaging.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\Dotfuscated_35_x64" />
+  </output>
+  <renaming>
+    <option>xmlserialization</option>
+    <mapping>
+      <mapoutput overwrite="true">
+        <file dir="${configdir}\Dotfuscated_35_x64" name="map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist>
+      <referencerule rulekey="{6655B10A-FD58-462d-8D4F-5B1316DFF0FF}" />
+      <referencerule rulekey="{229FD6F8-5BCC-427b-8F72-A7A413ECDF1A}" />
+      <referencerule rulekey="{2B7E7C8C-A39A-4db8-9DFC-6AFD38509061}" />
+      <referencerule rulekey="{89769974-93E9-4e71-8D92-BE70E855ACFC}" />
+      <referencerule rulekey="{7D9C8B02-2383-420f-8740-A9760394C2C1}" />
+    </referencerulelist>
+  </renaming>
+  <controlflow level="high" />
+  <removal>
+    <option>disable</option>
+    <referencerulelist>
+      <referencerule rulekey="{F4074361-D4CE-4e40-B907-BA9668A45996}" />
+    </referencerulelist>
+  </removal>
+  <signing>
+    <resign>
+      <option>dontuseattributes</option>
+      <key>
+        <file dir="C:\svnroot\Code\ES2012\EntitySpaces\StrongNameKey" name="EntitySpaces.snk" />
+      </key>
+    </resign>
+  </signing>
+  <sos mergeruntime="true" />
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" overwrite="false" />
+  </smartobfuscation>
+</dotfuscator>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitySpaces.SybaseSqlAnywhereProvider35.CF", "EntitySpaces.SybaseSqlAnywhereProvider35.CF.csproj", "{D5F758FC-4DDF-4686-864F-AB34845D01E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitySpaces.Interfaces35.CF", "..\..\EntitySpaces.Interfaces\EntitySpaces.Interfaces35.CF.csproj", "{44BE68AE-0FD1-4677-8155-84A886E0642F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitySpaces.DynamicQuery35.CF", "..\..\EntitySpaces.DynamicQuery\EntitySpaces.DynamicQuery35.CF.csproj", "{D45E8879-49E2-4783-9E24-F37E0193FEC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5F758FC-4DDF-4686-864F-AB34845D01E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F758FC-4DDF-4686-864F-AB34845D01E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F758FC-4DDF-4686-864F-AB34845D01E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F758FC-4DDF-4686-864F-AB34845D01E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BE68AE-0FD1-4677-8155-84A886E0642F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D45E8879-49E2-4783-9E24-F37E0193FEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45E8879-49E2-4783-9E24-F37E0193FEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45E8879-49E2-4783-9E24-F37E0193FEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45E8879-49E2-4783-9E24-F37E0193FEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
