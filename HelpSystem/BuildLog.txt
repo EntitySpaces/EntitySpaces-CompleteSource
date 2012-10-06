@@ -1,0 +1,352 @@
+01:27 PM
+-------------------------------------- 
+*** User Manual *** 
+-------------------------------------- 
+
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioUserManual\Documents\StudioUserManual.docx
+D2H:log:StudioUserManual.docx
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Chapter 1
+D2H:set status:Processing: Topic 1
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioUserManual\Temp\NetHelp_2\StudioUserManual-9-parsed.htm
+D2H:log:StudioUserManual.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: chapter1.htm
+D2H:set status:Writing: topic1.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:  Help target...
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\StudioUserManual\Temp\BuildLogs\2011-11-25_13-27-28.log
+-------------------------------------- 
+*** Getting Started *** 
+-------------------------------------- 
+
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioGettingStarted\Documents\EntitySpacesGettingStarted.docx
+D2H:log:EntitySpacesGettingStarted.docx
+D2H:log:  Processing fields...
+D2H:log:  Processing list paragraphs...
+D2H:log:  Converting lists to text...
+D2H:log:  Converting image map pictures... 
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Purpose
+D2H:set status:Processing: Requirements
+D2H:set status:Processing: Microsoft .NET 3.5 Framework or Higher
+D2H:set status:Processing: EntitySpaces 2011
+D2H:set status:Processing: Additional Resources
+D2H:set status:Processing: Installing EntitySpaces
+D2H:set status:Processing: Launching EntitySpaces
+D2H:set status:Processing: The EntitySpaces Standalone Version
+D2H:set status:Processing: The EntitySpaces Visual Studio Add-In
+D2H:set status:Processing: Generating Your EntitySpaces Architecture
+D2H:set status:Processing: Connect to your Database
+D2H:set status:Processing: The Connection Settings Tab
+D2H:set status:Processing: The File Locations Settings Tab
+D2H:set status:Processing: Saving Default Settings
+D2H:set status:Processing: The Templates Tab
+D2H:set status:Processing: Executing the EntitySpaces Templates
+D2H:set status:Processing: Running the Generated Classes Master Template
+D2H:set status:Processing: Running the Custom Classes Master Template
+D2H:set status:Processing: The EntitySpaces Configuration File
+D2H:set status:Processing: The Config File
+D2H:set status:Processing: Configless Execution
+D2H:set status:Processing: Standard .NET Connection Strings
+D2H:set status:Processing: DotNetNuke Configuration Settings
+D2H:set status:Processing: Registering the Loader
+D2H:set status:Processing: High Level Architectural Overview
+D2H:set status:Processing: High Level Object Usage
+D2H:set status:Processing: Collections
+D2H:set status:Processing: Loading a Collection
+D2H:set status:Processing: Querying a Collection
+D2H:set status:Processing: Saving a Collection
+D2H:set status:Processing: Adding a New Record Through a Collection
+D2H:set status:Processing: Deleting a Record Through a Collection
+D2H:set status:Processing: Entities
+D2H:set status:Processing: Loading a Single Entity
+D2H:set status:Processing: Querying an Entity
+D2H:set status:Processing: Saving an Entity
+D2H:set status:Processing: Deleting an Entity
+D2H:set status:Processing: The EntitySpaces Assemblies
+D2H:set status:Processing: The EntitySpaces Assemblies
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioGettingStarted\Temp\NetHelp_2\EntitySpacesGettingStarted-9-parsed.htm
+D2H:log:EntitySpacesGettingStarted.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: purpose.htm
+D2H:set status:Writing: requirements.htm
+D2H:set status:Writing: microsoftnet35framew.htm
+D2H:set status:Writing: entityspaces2011.htm
+D2H:set status:Writing: additionalresources.htm
+D2H:set status:Writing: installingentityspac.htm
+D2H:set status:Writing: launchingentityspace.htm
+D2H:set status:Writing: theentityspacesstand.htm
+D2H:set status:Writing: theentityspacesvisua.htm
+D2H:set status:Writing: generatingyourentity.htm
+D2H:set status:Writing: connecttoyourdatabas.htm
+D2H:set status:Writing: theconnectionsetting.htm
+D2H:set status:Writing: thefilelocationssett.htm
+D2H:set status:Writing: savingdefaultsetting.htm
+D2H:set status:Writing: thetemplatestab.htm
+D2H:set status:Writing: executingtheentitysp.htm
+D2H:set status:Writing: runningthegeneratedc.htm
+D2H:set status:Writing: runningthecustomclas.htm
+D2H:set status:Writing: theentityspacesconfi.htm
+D2H:set status:Writing: theconfigfile.htm
+D2H:set status:Writing: configlessexecution.htm
+D2H:set status:Writing: standardnetconnectio.htm
+D2H:set status:Writing: dotnetnukeconfigurat.htm
+D2H:set status:Writing: registeringtheloader.htm
+D2H:set status:Writing: highlevelarchitectur.htm
+D2H:set status:Writing: highlevelobjectusage.htm
+D2H:set status:Writing: collections.htm
+D2H:set status:Writing: loadingacollection.htm
+D2H:set status:Writing: queryingacollection.htm
+D2H:set status:Writing: savingacollection.htm
+D2H:set status:Writing: addinganewrecordthro.htm
+D2H:set status:Writing: deletingarecordthrou.htm
+D2H:set status:Writing: entities.htm
+D2H:set status:Writing: loadingasingleentity.htm
+D2H:set status:Writing: queryinganentity.htm
+D2H:set status:Writing: savinganentity.htm
+D2H:set status:Writing: deletinganentity.htm
+D2H:set status:Writing: theentityspacesassem.htm
+D2H:set status:Writing: theentityspacesassem1.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:  Help target...
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\StudioGettingStarted\Temp\BuildLogs\2011-11-25_13-27-50.log
+-------------------------------------- 
+*** Release Notes *** 
+-------------------------------------- 
+
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioReleaseNotes\Documents\EntitySpaces2011ReleaseNotes.docx
+D2H:log:EntitySpaces2011ReleaseNotes.docx
+D2H:log:  Processing fields...
+D2H:log:  Processing list paragraphs...
+D2H:log:  Converting lists to text...
+D2H:log:  Converting image map pictures... 
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Requirements
+D2H:set status:Processing: Microsoft .NET 3.5 Framework
+D2H:set status:Processing: Installation
+D2H:set status:Processing: Enhanced DataContract Support
+D2H:set status:Processing: The Generated classes now fully implement DataContract by default
+D2H:set status:Processing: New WCF Service Template
+D2H:set status:Processing: The Non-Proxy Based WCF Service Template
+D2H:set status:Processing: Object Graph Level API
+D2H:set status:Processing: IsGraphDirty
+D2H:set status:Processing: AcceptChangesGraph/RejectChangesGraph
+D2H:set status:Processing: PruneGraph
+D2H:set status:Processing: The esVisitor Class
+D2H:set status:Processing: The esVisitor Class, a new powerful API available to you.
+D2H:set status:Processing: The ApplyDefaults method
+D2H:set status:Processing: Providing Default Values Through the ApplyDefaults method
+D2H:set status:Processing: New Auditing Field Support
+D2H:set status:Processing: DateAdded and DateModified
+D2H:set status:Processing: AddedBy and ModifiedBy
+D2H:set status:Processing: Concurrency
+D2H:set status:Processing: Project File Enhancements
+D2H:set status:Processing: Editing the Settings
+D2H:set status:Processing: esSetting File Enhancements
+D2H:set status:Processing: Windows Phone 7 Support
+D2H:set status:Processing: Miscellaneous Bug Fixes and Enhancements
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioReleaseNotes\Temp\NetHelp_2\EntitySpaces2011ReleaseNotes-9-parsed.htm
+D2H:log:EntitySpaces2011ReleaseNotes.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: requirements.htm
+D2H:set status:Writing: microsoftnet35framew.htm
+D2H:set status:Writing: installation.htm
+D2H:set status:Writing: enhanceddatacontract.htm
+D2H:set status:Writing: thegeneratedclassesn.htm
+D2H:set status:Writing: newwcfservicetemplat.htm
+D2H:set status:Writing: thenonproxybasedwcfs.htm
+D2H:set status:Writing: objectgraphlevelapi.htm
+D2H:set status:Writing: isgraphdirty.htm
+D2H:set status:Writing: acceptchangesgraphre.htm
+D2H:set status:Writing: prunegraph.htm
+D2H:set status:Writing: theesvisitorclass.htm
+D2H:set status:Writing: theesvisitorclassane.htm
+D2H:set status:Writing: theapplydefaultsmeth.htm
+D2H:set status:Writing: providingdefaultvalu.htm
+D2H:set status:Writing: newauditingfieldsupp.htm
+D2H:set status:Writing: dateaddedanddatemodi.htm
+D2H:set status:Writing: addedbyandmodifiedby.htm
+D2H:set status:Writing: concurrency.htm
+D2H:set status:Writing: projectfileenhanceme.htm
+D2H:set status:Writing: editingthesettings.htm
+D2H:set status:Writing: essettingfileenhance.htm
+D2H:set status:Writing: windowsphone7support.htm
+D2H:set status:Writing: miscellaneousbugfixe.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:  Help target...
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\StudioReleaseNotes\Temp\BuildLogs\2011-11-25_13-28-17.log
+-------------------------------------- 
+*** EntitySpaces API *** 
+-------------------------------------- 
+
+D2H:log:Reference
+D2H:log: Compiling XML source document 'C:\SVNData\EntitySpacesNew\Documentation\EntitySpacesAPI\XMLDocuments\Reference.xml'...
+D2H:log: Parsing Sandcastle output
+D2H:log: Importing plugin-generated objects to the project
+D2H:log: Plugin-generated objects imported.
+D2H:log:Reading project data...
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\EntitySpacesAPI\Documents\EntitySpacesAPI.docx
+D2H:log:EntitySpacesAPI.docx
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: EntitySpaces Architecture API
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\EntitySpacesAPI\Temp\NetHelp_2\EntitySpacesAPI-9-parsed.htm
+D2H:log:EntitySpacesAPI.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: entityspacesarchitec.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:Reference
+D2H:log: Writing topic files for XML source document 'C:\SVNData\EntitySpacesNew\Documentation\EntitySpacesAPI\XMLDocuments\Reference.xml'...
+D2H:log: Generating output and project items with Sandcastle...
+D2H:log:  Help target...
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\EntitySpacesAPI\Temp\BuildLogs\2011-11-25_13-28-41.log
+-------------------------------------- 
+*** Profiler *** 
+-------------------------------------- 
+
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\ProfilerHelp\Documents\ProfilerHelp.docx
+D2H:log:ProfilerHelp.docx
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Chapter 1
+D2H:set status:Processing: Topic 1
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\ProfilerHelp\Documents\Glossary.docx
+D2H:log:Glossary.docx
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Glossary of Terms
+D2H:set status:Processing: Term1
+D2H:set status:Processing: Term2
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\ProfilerHelp\Temp\NetHelp_2\ProfilerHelp-9-parsed.htm
+D2H:log:ProfilerHelp.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: chapter1.htm
+D2H:set status:Writing: topic1.htm
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\ProfilerHelp\Temp\NetHelp_2\Glossary-10-parsed.htm
+D2H:log:Glossary.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: glossaryofterms.htm
+D2H:set status:Writing: gloss_term1.htm
+D2H:set status:Writing: gloss_term2.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:  Help target...
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\ProfilerHelp\Temp\BuildLogs\2011-11-25_13-35-48.log
+-------------------------------------- 
+*** About EntitySpaces *** 
+-------------------------------------- 
+
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\AboutEntitySpaces\Documents\AboutEntitySpaces.docx
+D2H:log:AboutEntitySpaces.docx
+D2H:log:  Processing fields...
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Contact Information
+D2H:set status:Processing: Support Options
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\AboutEntitySpaces\Temp\NetHelp_2\AboutEntitySpaces-9-parsed.htm
+D2H:log:AboutEntitySpaces.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: contactinformation.htm
+D2H:set status:Writing: supportoptions.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:  Help target...
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\AboutEntitySpaces\Temp\BuildLogs\2011-11-25_13-36-14.log
+-------------------------------------- 
+*** Studio Help *** 
+-------------------------------------- 
+
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioHelp\Documents\StudioHelp.docx
+D2H:log:StudioHelp.docx
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Getting Started
+D2H:set status:Processing: User Manual
+D2H:set status:Processing: Reference
+D2H:set status:Processing: Release Notes
+D2H:set status:Processing: EntitySpaces Profiler
+D2H:set status:Processing: About EntitySpaces
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioHelp\Documents\Glossary.docx
+D2H:log:Glossary.docx
+D2H:log:  Saving preprocessed document...
+D2H:set status:Ready
+D2H:log:  Preparing HTML file...
+D2H:log:  Processing HTML file...
+D2H:set status:Processing: Glossary of Terms
+D2H:set status:Processing: Term1
+D2H:set status:Processing: Term2
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioHelp\Temp\NetHelp_2\StudioHelp-9-parsed.htm
+D2H:log:StudioHelp.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: gettingstarted.htm
+D2H:set status:Writing: usermanual.htm
+D2H:set status:Writing: reference.htm
+D2H:set status:Writing: releasenotes.htm
+D2H:set status:Writing: entityspacesprofiler.htm
+D2H:set status:Writing: aboutentityspaces.htm
+D2H:set status:Doc-To-Help is compiling: C:\SVNData\EntitySpacesNew\Documentation\StudioHelp\Temp\NetHelp_2\Glossary-10-parsed.htm
+D2H:log:Glossary.docx
+D2H:log:  Writing output files...
+D2H:set status:Writing: glossaryofterms.htm
+D2H:set status:Writing: gloss_term1.htm
+D2H:set status:Writing: gloss_term2.htm
+D2H:log:Building...
+D2H:log:  Contents file...
+D2H:log:  Index file...
+D2H:log:  Help target...
+D2H:log signal document:
+D2H:log signal topic:
+D2H:log signal message:error:Error: Exception has been thrown by the target of an invocation.
+D2H:log:Saving changes...
+D2H:succeeded
+D2H:exit
+D2H:log file:C:\SVNData\EntitySpacesNew\Documentation\StudioHelp\Temp\BuildLogs\2011-11-25_13-36-35.log
+01:37 PM

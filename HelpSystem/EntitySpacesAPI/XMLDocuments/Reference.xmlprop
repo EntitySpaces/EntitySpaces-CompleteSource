@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<SandcastleProperties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FrameworkVersion>v2_0</FrameworkVersion>
+  <LanguageSyntax>CSharp VisualBasic</LanguageSyntax>
+  <SdkLinkTypes>None</SdkLinkTypes>
+  <PresentationStyle>VS2005</PresentationStyle>
+  <VisibilityMembers>Public</VisibilityMembers>
+  <VisibilityTypes>Public</VisibilityTypes>
+  <CompanyInfo>
+    <Name />
+    <EMail />
+    <CopyrightText>Copyright © 2011, EntitySpaces, LLC</CopyrightText>
+  </CompanyInfo>
+  <SendingFeedback>
+    <Enabled>false</Enabled>
+    <UseSandcastleDefaults>false</UseSandcastleDefaults>
+  </SendingFeedback>
+  <HeaderText>EntitySpaces 2011.1.110.0</HeaderText>
+  <ExternalComponentsConfig>
+    <Enabled>true</Enabled>
+    <CodeBlockConfiguration>&lt;component type="CodeBlockComponent" assembly=""&gt;&lt;basePath value="" /&gt;&lt;languageFilter value="true" /&gt;&lt;colorizer syntaxFile="Colorizer\highlight.xml" styleFile="Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" tabSize="0" defaultTitle="true" /&gt;&lt;/component&gt;</CodeBlockConfiguration>
+    <PostTransformConfiguration>&lt;component type="PostTransformComponent" assembly=""&gt;&lt;colorizer stylesheet="Colorizer\highlight.css" scriptFile="Colorizer\highlight.js" copyImage="Colorizer\CopyCode.gif" /&gt;&lt;outputPath value="Output\html" /&gt;&lt;logoFile filename="" height="0" width="0" altText="" placement="left" alignment="left" /&gt;&lt;/component&gt;</PostTransformConfiguration>
+  </ExternalComponentsConfig>
+  <RootFolder>Current</RootFolder>
+  <Assemblies>
+    <Entry LocationType="Path" AssemblyFile="..\..\..\Code\ES2011\EntitySpaces\BusinessObjects\bin\Debug\BusinessObjects.dll" CommentFile="..\..\..\Code\ES2011\EntitySpaces\BusinessObjects\bin\Debug\BusinessObjects.xml" Checksum="1FD4BEA96FB1CAEDF7782A352E48CD9E65FC7B810061870DA890A552F1D6FB8F" />
+    <Entry LocationType="Path" AssemblyFile="..\..\..\Code\ES2011\EntitySpaces\EntitySpaces.Core\bin\Debug35\EntitySpaces.Core.dll" CommentFile="..\..\..\Code\ES2011\EntitySpaces\EntitySpaces.Core\bin\Debug35\EntitySpaces.Core.xml" Checksum="FF2313CBA1E25A76E280862A6F691A44D2D3B219C43B808F9A2D15698FAA5075" />
+    <Entry LocationType="Path" AssemblyFile="..\..\..\Code\ES2011\EntitySpaces\EntitySpaces.DynamicQuery\bin\Debug35\EntitySpaces.DynamicQuery.dll" CommentFile="..\..\..\Code\ES2011\EntitySpaces\EntitySpaces.DynamicQuery\bin\Debug35\EntitySpaces.DynamicQuery.xml" Checksum="D5F0402013354A95CE9025CBC27BE0BD7690BC17659973531A9D98FA38E7E96F" />
+    <Entry LocationType="Path" AssemblyFile="..\..\..\Code\ES2011\EntitySpaces\EntitySpaces.Interfaces\bin\Debug35\EntitySpaces.Interfaces.dll" CommentFile="..\..\..\Code\ES2011\EntitySpaces\EntitySpaces.Interfaces\bin\Debug35\EntitySpaces.Interfaces.xml" Checksum="659B5D450E906D9584B8344AA34D7A6D10A52B0EB11DC7910DFA9D0DAC03974A" />
+  </Assemblies>
+  <Dependencies />
+</SandcastleProperties>
