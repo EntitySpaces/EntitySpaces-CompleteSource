@@ -7,4 +7,4 @@ YOU WILL NOT BE ABLE TO BUILD AND THE NEXT YOU SYNC YOUR REPOSITORY WILL BE SEVE
 WAIT FOR THE ANNOUNCEMENT ON OUR BLOG. 
 WE WILL BE WORKING ON THIS ALL WEEKEND.
 
-![Alt text](logo.png)
+<img src="https://raw.github.com/EntitySpaces/EntitySpaces-CompleteSource/master/logo.png" border="0">
