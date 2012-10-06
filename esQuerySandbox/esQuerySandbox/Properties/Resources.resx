@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArithmeticExpression" xml:space="preserve">
+    <value>OrdersQuery oq = new OrdersQuery();
+oq.Select
+(
+    oq.EmployeeID,
+    oq.ShipVia,
+    // Arithmetic Expression
+    (oq.EmployeeID + oq.ShipVia).As("StrangeColumnForSure")
+);
+
+OrdersCollection coll = new OrdersCollection();
+coll.Load(oq);
+
+return coll;</value>
+  </data>
+  <data name="CaseThenWhen1" xml:space="preserve">
+    <value>OrderDetailsQuery oq = new OrderDetailsQuery(); 
+
+oq.Select
+(
+	oq.Quantity,
+ 	oq.UnitPrice,
+    oq.UnitPrice
+        .Case()
+            .When(oq.Quantity &lt; 50).Then(oq.UnitPrice)
+            .When(oq.Quantity &gt;= 50 &amp;&amp; oq.Quantity &lt; 70).Then(oq.UnitPrice * .90)
+            .When(oq.Quantity &gt;= 70 &amp;&amp; oq.Quantity &lt; 99).Then(oq.UnitPrice * .80)
+            .Else(oq.UnitPrice * .70)
+        .End().As("Adjusted Unit Price")
+
+).OrderBy(oq.Quantity.Descending); 
+
+OrderDetailsCollection coll = new OrderDetailsCollection();
+coll.Load(oq);
+
+return coll;</value>
+  </data>
+  <data name="CaseThenWhen2" xml:space="preserve">
+    <value>EmployeesQuery q = new EmployeesQuery(); 
+
+q.Select
+(
+	q.LastName,
+    q.LastName
+        .Case()
+            .When(q.LastName.Like("%a%")).Then("Last Name Contains an A")
+            .Else("Last Name Doesnt Contain an A")
+        .End().As("SpecialLastName")
+); 
+
+EmployeesCollection coll = new EmployeesCollection();
+coll.Load(q);
+
+return coll;</value>
+  </data>
+  <data name="CorrelatedSubQuery" xml:space="preserve">
+    <value>OrderDetailsQuery oiq = new OrderDetailsQuery("oi");
+ProductsQuery pq = new ProductsQuery("p");
+
+oiq.Select(
+    oiq.OrderID,
+    (oiq.Quantity * oiq.UnitPrice).Sum().As("Total")
+);
+oiq.Where(oiq.ProductID
+    .In(
+        pq.Select(pq.ProductID)
+        .Where(oiq.ProductID == pq.ProductID)
+    )
+);
+oiq.GroupBy(oiq.OrderID);
+
+OrderDetailsCollection collection = new OrderDetailsCollection();
+collection.Load(oiq);
+
+return collection;</value>
+  </data>
+  <data name="FromSubQuery" xml:space="preserve">
+    <value>OrdersQuery oq = new OrdersQuery("o");
+OrderDetailsQuery oiq = new OrderDetailsQuery("oi");
+
+oq.Select(oq.CustomerID, oq.OrderDate, "&lt;sub.OrderTotal&gt;");
+oq.From
+    (
+        oiq.Select(oiq.OrderID,
+            (oiq.UnitPrice * oiq.Quantity).Sum().As("OrderTotal"))
+            .GroupBy(oiq.OrderID)
+    ).As("sub");
+oq.InnerJoin(oq).On(oq.OrderID == oiq.OrderID);
+
+OrdersCollection collection = new OrdersCollection();
+collection.Load(oq);
+
+return collection;</value>
+  </data>
+  <data name="JoinOnSubquery" xml:space="preserve">
+    <value>// Query for the Join
+OrderDetailsQuery odq = new OrderDetailsQuery("oi");
+
+// SubQuery of OrderItems with a discount
+OrderDetailsQuery odsq = new OrderDetailsQuery("ods");
+odsq.es.Distinct = true;
+odsq.Select(odsq.Discount);
+odsq.Where(odsq.Discount &gt; 0);
+
+// Orders with discounted items
+OrdersQuery oq = new OrdersQuery("o");
+oq.Select(oq.OrderID, odq.Discount);
+oq.InnerJoin(odq).On(oq.OrderID == odq.OrderID &amp;
+    odq.Discount.In(odsq));
+
+OrdersCollection collection = new OrdersCollection();
+collection.Load(oq);
+
+return collection;</value>
+  </data>
+  <data name="NativeLanguageSyntax" xml:space="preserve">
+    <value>OrdersQuery q = new OrdersQuery();
+q.Select(q.OrderID, q.Freight, q.ShipCountry);
+q.Where(q.Freight &gt; 5 &amp;&amp; q.Freight &lt; 20); // &lt;== see syntax
+q.OrderBy(q.Freight.Ascending);
+
+OrdersCollection coll = new OrdersCollection();
+coll.Load(q);
+
+return coll;</value>
+  </data>
+  <data name="PagingSample" xml:space="preserve">
+    <value>EmployeesQuery q = new EmployeesQuery();
+q.Select(q.EmployeeID, q.LastName, q.FirstName);
+q.OrderBy(q.LastName.Descending);
+
+q.es.PageNumber = 2;
+q.es.PageSize = 5;
+
+EmployeesCollection coll = new EmployeesCollection();
+coll.Load(q);
+
+return coll;</value>
+  </data>
+  <data name="SelectAllExcept" xml:space="preserve">
+    <value>EmployeesCollection coll = new EmployeesCollection();
+coll.Query.SelectAllExcept(coll.Query.Photo);
+coll.Query.Load();
+
+return coll;</value>
+  </data>
+  <data name="SelectSubQuery" xml:space="preserve">
+    <value>OrdersQuery orders = new OrdersQuery("o");
+OrderDetailsQuery details = new OrderDetailsQuery("oi");
+
+orders.Select
+(
+    orders.OrderID,
+    orders.OrderDate,
+    details.Select(
+        details.UnitPrice.Max())
+        .Where(orders.OrderID == details.OrderID).As("MaxUnitPrice")
+);
+
+OrdersCollection collection = new OrdersCollection();
+collection.Load(orders);
+
+return collection;</value>
+  </data>
+  <data name="SelectSubQueryAllOrderColumns" xml:space="preserve">
+    <value>OrdersQuery orders = new OrdersQuery("o");
+OrderDetailsQuery details = new OrderDetailsQuery("oi");
+
+orders.Select
+(
+    orders, // &lt;== this means orders.*
+    details.Select(
+        details.UnitPrice.Max())
+        .Where(orders.OrderID == details.OrderID).As("MaxUnitPrice")
+);
+
+OrdersCollection collection = new OrdersCollection();
+collection.Load(orders);
+
+return collection;</value>
+  </data>
+  <data name="SubQueryWithAllOperator" xml:space="preserve">
+    <value>// SubQuery using the ALL operator.
+// Get a list of customers whose zip code
+// is greater than all the customers in Oregon.
+CustomersQuery cq2 = new CustomersQuery("c2");
+cq2.es.All = true;
+cq2.Select(cq2.PostalCode);
+cq2.Where(cq2.Region == "OR");
+
+CustomersQuery cq1 = new CustomersQuery("c1");
+cq1.Select(cq1.CustomerID, cq1.CompanyName, cq1.PostalCode);
+cq1.Where(cq1.PostalCode &gt; cq2);
+
+CustomersCollection coll = new CustomersCollection();
+coll.Load(cq1);
+
+return coll;</value>
+  </data>
+  <data name="SubQueryWithAnyOperator" xml:space="preserve">
+    <value>// SubQuery using the ANY operator.
+// Get a list of employees who were hired
+// before the year any employee turned 27.
+EmployeesQuery eq2 = new EmployeesQuery("e2");
+eq2.es.Any = true;
+eq2.Select(eq2.BirthDate.DatePart("yyyy") + 27);
+
+EmployeesQuery eq1 = new EmployeesQuery("e1");
+eq1.Select(eq1.EmployeeID, eq1.LastName);
+eq1.Where(eq1.HireDate.DatePart("yyyy") &lt; eq2);
+
+EmployeesCollection coll = new EmployeesCollection();
+coll.Load(eq1);
+
+return coll;</value>
+  </data>
+  <data name="TraditionalSqlStyle" xml:space="preserve">
+    <value>// OrderID and ProductID for Order Details
+// with Products whose name begins with "G"
+// from Suppliers whose city begins with "S".
+
+OrderDetailsQuery oq = new OrderDetailsQuery("o");
+ProductsQuery pq = new ProductsQuery("p");
+SuppliersQuery sq = new SuppliersQuery("s");
+
+oq.Select(
+    oq.OrderID,
+    oq.ProductID
+).Where(oq.ProductID.In(
+    	pq.Select(pq.ProductID)
+    	.Where(pq.ProductName.Like("G%") &amp;&amp; pq.SupplierID.In(
+             sq.Select(sq.SupplierID)
+            .Where(sq.City.Like("S%"))
+            )
+        )
+    )
+);
+
+OrderDetailsCollection collection = new OrderDetailsCollection();
+collection.Load(oq);
+
+return collection;</value>
+  </data>
+  <data name="TypicalJoin" xml:space="preserve">
+    <value>// Query for the Join
+OrderDetailsQuery odq = new OrderDetailsQuery("oi");
+
+// Orders with discounted items
+OrdersQuery oq = new OrdersQuery("o");
+oq.Select(oq.OrderID, odq.Discount);
+oq.InnerJoin(odq).On(oq.OrderID == odq.OrderID);
+oq.Where(odq.Discount &gt; 0);
+
+OrdersCollection collection = new OrdersCollection();
+collection.Load(oq);
+
+return collection;</value>
+  </data>
+  <data name="WhereExists" xml:space="preserve">
+    <value>EmployeesQuery sq = new EmployeesQuery("s");
+sq.es.Distinct = true;
+sq.Select(sq.EmployeeID);
+sq.Where(sq.ReportsTo.IsNull());
+
+// If even one employee has a null supervisor,
+// i.e., the above query has a result set,
+// then run a list of all employees.
+EmployeesQuery eq = new EmployeesQuery("e");
+eq.Select(eq.EmployeeID, eq.ReportsTo);
+eq.Where(eq.Exists(sq));
+
+EmployeesCollection collection = new EmployeesCollection();
+collection.Load(eq);
+
+return collection;</value>
+  </data>
+  <data name="WhereNotInSubQuery" xml:space="preserve">
+    <value>EmployeeTerritoriesQuery etq = new EmployeeTerritoriesQuery("et");
+etq.Select(etq.TerritoryID);
+etq.Where(etq.EmployeeID == 1);
+
+// Territories that Employee 1 is not assigned to.
+TerritoriesQuery tq = new TerritoriesQuery("t");
+tq.Select(tq.TerritoryDescription);
+tq.Where(tq.TerritoryID.NotIn(etq));
+
+TerritoriesCollection collection = new TerritoriesCollection();
+collection.Load(tq);
+
+return collection;</value>
+  </data>
+</root>
