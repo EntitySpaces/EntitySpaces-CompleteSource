@@ -1,0 +1,1 @@
+Placeholder - incase you plan to use a strong name key "EntitySpaces.snk", use sn.exe to create the strong name key
