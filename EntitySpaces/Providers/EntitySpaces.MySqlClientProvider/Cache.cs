@@ -62,7 +62,7 @@ namespace EntitySpaces.MySqlClientProvider
                             string nativeType = typeMap.NativeType;
                             MySqlDbType dbType = Cache.NativeTypeToDbType(nativeType);
 
-                            param1 = new MySqlParameter(Delimiters.Param + col.PropertyName, dbType, 0, col.Name);
+                            param1 = new MySqlParameter(Delimiters.Param + col.Name, dbType, 0, col.Name);
                             param1.SourceColumn = col.Name;
 
                             switch (dbType)
